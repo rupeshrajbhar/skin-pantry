@@ -1,0 +1,60 @@
+@import 'base';
+
+.banner {
+    .banner_slider {
+        .slider {
+            @extend .postion_relative;
+
+            .slider_info {
+                @extend .width_100;
+                @extend .postion_t_b;
+
+                .text_xl {
+                    @extend .color_white;
+                    @extend .n_s_b;
+                    @extend .text_uppercase;
+                }
+            }
+        }
+    }
+}
+
+.philosophy {
+    @extend .postion_relative;
+
+    .layer_1 {
+        top: 70px;
+        z-index: 1;
+        left: -17%;
+        width: 750px;
+        @extend .postion_absolute;
+    }
+}
+
+.philosophy_info {
+    &:nth-child(even) {
+        .philosophy_img {
+            order: 1;
+            margin-top: -180px;
+        }
+
+        .philosophy_text {
+            padding-right: 40px;
+        }
+    }
+}
+
+.philosophy_info {
+    .philosophy_img {
+        width: 30%;
+        margin-top: -110px;
+    }
+
+    .philosophy_text {
+        width: 70%;
+
+        h3 {
+            color: var(--primary_color);
+        }
+    }
+}
