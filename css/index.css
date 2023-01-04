@@ -621,7 +621,7 @@ h6 {
 .postion_relative, .banner .banner_slider .slider, .philosophy {
   position: relative; }
 
-.postion_absolute, .philosophy .layer_1 {
+.postion_absolute, .philosophy .layer_1, .philosophy .layer_2, .philosophy .layer_3, .philosophy .layer_4 {
   position: absolute; }
 
 .postion_t_b, .banner .banner_slider .slider .slider_info {
@@ -670,10 +670,19 @@ h6 {
     border-top-left-radius: 15px; }
 
 .philosophy .layer_1 {
-  top: 70px;
+  top: -10px;
   z-index: 1;
-  left: -17%;
-  width: 750px; }
+  left: -19%;
+  width: 875px; }
+.philosophy .layer_2 {
+  top: 10px;
+  right: -210px; }
+.philosophy .layer_3 {
+  bottom: -50px;
+  left: -165px; }
+.philosophy .layer_4 {
+  bottom: -100px;
+  right: -165px; }
 
 .philosophy_info:nth-child(even) .philosophy_img {
   order: 1;
