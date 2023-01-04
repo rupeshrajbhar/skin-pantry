@@ -85,7 +85,8 @@ section {
 
 body {
   margin: 0;
-  font-family: "nunitosans-Regular"; }
+  font-family: "nunitosans-Regular";
+  color: var(--primary_color); }
 
 h1,
 h2,
@@ -104,7 +105,7 @@ h6 {
 .n_l {
   font-family: "nunitosans-Light"; }
 
-.n_s_b, .banner .banner_slider .slider .slider_info .text_xl {
+.n_s_b, .section_1 .banner_slider .slider .slider_info .text_xl {
   font-family: "NunitoSans-SemiBold"; }
 
 .n_b {
@@ -165,11 +166,11 @@ h6 {
   line-height: 1.6;
   margin: 0 0 20px; }
 
-.color_white, .banner .banner_slider .slider .slider_info .text_xl {
+.color_white, .section_1 .banner_slider .slider .slider_info .text_xl {
   color: var(--color_white); }
 
-.color_black {
-  color: var(--color-black); }
+.primary_color {
+  color: var(--primary_color); }
 
 .primary_btn {
   padding: 9px 30px;
@@ -426,10 +427,10 @@ h6 {
 .text_justify {
   text-align: justify; }
 
-.text_uppercase, .primary_btn, .banner .banner_slider .slider .slider_info .text_xl {
+.text_uppercase, .primary_btn, .section_1 .banner_slider .slider .slider_info .text_xl {
   text-transform: uppercase; }
 
-.width_100, .banner .banner_slider .slider .slider_info {
+.width_100, .section_1 .banner_slider .slider .slider_info {
   width: 100%; }
 
 .margin_a {
@@ -618,13 +619,13 @@ h6 {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color_white); }
 
-.postion_relative, .banner .banner_slider .slider, .philosophy {
+.postion_relative, .section_1 .banner_slider .slider, .section_2 {
   position: relative; }
 
-.postion_absolute, .philosophy .layer_1, .philosophy .layer_2, .philosophy .layer_3, .philosophy .layer_4 {
+.postion_absolute, .section_2 .layer_1, .section_2 .layer_2, .section_2 .layer_3, .section_2 .layer_4 {
   position: absolute; }
 
-.postion_t_b, .banner .banner_slider .slider .slider_info {
+.postion_t_b, .section_1 .banner_slider .slider .slider_info {
   top: 50%;
   left: 50%;
   position: absolute;
@@ -669,33 +670,29 @@ h6 {
     background-color: #4D4A48;
     border-top-left-radius: 15px; }
 
-.philosophy .layer_1 {
+.section_2 .layer_1 {
   top: -10px;
   z-index: 1;
   left: -19%;
   width: 875px; }
-.philosophy .layer_2 {
+.section_2 .layer_2 {
   top: 10px;
   right: -210px; }
-.philosophy .layer_3 {
+.section_2 .layer_3 {
   bottom: -50px;
   left: -165px; }
-.philosophy .layer_4 {
+.section_2 .layer_4 {
   bottom: -100px;
   right: -165px; }
-
-.philosophy_info:nth-child(even) .philosophy_img {
+.section_2 .philosophy_info:nth-child(even) .philosophy_img {
   order: 1;
   margin-top: -180px; }
-.philosophy_info:nth-child(even) .philosophy_text {
+.section_2 .philosophy_info:nth-child(even) .philosophy_text {
   padding-right: 40px; }
-
-.philosophy_info .philosophy_img {
+.section_2 .philosophy_info .philosophy_img {
   width: 30%;
   margin-top: -110px; }
-.philosophy_info .philosophy_text {
+.section_2 .philosophy_info .philosophy_text {
   width: 70%; }
-  .philosophy_info .philosophy_text h3 {
-    color: var(--primary_color); }
 
 /*# sourceMappingURL=index.css.map */

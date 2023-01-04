@@ -134,6 +134,7 @@ $n_e_b: 'NunitoSans-ExtraBold';
 body {
     margin: 0;
     font-family: $n_r;
+    color: var(--primary_color);
 }
 
 h1,
@@ -235,8 +236,8 @@ h6 {
     color: var(--color_white);
 }
 
-.color_black {
-    color: var(--color-black);
+.primary_color {
+    color: var(--primary_color);
 }
 
 .primary_btn {
