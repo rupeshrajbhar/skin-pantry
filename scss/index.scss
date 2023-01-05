@@ -1,6 +1,31 @@
 @import 'base';
 
 .section_1 {
+    //  h2, .banner h5, .banner a{opacity: 0;}/
+h2{
+    opacity: 0;
+}
+.btn_section{
+    opacity: 0;
+}
+ .slick-active h2{
+  transform: translateY(80px);
+  animation: 0.5s fadeUp 0.5s forwards;
+}
+.slick-active .btn_section{
+  transform: translateY(80px);
+  animation: 0.5s fadeUp 0.5s forwards;
+}
+// .slick-active a{
+//   transform: translateY(80px);
+//   animation: 0.5s fadeUp 0.5s forwards;
+// }
+
+@keyframes fadeUp {
+  0%{transform: translateY(80px);opacity: 0;}
+  100%{transform: translateY(0px);opacity: 1;}
+}
+
     .banner_slider {
         .slider {
             @extend .postion_relative;
@@ -259,7 +284,50 @@
             padding: 0 20px;
         }
     }
-    .progress1 {
+    .progress {
+        display: block;
+        margin-left: 0;
+        margin-top: 25px;
+        width: 100%;
+        height: 3px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #ECE7E6;
+        background-image: linear-gradient(0deg, rgba(62,35,19,1) 0%, rgba(62,35,19,1) 100%);
+        background-repeat: no-repeat;
+        background-size: 0 100%;
+        margin-top: 60px;
+        transition: background-size 0.4s ease-in-out;
+    
+        @media only screen and (max-width: 767px) {
+            width: 100%;
+        }
+    
+        @media (min-width: 768px) and (max-width: 992px) {
+            width: 100%;
+        }
+      }
+}
+
+.section_11{
+    .blog_slider{
+        margin: 0 -12px;
+        .slider{
+            padding: 0 12px;
+            .blog_img{
+                @extend .postion_relative;
+                h6{
+                    top: 15px;
+                    left: 15px;
+                    margin: 0;
+                    padding: 5px 10px;
+                    background-color: var(--color_white);
+                    @extend .postion_absolute; 
+                }
+            }
+        }
+    }
+    .progress {
         display: block;
         margin-left: 0;
         margin-top: 25px;
@@ -286,6 +354,24 @@
 
 .section_12{
     @extend .postion_relative;
+    .some{
+        top: 0;
+        @extend .postion_absolute;
+        margin-left: var(--container_left_space);
+        h4{
+            @extend .postion_relative;
+            padding-top: 100px;
+            padding-left: 70px;
+            .g{
+                top: 0;
+                left: 0;
+                display: inherit;
+                font-size: 90px;
+                font-weight: 100;
+                @extend .postion_absolute;
+            }
+        }
+    }
     .sub{
         bottom: 0;
         @extend .postion_absolute;
