@@ -430,7 +430,7 @@ h6 {
 .text_uppercase, .primary_btn, .section_1 .banner_slider .slider .slider_info .text_xl {
   text-transform: uppercase; }
 
-.width_100, .section_1 .banner_slider .slider .slider_info {
+.width_100, .section_1 .banner_slider .slider .slider_info, .section_6 .products .right_product .product_box .text_arrow, .section_8 .products .right_product .product_box .text_arrow {
   width: 100%; }
 
 .margin_a, .section_4 .brand_slider .slider .brand_info, .section_4 .brand_slider .slider .brand_logo {
@@ -619,10 +619,10 @@ h6 {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color_white); }
 
-.postion_relative, .section_1 .banner_slider .slider, .section_2, .section_4 {
+.postion_relative, .section_1 .banner_slider .slider, .section_2, .section_4, .section_6 .products .right_product .product_box, .section_6 .products .right_product .product_box .product_img, .section_8 .products .right_product .product_box, .section_8 .products .right_product .product_box .product_img, .section_12 {
   position: relative; }
 
-.postion_absolute, .section_2 .layer_1, .section_2 .layer_2, .section_2 .layer_3, .section_2 .layer_4 {
+.postion_absolute, .section_2 .layer_1, .section_2 .layer_2, .section_2 .layer_3, .section_2 .layer_4, .section_6 .products .right_product .product_box .product_img img, .section_6 .products .right_product .product_box .text_arrow, .section_8 .products .right_product .product_box .product_img img, .section_8 .products .right_product .product_box .text_arrow, .section_12 .sub {
   position: absolute; }
 
 .postion_t_b, .section_1 .banner_slider .slider .slider_info {
@@ -764,6 +764,83 @@ h6 {
   .section_6 .products .left_product {
     width: 50%; }
   .section_6 .products .right_product {
+    width: 50%;
+    margin-left: 20px; }
+    .section_6 .products .right_product .product_box {
+      width: 48%;
+      height: 48.5%;
+      background-color: #F6F6F6; }
+      .section_6 .products .right_product .product_box .product_img {
+        height: 77%; }
+        .section_6 .products .right_product .product_box .product_img .big_img {
+          height: 200px; }
+        .section_6 .products .right_product .product_box .product_img img {
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%); }
+      .section_6 .products .right_product .product_box .text_arrow {
+        padding: 20px 15px;
+        bottom: 0; }
+
+.section_7 {
+  margin-left: var(--container_left_space); }
+  .section_7 .pantry .pantry_text {
+    width: 50%;
+    padding-right: 50px; }
+  .section_7 .pantry .pantry_img {
     width: 50%; }
+
+.section_8 .products {
+  margin-left: var(--container_left_space); }
+  .section_8 .products .left_product {
+    width: 50%; }
+  .section_8 .products .right_product {
+    width: 50%;
+    margin-right: 20px; }
+    .section_8 .products .right_product .product_box {
+      width: 48%;
+      height: 48.5%;
+      background-color: #F6F6F6; }
+      .section_8 .products .right_product .product_box .product_img {
+        height: 77%; }
+        .section_8 .products .right_product .product_box .product_img .big_img {
+          height: 200px; }
+        .section_8 .products .right_product .product_box .product_img img {
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%); }
+      .section_8 .products .right_product .product_box .text_arrow {
+        padding: 20px 15px;
+        bottom: 0; }
+
+.section_9 .notes_slider {
+  margin: 0 -20px; }
+  .section_9 .notes_slider .slider {
+    padding: 0 20px; }
+.section_9 .progress1 {
+  display: block;
+  margin-left: 0;
+  margin-top: 25px;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ECE7E6;
+  background-image: linear-gradient(0deg, #3e2313 0%, #3e2313 100%);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  margin-top: 60px;
+  transition: background-size 0.4s ease-in-out; }
+  @media only screen and (max-width: 767px) {
+    .section_9 .progress1 {
+      width: 100%; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .section_9 .progress1 {
+      width: 100%; } }
+
+.section_12 .sub {
+  bottom: 0; }
+  .section_12 .sub img {
+    opacity: 0.8; }
 
 /*# sourceMappingURL=index.css.map */
