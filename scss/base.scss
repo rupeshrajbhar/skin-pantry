@@ -79,6 +79,10 @@ section {
     @media (min-width: 1200px) {
         width: 1170px;
     }
+    @media (min-width: 1920px) {
+        width: 1540px;
+    }
+
 }
 
 :root {
@@ -98,9 +102,10 @@ section {
         --container_width: 1170px;
     }
 
-    // @media (min-width: 1680px) {
-    //   --container_width: 1360px;
-    // }
+
+    @media (min-width: 1680px) {
+      --container_width: 1540px;
+    }
 
     --container_left_space: calc((100% - var(--container_width)) / 2);
 

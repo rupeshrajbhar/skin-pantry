@@ -57,6 +57,9 @@ section {
   @media (min-width: 1200px) {
     .container {
       width: 1170px; } }
+  @media (min-width: 1920px) {
+    .container {
+      width: 1540px; } }
 
 :root {
   --container_width: 100%;
@@ -77,6 +80,9 @@ section {
   @media (min-width: 1200px) {
     :root {
       --container_width: 1170px; } }
+  @media (min-width: 1680px) {
+    :root {
+      --container_width: 1540px; } }
 
 .img-responsive {
   display: block;

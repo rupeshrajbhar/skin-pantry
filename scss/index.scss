@@ -70,6 +70,9 @@ h2{
         @media(min-width:993px) and (max-width: 1200px) {
             width: 550px;
         }
+        @media(min-width:1681px) and (max-width: 5000px) {
+            left: -7%;
+        }
     }
     .layer_2 {
         top: 10px;
@@ -88,6 +91,9 @@ h2{
         @media(min-width:993px) and (max-width: 1200px) {
             right: -280px;
         }
+        @media(min-width:1681px) and (max-width: 5000px) {
+            right: -160px;
+        }
     }
     .layer_3 {
         bottom: -50px;
@@ -103,11 +109,18 @@ h2{
             bottom: 0;
             left: -70px;
         }
+        @media(min-width:1681px) and (max-width: 5000px) {
+            bottom: -55px;
+            left: -116px;
+        }
     }
     .layer_4 {
         bottom: -31px;
         right: -60px;
         @extend .postion_absolute;
+        @media(min-width:1681px) and (max-width: 5000px) {
+            right: -40px;
+        }
     }
 
     .m_layar_1{
@@ -147,7 +160,7 @@ h2{
             @extend .postion_absolute;
         }
         .philosophy_img {
-            width: 30%;
+            width: 44%;
             margin-top: -110px;
             @media(min-width:768px) and (max-width: 992px) {
                 margin-top: -50px;
@@ -155,7 +168,7 @@ h2{
         }
     
         .philosophy_text {
-            width: 70%;
+            width: 56%;
             @media (max-width: 767px) {
                 width: 100%;
                 padding-top: 65px;
@@ -199,7 +212,7 @@ h2{
             text-align: center;
             margin-left: -100px;
             @media (max-width: 767px) {
-                margin-left: 0;
+                margin-left: -20px;
             }
     
             li {
@@ -314,6 +327,9 @@ h2{
     }
     .products{
         margin-right: var(--container_left_space);
+        @media(min-width:1441px) and (max-width: 5000px) {
+            margin-left: var(--container_left_space);
+        }
         @media (max-width: 767px) {
             flex-wrap: wrap;
         }
@@ -406,6 +422,9 @@ h2{
 
 .section_7{
     margin-left: var(--container_left_space);
+    @media(min-width:1441px) and (max-width: 5000px) {
+        margin-right: var(--container_left_space);
+    }
     
     .pantry{
         @media (max-width: 767px) {
@@ -451,6 +470,9 @@ h2{
         margin-left: var(--container_left_space);
         @media (max-width: 767px) {
             flex-wrap: wrap;
+        }
+        @media(min-width:1441px) and (max-width: 5000px) {
+            margin-right: var(--container_left_space);
         }
         .left_product{
             width: 50%;
@@ -592,7 +614,7 @@ h2{
             @media (max-width: 767px) {
                 width: 80vw !important;
                 padding: 0;
-                margin: 0 20px;
+                margin: 0 8px;
             } 
             h3{
                 @media (max-width: 767px) {

@@ -57,6 +57,9 @@ section {
   @media (min-width: 1200px) {
     .container {
       width: 1170px; } }
+  @media (min-width: 1920px) {
+    .container {
+      width: 1540px; } }
 
 :root {
   --container_width: 100%;
@@ -77,6 +80,9 @@ section {
   @media (min-width: 1200px) {
     :root {
       --container_width: 1170px; } }
+  @media (min-width: 1680px) {
+    :root {
+      --container_width: 1540px; } }
 
 .img-responsive {
   display: block;
@@ -718,6 +724,9 @@ h6 {
   @media (min-width: 993px) and (max-width: 1200px) {
     .section_2 .layer_1 {
       width: 550px; } }
+  @media (min-width: 1681px) and (max-width: 5000px) {
+    .section_2 .layer_1 {
+      left: -7%; } }
 .section_2 .layer_2 {
   top: 10px;
   right: -210px; }
@@ -734,6 +743,9 @@ h6 {
   @media (min-width: 993px) and (max-width: 1200px) {
     .section_2 .layer_2 {
       right: -280px; } }
+  @media (min-width: 1681px) and (max-width: 5000px) {
+    .section_2 .layer_2 {
+      right: -160px; } }
 .section_2 .layer_3 {
   bottom: -50px;
   left: -165px; }
@@ -747,9 +759,16 @@ h6 {
       width: 250px;
       bottom: 0;
       left: -70px; } }
+  @media (min-width: 1681px) and (max-width: 5000px) {
+    .section_2 .layer_3 {
+      bottom: -55px;
+      left: -116px; } }
 .section_2 .layer_4 {
   bottom: -31px;
   right: -60px; }
+  @media (min-width: 1681px) and (max-width: 5000px) {
+    .section_2 .layer_4 {
+      right: -40px; } }
 .section_2 .m_layar_1 {
   top: 20px;
   width: 150px;
@@ -772,13 +791,13 @@ h6 {
   right: -40px;
   width: 180px; }
 .section_2 .philosophy_info .philosophy_img {
-  width: 30%;
+  width: 44%;
   margin-top: -110px; }
   @media (min-width: 768px) and (max-width: 992px) {
     .section_2 .philosophy_info .philosophy_img {
       margin-top: -50px; } }
 .section_2 .philosophy_info .philosophy_text {
-  width: 70%; }
+  width: 56%; }
   @media (max-width: 767px) {
     .section_2 .philosophy_info .philosophy_text {
       width: 100%;
@@ -814,7 +833,7 @@ h6 {
       margin-left: -100px; }
       @media (max-width: 767px) {
         .section_4 .brand_slider .slick-dots {
-          margin-left: 0; } }
+          margin-left: -20px; } }
       .section_4 .brand_slider .slick-dots li {
         width: 10px;
         height: 10px;
@@ -893,6 +912,9 @@ h6 {
   padding: 0 10px; }
 .section_6 .products {
   margin-right: var(--container_left_space); }
+  @media (min-width: 1441px) and (max-width: 5000px) {
+    .section_6 .products {
+      margin-left: var(--container_left_space); } }
   @media (max-width: 767px) {
     .section_6 .products {
       flex-wrap: wrap; } }
@@ -966,6 +988,9 @@ h6 {
 
 .section_7 {
   margin-left: var(--container_left_space); }
+  @media (min-width: 1441px) and (max-width: 5000px) {
+    .section_7 {
+      margin-right: var(--container_left_space); } }
   @media (max-width: 767px) {
     .section_7 .pantry {
       padding: 0 15px; } }
@@ -1002,6 +1027,9 @@ h6 {
   @media (max-width: 767px) {
     .section_8 .products {
       flex-wrap: wrap; } }
+  @media (min-width: 1441px) and (max-width: 5000px) {
+    .section_8 .products {
+      margin-right: var(--container_left_space); } }
   .section_8 .products .left_product {
     width: 50%; }
     @media (max-width: 767px) {
@@ -1114,7 +1142,7 @@ h6 {
       .section_11 .blog_slider .slider {
         width: 80vw !important;
         padding: 0;
-        margin: 0 20px; } }
+        margin: 0 8px; } }
     @media (max-width: 767px) {
       .section_11 .blog_slider .slider h3 {
         text-align: left; } }
