@@ -29,7 +29,12 @@ h2{
     .banner_slider {
         .slider {
             @extend .postion_relative;
-
+            picture{
+                img{
+                    height: 100vh;
+                    object-fit: cover;
+                }
+            }
             .slider_info {
                 @extend .width_100;
                 @extend .postion_t_b;
@@ -48,26 +53,68 @@ h2{
     @extend .postion_relative;
 
     .layer_1 {
-        top: -10px;
+        top: 45px;
         z-index: 1;
         left: -19%;
-        width: 875px;
+        width: 830px;
         @extend .postion_absolute;
+        @media (max-width: 767px) {
+            top: inherit;
+            left: inherit;
+            width: auto;
+            position: inherit;
+        }
+        @media(min-width:768px) and (max-width: 992px) {
+            width: 400px;
+        }
+        @media(min-width:993px) and (max-width: 1200px) {
+            width: 550px;
+        }
     }
     .layer_2 {
         top: 10px;
         right: -210px;
         @extend .postion_absolute;
+        @media (max-width: 767px) {
+            width: 150px;
+            bottom: -12px;
+            top: inherit;
+            right: -65px;
+        }
+        @media(min-width:768px) and (max-width: 992px) {
+            width: 300px;
+            right: -150px;
+        }
+        @media(min-width:993px) and (max-width: 1200px) {
+            right: -280px;
+        }
     }
     .layer_3 {
         bottom: -50px;
         left: -165px;
         @extend .postion_absolute;
+        @media (max-width: 767px) {
+            top: 234px;
+            left: -15%;
+            width: 200px;
+        }
+        @media(min-width:768px) and (max-width: 992px) {
+            width: 250px;
+            bottom: 0;
+            left: -70px;
+        }
     }
     .layer_4 {
-        bottom: -100px;
-        right: -165px;
+        bottom: -31px;
+        right: -60px;
         @extend .postion_absolute;
+    }
+
+    .m_layar_1{
+        top: 20px;
+        width: 150px;
+        right: 0;
+        position: absolute;
     }
     .philosophy_info {
         &:nth-child(even) {
@@ -78,18 +125,54 @@ h2{
     
             .philosophy_text {
                 padding-right: 40px;
+                @media (max-width: 767px) {
+                    padding-right: 0;
+                }
             }
         }
     }
     
     .philosophy_info {
+        @extend .postion_relative;
+        .m_layer_4{
+            top: -50px;
+            left: -50px;
+            width: 150px;
+            @extend .postion_absolute;
+        }
+        .m_pantry{
+            top: -120px;
+            right: -40px;
+            width: 180px;
+            @extend .postion_absolute;
+        }
         .philosophy_img {
             width: 30%;
             margin-top: -110px;
+            @media(min-width:768px) and (max-width: 992px) {
+                margin-top: -50px;
+            }
         }
     
         .philosophy_text {
             width: 70%;
+            @media (max-width: 767px) {
+                width: 100%;
+                padding-top: 65px;
+            }
+        }
+    }
+}
+.section_3 {
+    .icon_section{
+        @media (max-width: 767px) {
+            display: block;
+        }
+        .icon_box{
+            @media (max-width: 767px) {
+                padding: 0 15px;
+                width: 30vw!important;
+            }
         }
     }
 }
@@ -105,10 +188,19 @@ h2{
         padding: 100px;
         backdrop-filter: blur(8px);
         background-color: rgba(255, 255, 255, 0.4);
+        @media (max-width: 767px) {
+            padding: 40px 20px;
+        }
+        @media(min-width:768px) and (max-width: 992px) {
+            padding: 60px;
+        }
         .slick-dots {
             bottom: -60px;
             text-align: center;
             margin-left: -100px;
+            @media (max-width: 767px) {
+                margin-left: 0;
+            }
     
             li {
                 width: 10px;
@@ -147,20 +239,48 @@ h2{
                 width: 80%;
                 @extend .margin_a;
                 @extend .text_center;
+                @media (max-width: 992px) {
+                    width: 100%;
+                }
             }
             .brand_logo{
                 width: 85%;
                 @extend .margin_a;
+                @media (max-width: 767px) {
+                    width: 100%;
+                    justify-content: center;
+                }
+                @media(min-width:768px) and (max-width: 992px) {
+                    width: 100%;
+                }
             }
         }
     }
 }
 
 .section_5{
+    .text_btn {
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+        }
+        .text{
+            @media (max-width: 767px) {
+                width: 100%;
+                text-align: center;
+            }
+            @media(min-width:768px) and (max-width: 992px) {
+                width: 100%;
+            }
+        }
+    }
     .selling_slider{
         margin-left: var(--container_left_space);
         .slider{
             padding: 0 20px;
+            @media (max-width: 767px) {
+                width: 80vw;
+                padding: 0 10px;
+            }
         }
     }
     .progress {
@@ -188,25 +308,70 @@ h2{
       }
 }
 
-.section_6{
+.section_6{ 
+    p{
+        padding: 0 10px;
+    }
     .products{
         margin-right: var(--container_left_space);
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
         .left_product{
             width: 50%;
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+            @media(min-width:768px) and (max-width: 992px) {
+                width: 40%;
+                height: 400px;
+            }
+            img{
+                @media(min-width:768px) and (max-width: 992px) {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
         }
         .right_product{
             width: 50%;
             margin-left: 20px;
+            @media (max-width: 767px) {
+                width: 100%;
+                margin-left: 0;
+                margin: 10px;
+            }
+            @media(min-width:768px) and (max-width: 992px) {
+                width: 60%;
+            }
             .product_box{
                 width: 48%;
                 height: 48.5%;
                 background-color: #F6F6F6;
+                @media (max-width: 767px) {
+                    height: 210px;
+                    width: 48.5%;
+                    margin-bottom: 10px;
+                }
                 @extend .postion_relative;
                 .product_img{
                     height: 77%;
                     @extend .postion_relative;
+                        @media (max-width: 767px) {
+                            width: 90%;
+                            margin: auto;
+                        }
+                    
                     .big_img{
                         height: 200px;
+                        @media (max-width: 767px) {
+                            height: auto;
+                            width: 50%;
+                        }
+                        @media(min-width:768px) and (max-width: 992px) {
+                            width: 40%;
+                            height: auto;
+                        }
                     }
                     img{
                         bottom: 0;
@@ -220,6 +385,19 @@ h2{
                     padding:20px 15px;
                     bottom: 0;
                     @extend .postion_absolute;
+                    @media (max-width: 767px) {
+                        bottom: -5px;
+                        padding: 10px 8px;
+                        position: inherit;
+                    }
+                    .text_md {
+                        @media (max-width: 767px) {
+                            font-size: 14px;
+                        } 
+                        @media(min-width:768px) and (max-width: 992px) {
+                            font-size: 16px;
+                        }
+                    }
                 }
             }
         }
@@ -228,36 +406,107 @@ h2{
 
 .section_7{
     margin-left: var(--container_left_space);
+    
     .pantry{
+        @media (max-width: 767px) {
+            padding: 0 15px;
+        }
         .pantry_text{
             width: 50%;
             padding-right: 50px;
+            @media (max-width: 767px) {
+                width: 100%;
+                padding-right: 0;
+                padding-top: 30px;
+            }
+            @media(min-width:768px) and (max-width: 992px) {
+                width: 100%;
+            }
         }
         .pantry_img{
             width: 50%;
+            @media (max-width: 767px) {
+                width: 100%;
+                order: -1;
+            }
+            img{
+                width: 90%;
+            }
+            @media(min-width:768px) and (max-width: 992px) {
+                width: 60%;
+                order: -1;
+                margin-bottom: 40px;
+            }
         }
     }
 }
 
 .section_8{
+    p{
+        @media (max-width: 767px) {
+            padding: 0 15px;
+        }
+    }
     .products{
         margin-left: var(--container_left_space);
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
         .left_product{
             width: 50%;
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+            @media(min-width:768px) and (max-width: 992px) {
+                width: 40%;
+                height: 400px;
+            }
+            img{
+                @media(min-width:768px) and (max-width: 992px) {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
         }
         .right_product{
             width: 50%;
             margin-right: 20px;
+            @media (max-width: 767px) {
+                order: 1;
+                width: 100%;
+                margin: 10px;
+            }
+            @media(min-width:768px) and (max-width: 992px) {
+                width: 60%;
+                height: 400px;
+            }
             .product_box{
                 width: 48%;
                 height: 48.5%;
                 background-color: #F6F6F6;
+                @media (max-width: 767px) {
+                    height: 210px;
+                    width: 48.5%;
+                    margin-bottom: 10px;
+                }
                 @extend .postion_relative;
                 .product_img{
                     height: 77%;
                     @extend .postion_relative;
+                        @media (max-width: 767px) {
+                            width: 90%;
+                            margin: auto;
+                        }
+                    
                     .big_img{
                         height: 200px;
+                        @media (max-width: 992px) {
+                            height: auto;
+                            width: 50%;
+                        }
+                        @media(min-width:768px) and (max-width: 992px) {
+                            width: 40%;
+                        }
                     }
                     img{
                         bottom: 0;
@@ -271,6 +520,19 @@ h2{
                     padding:20px 15px;
                     bottom: 0;
                     @extend .postion_absolute;
+                    @media (max-width: 767px) {
+                        bottom: -5px;
+                        padding: 10px 8px;
+                        position: inherit;
+                    }
+                    .text_md {
+                        @media (max-width: 767px) {
+                            font-size: 14px;
+                        } 
+                        @media(min-width:768px) and (max-width: 992px) {
+                            font-size: 16px;
+                        }
+                    }
                 }
             }
         }
@@ -282,6 +544,9 @@ h2{
         margin: 0 -20px;
         .slider{
             padding: 0 20px;
+            @media (max-width: 767px) {
+                width: 80vw !important;
+            } 
         }
     }
     .progress {
@@ -301,6 +566,7 @@ h2{
     
         @media only screen and (max-width: 767px) {
             width: 100%;
+            margin-top: 25px;
         }
     
         @media (min-width: 768px) and (max-width: 992px) {
@@ -310,10 +576,29 @@ h2{
 }
 
 .section_11{
+    .text{
+        @media (max-width: 767px) {
+            width: 100%;
+            text-align: center;
+        } 
+    }
     .blog_slider{
         margin: 0 -12px;
+        @media (max-width: 767px) {
+           margin-left: 0;
+        } 
         .slider{
             padding: 0 12px;
+            @media (max-width: 767px) {
+                width: 80vw !important;
+                padding: 0;
+                margin: 0 20px;
+            } 
+            h3{
+                @media (max-width: 767px) {
+                    text-align: left;
+                }   
+            }
             .blog_img{
                 @extend .postion_relative;
                 h6{
@@ -369,6 +654,11 @@ h2{
                 font-size: 90px;
                 font-weight: 100;
                 @extend .postion_absolute;
+                @media (max-width: 767px) {
+                    top: 20px;
+                    left: 25px;
+                    font-size: 70px;
+                } 
             }
         }
     }

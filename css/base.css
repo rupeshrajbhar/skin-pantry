@@ -85,7 +85,8 @@ section {
 
 body {
   margin: 0;
-  font-family: "nunitosans-Regular"; }
+  font-family: "nunitosans-Regular";
+  color: var(--primary_color); }
 
 h1,
 h2,
@@ -123,6 +124,10 @@ h6 {
   line-height: 1.2;
   margin: 0 0 20px;
   letter-spacing: 2px; }
+  @media (max-width: 767px) {
+    .text_xxxl {
+      font-size: 30px;
+      letter-spacing: 0; } }
 
 .text_xxl {
   font-size: 40px;
@@ -134,6 +139,9 @@ h6 {
   line-height: 1.4;
   margin: 0 0 20px;
   letter-spacing: 3px; }
+  @media (max-width: 767px) {
+    .text_xl {
+      font-size: 30px; } }
 
 .text_l {
   font-size: 24px;
@@ -168,8 +176,8 @@ h6 {
 .color_white {
   color: var(--color_white); }
 
-.color_black {
-  color: var(--color-black); }
+.primary_color {
+  color: var(--primary_color); }
 
 .primary_btn {
   padding: 9px 30px;
@@ -181,10 +189,7 @@ h6 {
   border: 1px solid var(--color_white); }
   @media (max-width: 767px) {
     .primary_btn {
-      padding: 13px 15px; } }
-  @media (max-width: 360px) {
-    .primary_btn {
-      padding: 13px 10px; } }
+      padding: 11px 22px; } }
   .primary_btn .btn_play_icon {
     margin: auto;
     padding-right: 6px;
@@ -630,27 +635,33 @@ h6 {
   position: absolute;
   transform: translate(-50%, -50%); }
 
+.m_no_padd {
+  padding: 0; }
+
 .width_m_80 {
   width: 80%;
   margin: auto; }
+  @media (max-width: 767px) {
+    .width_m_80 {
+      width: 100%; } }
 
-.banner .slick-dots {
+.section_1 .slick-dots {
   bottom: 0;
   height: 30px;
   text-align: right;
   padding-right: 10px; }
-  .banner .slick-dots li {
+  .section_1 .slick-dots li {
     width: 10px;
     height: 10px;
     margin: 0 6px; }
-    .banner .slick-dots li.slick-active button:before {
+    .section_1 .slick-dots li.slick-active button:before {
       opacity: 1;
       background: #fff !important; }
-    .banner .slick-dots li button {
+    .section_1 .slick-dots li button {
       width: 10px;
       height: 10px;
       opacity: 1; }
-      .banner .slick-dots li button:before {
+      .section_1 .slick-dots li button:before {
         content: '';
         width: 10px;
         height: 10px;
@@ -659,7 +670,7 @@ h6 {
         border-radius: 100%;
         background: #4D4A48 !important;
         border: 1px solid #fff; }
-  .banner .slick-dots:after {
+  .section_1 .slick-dots:after {
     content: '';
     width: 88px;
     height: 30px;
