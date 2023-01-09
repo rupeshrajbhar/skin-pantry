@@ -1,35 +1,35 @@
 @font-face {
-  font-family: 'nunitosans-ELight';
+  font-family: "nunitosans-ELight";
   src: url(../fonts/nunito-sans/NunitoSans-ExtraLight.ttf);
   font-style: normal;
   font-weight: normal; }
 @font-face {
-  font-family: 'nunitosans-Light';
+  font-family: "nunitosans-Light";
   src: url(../fonts/nunito-sans/NunitoSans-Light.ttf);
   font-style: normal;
   font-weight: normal; }
 @font-face {
-  font-family: 'nunitosans-Regular';
+  font-family: "nunitosans-Regular";
   src: url(../fonts/nunito-sans/NunitoSans-Regular.ttf);
   font-style: normal;
   font-weight: normal; }
 @font-face {
-  font-family: 'NunitoSans-SemiBold';
+  font-family: "NunitoSans-SemiBold";
   src: url(../fonts/nunito-sans/NunitoSans-SemiBold.ttf);
   font-style: normal;
   font-weight: normal; }
 @font-face {
-  font-family: 'NunitoSans-Bold';
+  font-family: "NunitoSans-Bold";
   src: url(../fonts/nunito-sans/NunitoSans-Bold.ttf);
   font-style: normal;
   font-weight: normal; }
 @font-face {
-  font-family: 'NunitoSans-ExtraBold';
+  font-family: "NunitoSans-ExtraBold";
   src: url(../fonts/nunito-sans/NunitoSans-ExtraBold.ttf);
   font-style: normal;
   font-weight: normal; }
 @font-face {
-  font-family: 'gistesy';
+  font-family: "gistesy";
   src: url(../fonts/nunito-sans/gistesy.ttf);
   font-style: normal;
   font-weight: normal; }
@@ -66,11 +66,11 @@ section {
   --transition: ease all 300ms;
   --headerHeight: 0px;
   --container_left_space: calc((100% - var(--container_width)) / 2);
-  --primary_color: #3E2313;
+  --primary_color: #3e2313;
   --secondary_color: #763422;
-  --sub_title: #785A52;
-  --iconography: #CCA27B;
-  --color_white: #FFFFFF; }
+  --sub_title: #785a52;
+  --iconography: #cca27b;
+  --color_white: #ffffff; }
   @media (min-width: 768px) and (max-width: 991px) {
     :root {
       --container_width: 750px; } }
@@ -668,22 +668,43 @@ h6 {
       height: 10px;
       opacity: 1; }
       .section_1 .slick-dots li button:before {
-        content: '';
+        content: "";
         width: 10px;
         height: 10px;
         z-index: 1;
         opacity: 1;
         border-radius: 100%;
-        background: #4D4A48 !important;
+        background: #4d4a48 !important;
         border: 1px solid #fff; }
   .section_1 .slick-dots:after {
-    content: '';
+    content: "";
     width: 88px;
     height: 30px;
     right: 0;
     top: 0;
     position: absolute;
-    background-color: #4D4A48;
+    background-color: #4d4a48;
     border-top-left-radius: 15px; }
+
+.product_box .text_arrow {
+  position: relative;
+  overflow: hidden; }
+  .product_box .text_arrow::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--text_arrowHeight);
+    background-color: #3e2313;
+    z-index: -1;
+    transform: translateY(100%);
+    transition: all 1s; }
+.product_box:hover .text_arrow::after {
+  transform: translateY(0); }
+.product_box:hover .arrow img {
+  filter: brightness(0) invert(1); }
+.product_box:hover .text_md {
+  color: #fff; }
 
 /*# sourceMappingURL=base.css.map */
