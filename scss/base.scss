@@ -931,6 +931,9 @@ h6 {
   .text_arrow {
     position: relative;
     overflow: hidden;
+    @extend .width_100;
+    padding: 15px 15px;
+    bottom: 0;
     &::after {
       content: "";
       position: absolute;
@@ -938,7 +941,7 @@ h6 {
       left: 0;
       width: 100%;
       height: var(--text_arrowHeight);
-      background-color: #3e2313;
+      background-color: #763422;
       z-index: -1;
       transform: translateY(100%);
       transition: all 1s;
@@ -959,4 +962,10 @@ h6 {
       color: #fff;
     }
   }
+}
+
+[data-scroll-parallax] {
+  transform: translate3d(0, calc(var(--viewport-y) * -6vh), 0);
+  transition: transform 0.12s ease;
+  will-change: transform;
 }

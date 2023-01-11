@@ -440,7 +440,7 @@ h6 {
 .text_uppercase, .primary_btn {
   text-transform: uppercase; }
 
-.width_100 {
+.width_100, .product_box .text_arrow {
   width: 100%; }
 
 .margin_a {
@@ -688,7 +688,9 @@ h6 {
 
 .product_box .text_arrow {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 15px 15px;
+  bottom: 0; }
   .product_box .text_arrow::after {
     content: "";
     position: absolute;
@@ -696,7 +698,7 @@ h6 {
     left: 0;
     width: 100%;
     height: var(--text_arrowHeight);
-    background-color: #3e2313;
+    background-color: #763422;
     z-index: -1;
     transform: translateY(100%);
     transition: all 1s; }
@@ -706,5 +708,10 @@ h6 {
   filter: brightness(0) invert(1); }
 .product_box:hover .text_md {
   color: #fff; }
+
+[data-scroll-parallax] {
+  transform: translate3d(0, calc(var(--viewport-y) * -6vh), 0);
+  transition: transform 0.12s ease;
+  will-change: transform; }
 
 /*# sourceMappingURL=base.css.map */
