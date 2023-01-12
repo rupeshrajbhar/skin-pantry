@@ -51,9 +51,21 @@
     </section>
 
     <section class="section_2 ptb_100 m_t_30 overflow_h">
-      <img src="img/home/layer_1.png" class="img-responsive layer_1 opac" />
-      <img src="img/home/layer_2.png" class="img-responsive layer_2 opac" />
-      <img src="img/home/layer_3.png" class="img-responsive layer_3" />
+      <img
+        src="img/home/layer_1.png"
+        class="img-responsive layer_1 toFade"
+        data-scroll
+      />
+      <img
+        src="img/home/layer_2.png"
+        class="img-responsive layer_2 toFade"
+        data-scroll
+      />
+      <img
+        src="img/home/layer_3.png"
+        class="img-responsive layer_3 toFade"
+        data-scroll
+      />
       <img
         src="img/home/layer_4.png"
         class="img-responsive hidden-xs layer_4"
@@ -67,7 +79,8 @@
           <div class="philosophy_img hidden-xs">
             <img
               src="img/home/skin_care.png"
-              class="img-responsive margin_a opac"
+              class="img-responsive margin_a toFade"
+              data-scroll
             />
           </div>
           <div class="philosophy_text prlx" data-scroll data-scroll-parallax>
@@ -391,7 +404,7 @@
         and phytonutrients that strengthen its natural renewal processes.
       </p>
       <div class="products d_f pt_20">
-        <div class="left_product">
+        <div class="left_product reveal reveal_reverse" data-scroll>
           <img src="img/home/fine_img.jpg" class="img-responsive width_100" />
         </div>
         <div class="right_product f_w_j">
@@ -579,7 +592,7 @@
             </div>
           </div>
         </div>
-        <div class="left_product toTop" data-scroll>
+        <div class="left_product reveal toTop" data-scroll>
           <img src="img/home/body.jpg" class="img-responsive width_100" />
         </div>
       </div>
@@ -903,7 +916,7 @@
           },
         ],
       });
-      var dataSlidItem = $(".logoSlide");
+      var dataSlidItem = $(".brand_logo .logo");
 
       $(".brand_info_slider").on(
         "afterChange",
@@ -912,6 +925,13 @@
           $(".brand_logo .logo").eq(currentSlide).addClass("logActive");
         }
       );
+      $("[data-slide]").click(function (e) {
+        e.preventDefault();
+        var slideno = $(this).data("slide");
+        $(".brand_info_slider").slick("slickGoTo", slideno - 1);
+        // $("body").css("overflow", "hidden");
+        // console.log(slideno);
+      });
 
       if (winW < 767) {
         $(".brand_logo_slider").slick({

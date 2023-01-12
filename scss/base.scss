@@ -819,6 +819,19 @@ h6 {
     transform: translateX(100px);
   }
 }
+.toFade {
+  &[data-scroll] {
+    transition: all 0.5s ease-out;
+  }
+
+  &[data-scroll="in"] {
+    opacity: 1;
+  }
+
+  &[data-scroll="out"] {
+    opacity: 0;
+  }
+}
 
 //custom scrool bar
 ::-webkit-scrollbar {

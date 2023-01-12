@@ -607,6 +607,13 @@ h6 {
   opacity: 0;
   transform: translateX(100px); }
 
+.toFade[data-scroll] {
+  transition: all 0.5s ease-out; }
+.toFade[data-scroll="in"] {
+  opacity: 1; }
+.toFade[data-scroll="out"] {
+  opacity: 0; }
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 3px;
