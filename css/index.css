@@ -813,7 +813,9 @@ h6 {
   order: 1;
   margin-top: -180px; }
 .section_2 .philosophy_info:nth-child(even) .philosophy_text {
-  padding-right: 40px; }
+  padding-right: 40px;
+  position: relative;
+  z-index: 1; }
   @media (max-width: 767px) {
     .section_2 .philosophy_info:nth-child(even) .philosophy_text {
       padding-right: 0; } }
@@ -1274,7 +1276,8 @@ h6 {
     opacity: 0.8; }
 
 .reveal {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .reveal::before {
     content: "";
     position: absolute;
@@ -1282,9 +1285,10 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #763422; }
+    background-color: #763422;
+    z-index: 1; }
   .reveal[data-scroll]::before {
-    transition: 0.2s all 1.5s ease-out;
+    transition: all 1.5s ease-out;
     transform-origin: right; }
   .reveal[data-scroll="in"]::before {
     transform: scaleX(0); }
@@ -1297,8 +1301,16 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #763422; }
+    background-color: #763422;
+    z-index: 1; }
   .reveal.reveal_reverse[data-scroll]::before {
     transform-origin: left; }
+
+.zoomIn[data-scroll] {
+  transition: all 1.5s; }
+.zoomIn[data-scroll="in"] {
+  transform: scale(1); }
+.zoomIn[data-scroll="out"] {
+  transform: scale(1.2); }
 
 /*# sourceMappingURL=index.css.map */
