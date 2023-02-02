@@ -828,13 +828,13 @@ h6 {
   right: -40px;
   width: 180px; }
 .section_2 .philosophy_info .philosophy_img {
-  width: 44%;
+  width: 40%;
   margin-top: -110px; }
   @media (min-width: 768px) and (max-width: 992px) {
     .section_2 .philosophy_info .philosophy_img {
       margin-top: -50px; } }
 .section_2 .philosophy_info .philosophy_text {
-  width: 56%; }
+  width: 60%; }
   @media (max-width: 767px) {
     .section_2 .philosophy_info .philosophy_text {
       width: 100%;
@@ -1072,6 +1072,9 @@ h6 {
         order: -1; } }
     .section_7 .pantry .pantry_img img {
       width: 90%; }
+    @media (max-width: 767px) {
+      .section_7 .pantry .pantry_img h3 {
+        text-align: center; } }
     @media (min-width: 768px) and (max-width: 992px) {
       .section_7 .pantry .pantry_img {
         width: 60%;
@@ -1274,6 +1277,10 @@ h6 {
   bottom: 0; }
   .section_12 .sub img {
     opacity: 0.8; }
+
+@media (max-width: 767px) {
+  .section_13 .icon_section .icon {
+    padding: 0 20px; } }
 
 .reveal {
   position: relative;
