@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000" />
+    <title>skin pantry</title>
+    <link rel="stylesheet" href="css/about_us.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <!--    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />-->
+    <link rel="shortcut icon" type="image/x-icon" href="img/g5/favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <section class="section_1">
+        <div class="banner_paginaction">
+            <p class="text_xs"><a href="index.html">Home</a> / <a href="about_us.html">About us</a></p>
+        </div>
+        <div class="banner_slider overflow_h">
+            <div class="slider">
+                <picture>
+                    <source media="(max-width:767px)" srcset="img/product_listing/mobile_banner.jpg" alt="" />
+                    <img src="img/about/dekstop_banner.jpg" class="img-responsive width_100" />
+                </picture>
+                <div class="slider_info text_center">
+                    <h2 class="text_xxxl n_l text_uppercase color_white f_w_r text_left">
+                        The Skin Pantry is <br class="hidden-xs">
+                        skin food. Literally.
+                    </h2>
+                    <p class="text_reg color_white text_left hidden-xs">And yet, there’s more to it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_2 ptb_100">
+        <div class="container">
+            <div class="beauty f_w f_r_aj_between">
+                <div class="img_box">
+                    <img src="img/about/beauty.jpg" class="img-responsive width_100" />
+                </div>
+                <div class="info_box">
+                    <h3 class="text_xxxl n_l f_w_r">BEAUTY THAT’S GOOD
+                        FOR YOU</h3>
+                    <p class="text_reg">Experience a range of handcrafted skincare products, made fresh to order
+                        in micro batches, with certified organic, natural and plant based ingredients, created on the
+                        belief that beauty should be good for you! We bring to you, a deeply nourishing, honest-to-goodness,
+                        chemical-free range of skincare products, with the sensorial appeal of delicious food.</p>
+                    <p class="text_reg">
+                        Mesmerizing textures, aromas and ingredients, encourage you to delight in your skin care
+                        ritual, to savour the product experience, as one would, a fine dessert.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_3 ptb_100 overflow_h">
+        <div class="container">
+            <div class="text_btn f_j">
+                <div class="text">
+                    <h3 class="text_xxxl n_l primary_color text_uppercase toTop f_w_r" data-scroll>You May Also Like
+                    </h3>
+                </div>
+                <div class="btn_section hidden-xs toTop" data-scroll>
+                    <a href="#" class="secondary_btn text_reg n_b text_uppercase">Shop all</a>
+                </div>
+            </div>
+        </div>
+        <div class="selling_slider">
+            <div class="slider">
+                <img src="img/home/selling_p_1.png" class="img-responsive" />
+            </div>
+            <div class="slider">
+                <img src="img/home/selling_p_2.png" class="img-responsive" />
+            </div>
+            <div class="slider">
+                <img src="img/home/selling_p_4.png" class="img-responsive" />
+            </div>
+            <div class="slider">
+                <img src="img/home/selling_p_1.png" class="img-responsive" />
+            </div>
+            <div class="slider">
+                <img src="img/home/selling_p_2.png" class="img-responsive" />
+            </div>
+        </div>
+        <div class="container">
+            <div class="progress">
+                <div class="progress_bar"></div>
+            </div>
+        </div>
+        <div class="btn_section visible-xs text_center pt_50">
+            <a href="#" class="secondary_btn text_reg n_b text_uppercase">View All Products</a>
+        </div>
+    </section>
+
+    <section class="section_12 toTop" data-scroll>
+        <picture>
+            <source media="(max-width:767px)" srcset="img/home/m_some_banner.jpg" alt="" />
+            <img src="img/home/some_banner.jpg" class="img-responsive width_100" />
+        </picture>
+        <div class="some pt_100">
+            <h4>
+                <span class="g color_white">Some scoop</span>
+                <span class="text_xxxl color_white n_e_l text_uppercase">from our pantry</span>
+            </h4>
+        </div>
+        <div class="sub width_100">
+            <img src="img/home/subscribe.jpg" class="img-responsive width_100" />
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/scroll-out.min.js"></script>
+    <!--      <script src="js/jquery.fancybox.min.js"></script>-->
+    <script>
+        windowWidth = window.innerWidth;
+        var winW = $(window).outerWidth();
+        var winH = $(window).outerHeight();
+
+        //scrollout
+        ScrollOut({
+            once: true,
+        });
+        ScrollOut({
+            targets: ".prlx",
+            cssProps: {
+                viewportY: true,
+            },
+        });
+
+
+        $(".banner_slider").slick({
+            // dots: true,
+            infinite: true,
+            speed: 500,
+            pauseOnHover: false,
+            fade: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+
+        var $slider = $(".selling_slider");
+        var $progressBar = $(".progress");
+        var $progressBarLabel = $(".progress_bar");
+
+        $slider.on(
+            "beforeChange",
+            function(event, slick, currentSlide, nextSlide) {
+                var calc = (nextSlide / (slick.slideCount - 1)) * 100;
+
+                $progressBar
+                    .css("background-size", calc + "% 100%")
+                    .attr("aria-valuenow", calc);
+
+                $progressBarLabel.text(calc + "% completed");
+            }
+        );
+
+        $(".selling_slider").slick({
+            dots: false,
+            arrows: false,
+            autoplay: true,
+            //   slidesToShow: 4,
+            slidesToScroll: 1,
+            speed: 1000,
+            autoplaySpeed: 2000,
+            swipeToSlide: true,
+            variableWidth: true,
+            pauseOnhover: false,
+            prevArrow: '<img src="img/home/l_arrows_b.png" class="prev-arrow">',
+            nextArrow: '<img src="img/home/r_arrows_b.png" class="next-arrow">',
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToShow: 1,
+                    // variableWidth: false,
+                },
+            }, ],
+        });
+
+    </script>
+</body>
+
+</html>

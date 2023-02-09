@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000" />
+    <title>skin pantry</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <!--    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />-->
+    <link rel="shortcut icon" type="image/x-icon" href="img/g5/favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <section class="section_1">
+        <div class="banner_paginaction">
+            <p class="text_xs"><a href="index.html">Home</a> / <a href="contact.html">Contact Us</a></p>
+        </div>
+        <div class="banner_slider overflow_h">
+            <div class="slider">
+                <picture>
+                    <source media="(max-width:767px)" srcset="img/product_listing/mobile_banner.jpg" alt="" />
+                    <img src="img/contact/dekstop_banner.jpg" class="img-responsive width_100" />
+                </picture>
+                <div class="slider_info text_center">
+                    <h2 class="text_xxxl n_l text_uppercase color_white f_w_r text_left">
+                        What's brewing at <br class="hidden-xs">
+                        the pantry?
+                    </h2>
+                    <p class="text_reg color_white text_left hidden-xs">Help us keep you updated.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_2 ptb_100">
+        <div class="container">
+            <div class="get_in_touch f_w_j">
+                <div class="get_form">
+                    <h5 class="text_l n_b text_uppercase">Get in touch</h5>
+                    <img src="img/contact/contact_form.jpg" class="img-responsive">
+                </div>
+                <div class="get_info">
+                    <h5 class="text_l n_b text_uppercase pb_10">Find us at</h5>
+                    <div class="office">
+                        <h6 class="text_md n_b text_uppercase">Office</h6>
+                        <ul>
+                            <li><a href="javascript:void(0)"><img src="img/contact/location.png" class="img-responsive">
+                                    The Skin Mill LLP Choksey Mansion, 2nd floor, Unit No.2, 303,
+                                    Shahid Bhagat Singh Marg, Fort, Mumbai - 400001</a></li>
+                            <li><a href="Tel+:022-49746169"><img src="img/contact/call.png" class="img-responsive">
+                                    022-49746169</a></li>
+                            <li><a href="mailto:help@theskinpantry.com"><img src="img/contact/email.png" class="img-responsive">
+                                    help@theskinpantry.com</a></li>
+                            <li><a href="mailto:contact@theskinpantry.com"><img src="img/contact/order.png" class="img-responsive">
+                                </a>For bulk orders contact@theskinpantry.com</li>
+                            <li><a href="javascript:void(0)"><img src="img/contact/time.png" class="img-responsive">
+                                    10:30 am - 05:30 pm (Monday to Friday)</a></li>
+                        </ul>
+                        <div class="btn_section">
+                            <p class="tertiary_btn d_f">
+                                <img src="img/contact/whatsapp.png" class="img-responsive">
+                                <span> For WhatsApp Orders</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_12 toTop" data-scroll>
+        <picture>
+            <source media="(max-width:767px)" srcset="img/home/m_some_banner.jpg" alt="" />
+            <img src="img/home/some_banner.jpg" class="img-responsive width_100" />
+        </picture>
+        <div class="some pt_100">
+            <h4>
+                <span class="g color_white">Some scoop</span>
+                <span class="text_xxxl color_white n_e_l text_uppercase">from our pantry</span>
+            </h4>
+        </div>
+        <div class="sub width_100">
+            <img src="img/home/subscribe.jpg" class="img-responsive width_100" />
+        </div>
+    </section>
+
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/scroll-out.min.js"></script>
+    <!--      <script src="js/jquery.fancybox.min.js"></script>-->
+    <script>
+        windowWidth = window.innerWidth;
+        var winW = $(window).outerWidth();
+        var winH = $(window).outerHeight();
+
+        //scrollout
+        ScrollOut({
+            once: true,
+        });
+        ScrollOut({
+            targets: ".prlx",
+            cssProps: {
+                viewportY: true,
+            },
+        });
+
+
+        $(".banner_slider").slick({
+            // dots: true,
+            infinite: true,
+            speed: 500,
+            pauseOnHover: false,
+            fade: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+
+    </script>
+</body>
+
+</html>

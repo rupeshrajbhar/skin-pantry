@@ -117,7 +117,7 @@ h6 {
 .n_b {
   font-family: "NunitoSans-Bold"; }
 
-.n_e_b, .primary_btn {
+.n_e_b, .primary_btn, .tertiary_btn {
   font-family: "NunitoSans-ExtraBold"; }
 
 .text_xxxl {
@@ -206,6 +206,20 @@ h6 {
   text-decoration: none;
   color: var(--primary_color);
   border-bottom: 1px solid var(--primary_color); }
+
+.tertiary_btn {
+  margin-bottom: 0;
+  padding: 9px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  color: var(--color_white);
+  background-color: #763422;
+  border: 1px solid var(--color_white); }
+  @media (max-width: 767px) {
+    .tertiary_btn {
+      padding: 11px 22px; } }
 
 .f_w_l {
   font-weight: 300; }
