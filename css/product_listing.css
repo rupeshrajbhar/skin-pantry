@@ -204,15 +204,15 @@ h6 {
 
 .secondary_btn {
   text-decoration: none;
-  color: var(--primary_color);
-  border-bottom: 1px solid var(--primary_color); }
+  color: var(--secondary_color);
+  border-bottom: 1px solid var(--secondary_color); }
 
 .tertiary_btn {
+  margin-bottom: 0;
   padding: 9px 30px;
   border-radius: 5px;
   text-decoration: none;
   letter-spacing: 1.5px;
-  margin-bottom: 0;
   text-transform: capitalize;
   color: var(--color_white);
   background-color: #763422;
@@ -712,6 +712,9 @@ h6 {
   overflow: hidden;
   padding: 15px 15px;
   bottom: 0; }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .product_box .text_arrow {
+      padding: 8px 15px; } }
   .product_box .text_arrow::after {
     content: "";
     position: absolute;
@@ -763,6 +766,9 @@ h6 {
     @media (max-width: 767px) {
       .section_1 .banner_paginaction {
         padding: 0 10px; } }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .section_1 .banner_paginaction {
+        padding: 0 15px; } }
     .section_1 .banner_paginaction .text_xs a {
       text-decoration: none; }
   .section_1 .banner_slider .slider .slider_info {
@@ -773,17 +779,19 @@ h6 {
     @media (max-width: 1200px) {
       .section_1 .banner_slider .slider .slider_info {
         bottom: 0; } }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .section_1 .banner_slider .slider .slider_info {
+        left: 15px; } }
     @media (max-width: 767px) {
       .section_1 .banner_slider .slider .slider_info h2 {
         font-size: 26px;
         padding: 0 10px;
         line-height: 40px; } }
-    @media (max-width: 992px) {
+    @media (min-width: 768px) and (max-width: 992px) {
       .section_1 .banner_slider .slider .slider_info h2 {
-        font-size: 35px; } }
-    @media (max-width: 992px) {
-      .section_1 .banner_slider .slider .slider_info p {
-        display: none; } }
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px; } }
 
 .faq {
   position: relative; }
@@ -850,6 +858,12 @@ h6 {
 .section_12 .some {
   top: 0;
   margin-left: var(--container_left_space); }
+  @media (max-width: 992px) {
+    .section_12 .some {
+      padding-top: 0; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .section_12 .some {
+      padding-left: 10px; } }
   .section_12 .some h4 {
     padding-top: 100px;
     padding-left: 70px; }

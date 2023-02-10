@@ -204,8 +204,8 @@ h6 {
 
 .secondary_btn {
   text-decoration: none;
-  color: var(--primary_color);
-  border-bottom: 1px solid var(--primary_color); }
+  color: var(--secondary_color);
+  border-bottom: 1px solid var(--secondary_color); }
 
 .tertiary_btn {
   margin-bottom: 0;
@@ -712,6 +712,9 @@ h6 {
   overflow: hidden;
   padding: 15px 15px;
   bottom: 0; }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .product_box .text_arrow {
+      padding: 8px 15px; } }
   .product_box .text_arrow::after {
     content: "";
     position: absolute;
@@ -763,6 +766,9 @@ h6 {
     @media (max-width: 767px) {
       .section_1 .banner_paginaction {
         padding: 0 10px; } }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .section_1 .banner_paginaction {
+        padding: 0 15px; } }
     .section_1 .banner_paginaction .text_xs a {
       text-decoration: none; }
   .section_1 .banner_slider .slider .slider_info {
@@ -773,42 +779,55 @@ h6 {
     @media (max-width: 1200px) {
       .section_1 .banner_slider .slider .slider_info {
         bottom: 0; } }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .section_1 .banner_slider .slider .slider_info {
+        left: 15px; } }
     @media (max-width: 767px) {
       .section_1 .banner_slider .slider .slider_info h2 {
         font-size: 26px;
         padding: 0 10px;
         line-height: 40px; } }
-    @media (max-width: 992px) {
+    @media (min-width: 768px) and (max-width: 992px) {
       .section_1 .banner_slider .slider .slider_info h2 {
-        font-size: 35px; } }
-    @media (max-width: 992px) {
-      .section_1 .banner_slider .slider .slider_info p {
-        display: none; } }
+        text-align: left;
+        font-size: 30px;
+        margin-bottom: 10px; } }
 
 .section_2 .beauty .img_box {
   width: 48%; }
 .section_2 .beauty .info_box {
   width: 48%; }
 
+.section_6 .colette .colette_img {
+  width: 30%; }
+  @media (max-width: 767px) {
+    .section_6 .colette .colette_img {
+      width: 100%; } }
+.section_6 .colette .colette_info {
+  width: 70%; }
+  @media (max-width: 767px) {
+    .section_6 .colette .colette_info {
+      width: 100%; } }
+
 @media (max-width: 992px) {
-  .section_3 .text_btn {
+  .section_7 .text_btn {
     flex-wrap: wrap; } }
 @media (max-width: 767px) {
-  .section_3 .text_btn .text {
+  .section_7 .text_btn .text {
     width: 100%;
     text-align: center; } }
 @media (min-width: 768px) and (max-width: 992px) {
-  .section_3 .text_btn .text {
+  .section_7 .text_btn .text {
     width: 100%; } }
-.section_3 .selling_slider {
+.section_7 .selling_slider {
   margin-left: var(--container_left_space); }
-  .section_3 .selling_slider .slider {
+  .section_7 .selling_slider .slider {
     padding: 0 20px; }
     @media (max-width: 767px) {
-      .section_3 .selling_slider .slider {
+      .section_7 .selling_slider .slider {
         width: 80vw;
         padding: 0 10px; } }
-.section_3 .progress {
+.section_7 .progress {
   display: block;
   margin-left: 0;
   margin-top: 25px;
@@ -823,10 +842,10 @@ h6 {
   margin-top: 60px;
   transition: background-size 0.4s ease-in-out; }
   @media only screen and (max-width: 767px) {
-    .section_3 .progress {
+    .section_7 .progress {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 992px) {
-    .section_3 .progress {
+    .section_7 .progress {
       width: 100%; } }
 
 .section_12 .some {

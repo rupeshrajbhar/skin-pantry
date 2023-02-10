@@ -204,8 +204,8 @@ h6 {
 
 .secondary_btn {
   text-decoration: none;
-  color: var(--primary_color);
-  border-bottom: 1px solid var(--primary_color); }
+  color: var(--secondary_color);
+  border-bottom: 1px solid var(--secondary_color); }
 
 .tertiary_btn {
   margin-bottom: 0;
@@ -712,6 +712,9 @@ h6 {
   overflow: hidden;
   padding: 15px 15px;
   bottom: 0; }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .product_box .text_arrow {
+      padding: 8px 15px; } }
   .product_box .text_arrow::after {
     content: "";
     position: absolute;

@@ -204,15 +204,15 @@ h6 {
 
 .secondary_btn {
   text-decoration: none;
-  color: var(--primary_color);
-  border-bottom: 1px solid var(--primary_color); }
+  color: var(--secondary_color);
+  border-bottom: 1px solid var(--secondary_color); }
 
 .tertiary_btn {
+  margin-bottom: 0;
   padding: 9px 30px;
   border-radius: 5px;
   text-decoration: none;
   letter-spacing: 1.5px;
-  margin-bottom: 0;
   text-transform: capitalize;
   color: var(--color_white);
   background-color: #763422;
@@ -712,6 +712,9 @@ h6 {
   overflow: hidden;
   padding: 15px 15px;
   bottom: 0; }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .product_box .text_arrow {
+      padding: 8px 15px; } }
   .product_box .text_arrow::after {
     content: "";
     position: absolute;
@@ -758,6 +761,10 @@ h6 {
   @media (max-width: 767px) {
     .section_1 .icon_section .icon_box .icon_box_img {
       position: relative; } }
+  @media (max-width: 767px) {
+    .section_1 .icon_section .icon_box .icon_box_img img {
+      border-radius: 100%;
+      border: 2px solid #CCA27B; } }
   .section_1 .icon_section .icon_box .icon_box_img .pluse_img {
     right: 0;
     bottom: 0;
@@ -783,6 +790,8 @@ h6 {
       width: 80px;
       position: absolute;
       border-radius: 100%;
+      border-radius: 100%;
+      border: 2px solid #CCA27B;
       transform: translateX(-50%); }
 
 .section_3 .video_section .play_btn_section {

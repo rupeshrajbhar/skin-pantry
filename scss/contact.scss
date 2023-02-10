@@ -44,6 +44,10 @@
             padding: 0 10px;
         }
 
+        @media (min-width: 768px) and (max-width: 992px) {
+            padding: 0 15px;
+        }
+
         .text_xs {
             @extend .color_white;
 
@@ -66,6 +70,10 @@
                     bottom: 0;
                 }
 
+                @media (min-width: 768px) and (max-width: 992px) {
+                    left: 15px;
+                }
+
                 h2 {
                     @media (max-width: 767px) {
                         font-size: 26px;
@@ -73,14 +81,10 @@
                         line-height: 40px;
                     }
 
-                    @media (max-width: 992px) {
-                        font-size: 35px;
-                    }
-                }
-
-                p {
-                    @media (max-width: 992px) {
-                        display: none;
+                    @media (min-width: 768px) and (max-width: 992px) {
+                        text-align: left;
+                        font-size: 30px;
+                        margin-bottom: 10px;
                     }
                 }
             }

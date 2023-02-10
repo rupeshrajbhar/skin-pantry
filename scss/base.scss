@@ -273,8 +273,8 @@ h6 {
 
 .secondary_btn {
     text-decoration: none;
-    color: var(--primary_color);
-    border-bottom: 1px solid var(--primary_color);
+    color: var(--secondary_color);
+    border-bottom: 1px solid var(--secondary_color);
 }
 
 .tertiary_btn {
@@ -969,6 +969,10 @@ h6 {
         @extend .width_100;
         padding: 15px 15px;
         bottom: 0;
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            padding: 8px 15px;
+        }
 
         &::after {
             content: "";
