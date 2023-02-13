@@ -8,13 +8,18 @@
             justify-content: flex-start;
         }
 
+        @media (min-width: 768px) and (max-width: 992px) {
+            justify-content: flex-start;
+        }
+
 
         .icon_box {
             width: 20%;
             position: relative;
 
             @media (min-width: 768px) and (max-width: 992px) {
-                width: 19%;
+                width: 33.33%;
+                padding-bottom: 40px;
             }
 
             @media (max-width: 767px) {
@@ -67,6 +72,7 @@
             .hover_icon_box {
                 left: 0;
                 top: 25px;
+                z-index: 1;
                 display: none;
                 padding: 20px 10px;
                 padding-top: 60px;
@@ -132,7 +138,7 @@
                 @media screen and (max-width: 767px) {
                     overflow-x: auto;
                     white-space: nowrap;
-                    justify-content: flex-start;
+                    justify-content: center;
                 }
 
                 .btn {
@@ -147,13 +153,21 @@
 
                     @media screen and (max-width: 767px) {
                         width: auto;
-                        padding-left: 25px;
-                        padding-right: 25px;
+                        padding-left: 18px;
+                        padding-right: 18px;
                     }
 
                     &.active {
                         color: var(--color_white);
                         background-color: var(--iconography);
+                    }
+                }
+
+                .btn_m {
+                    display: flex;
+
+                    .padd_faq {
+                        padding-right: 8px;
                     }
                 }
             }

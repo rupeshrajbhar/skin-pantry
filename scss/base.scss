@@ -727,6 +727,14 @@ h6 {
     }
 }
 
+.hidden-xs-opacity {
+    opacity: 1;
+
+    @media (max-width: 767px) {
+        opacity: 0 !important;
+    }
+}
+
 .hidden-sm {
     display: block;
 
@@ -764,6 +772,14 @@ h6 {
 
     @media (min-width: 767px) {
         display: none !important;
+    }
+}
+
+.visible-xs-opacity {
+    opacity: 1;
+
+    @media (min-width: 767px) {
+        opacity: 0 !important;
     }
 }
 
@@ -967,7 +983,7 @@ h6 {
         position: relative;
         overflow: hidden;
         @extend .width_100;
-        padding: 15px 15px;
+        padding: 10px;
         bottom: 0;
 
         @media (min-width: 768px) and (max-width: 992px) {
@@ -985,6 +1001,10 @@ h6 {
             z-index: -1;
             transform: translateY(100%);
             transition: all 1s;
+
+            @media (max-width: 992px) {
+                top: 1px;
+            }
         }
     }
 

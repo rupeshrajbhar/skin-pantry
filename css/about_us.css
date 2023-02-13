@@ -549,6 +549,12 @@ h6 {
     .hidden-xs {
       display: none !important; } }
 
+.hidden-xs-opacity {
+  opacity: 1; }
+  @media (max-width: 767px) {
+    .hidden-xs-opacity {
+      opacity: 0 !important; } }
+
 .hidden-sm {
   display: block; }
   @media (min-width: 767px) and (max-width: 1024px) {
@@ -578,6 +584,12 @@ h6 {
   @media (min-width: 767px) {
     .visible-xs {
       display: none !important; } }
+
+.visible-xs-opacity {
+  opacity: 1; }
+  @media (min-width: 767px) {
+    .visible-xs-opacity {
+      opacity: 0 !important; } }
 
 .overflow_h {
   overflow: hidden; }
@@ -710,7 +722,7 @@ h6 {
 .product_box .text_arrow {
   position: relative;
   overflow: hidden;
-  padding: 15px 15px;
+  padding: 10px;
   bottom: 0; }
   @media (min-width: 768px) and (max-width: 992px) {
     .product_box .text_arrow {
@@ -726,6 +738,9 @@ h6 {
     z-index: -1;
     transform: translateY(100%);
     transition: all 1s; }
+    @media (max-width: 992px) {
+      .product_box .text_arrow::after {
+        top: 1px; } }
 .product_box:hover .text_arrow::after {
   transform: translateY(0); }
 .product_box:hover .arrow img {
