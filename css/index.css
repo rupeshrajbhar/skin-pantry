@@ -1094,6 +1094,9 @@ h6 {
           width: 48.5%;
           margin-bottom: 10px;
           background-color: #FCFAF8; } }
+      .section_6 .products .right_product .product_box a {
+        text-decoration: none;
+        color: var(--primary_color); }
       .section_6 .products .right_product .product_box .product_img {
         height: 77%;
         transition: all 1s; }
@@ -1251,6 +1254,9 @@ h6 {
           width: 48.5%;
           margin-bottom: 10px;
           background-color: #FCFAF8; } }
+      .section_8 .products .right_product .product_box a {
+        text-decoration: none;
+        color: var(--primary_color); }
       .section_8 .products .right_product .product_box:hover .skin_prroduct_3 {
         z-index: 1; }
       .section_8 .products .right_product .product_box .product_img {
@@ -1284,7 +1290,7 @@ h6 {
             .section_8 .products .right_product .product_box .product_img img {
               bottom: 10px; } }
       .section_8 .products .right_product .product_box:hover .skin_product {
-        margin-left: 15px; }
+        transform: translateX(-45%); }
       .section_8 .products .right_product .product_box:hover .skin_product_layer {
         opacity: 1 !important; }
       .section_8 .products .right_product .product_box:hover .product_arrows {
@@ -1415,6 +1421,10 @@ h6 {
         display: flex;
         align-items: flex-end;
         justify-content: end; }
+        @media (max-width: 767px) {
+          .section_10 .what .skin_layer_1 .pluse_arrow {
+            width: 68px;
+            height: 62px; } }
         .section_10 .what .skin_layer_1 .pluse_arrow .skin_layer_img_outer {
           top: 0;
           left: 0;
@@ -1443,6 +1453,10 @@ h6 {
           display: flex;
           align-items: flex-end;
           justify-content: end; }
+          @media (max-width: 767px) {
+            .section_10 .what .skin_layer_2 a .pluse_arrow {
+              width: 65px;
+              height: 75px; } }
           .section_10 .what .skin_layer_2 a .pluse_arrow .pluse {
             top: 0; }
           .section_10 .what .skin_layer_2 a .pluse_arrow .skin_layer_img_outer {
@@ -1460,8 +1474,8 @@ h6 {
       bottom: -15px; }
       @media (max-width: 767px) {
         .section_10 .what .skin_layer_3 {
-          left: 85px;
-          bottom: -70px; } }
+          left: 65px;
+          bottom: -30px; } }
       @media (min-width: 768px) and (max-width: 992px) {
         .section_10 .what .skin_layer_3 {
           left: 100px; } }
@@ -1473,6 +1487,10 @@ h6 {
           display: flex;
           align-items: flex-end;
           justify-content: end; }
+          @media (max-width: 767px) {
+            .section_10 .what .skin_layer_3 a .pluse_arrow {
+              width: 70px;
+              height: 55px; } }
           .section_10 .what .skin_layer_3 a .pluse_arrow .pluse {
             top: 0;
             left: 10px; }
@@ -1491,8 +1509,8 @@ h6 {
       bottom: -20px; }
       @media (max-width: 767px) {
         .section_10 .what .skin_layer_4 {
-          right: -25px;
-          bottom: -50px; } }
+          right: -77px;
+          bottom: -5px; } }
       @media (min-width: 768px) and (max-width: 992px) {
         .section_10 .what .skin_layer_4 {
           right: -150px; } }
@@ -1504,6 +1522,10 @@ h6 {
           display: flex;
           align-items: flex-end;
           justify-content: end; }
+          @media (max-width: 767px) {
+            .section_10 .what .skin_layer_4 a .pluse_arrow {
+              width: 75px;
+              height: 64px; } }
           .section_10 .what .skin_layer_4 a .pluse_arrow .pluse {
             top: 0;
             left: 10px; }
@@ -1514,7 +1536,7 @@ h6 {
             .section_10 .what .skin_layer_4 a .pluse_arrow .skin_layer_img_outer .skin_layer_img_1 {
               transition: all 1s;
               transform-origin: right;
-              clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
+              clip-path: polygon(0 0, 0 0, 0 100%, 0 100%); }
             .section_10 .what .skin_layer_4 a .pluse_arrow .skin_layer_img_outer .skin_l_w_1 {
               clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
     .section_10 .what .skin_layer_5 {
@@ -1522,8 +1544,8 @@ h6 {
       bottom: 110px; }
       @media (max-width: 767px) {
         .section_10 .what .skin_layer_5 {
-          right: -60px;
-          bottom: 60px; } }
+          right: -75px;
+          bottom: 40px; } }
       @media (min-width: 768px) and (max-width: 992px) {
         .section_10 .what .skin_layer_5 {
           bottom: 70px; } }
@@ -1535,6 +1557,9 @@ h6 {
           display: flex;
           align-items: flex-end;
           justify-content: end; }
+          @media (max-width: 767px) {
+            .section_10 .what .skin_layer_5 a .pluse_arrow {
+              width: 60px; } }
           .section_10 .what .skin_layer_5 a .pluse_arrow .pluse {
             top: 0;
             left: -5px; }
@@ -1545,7 +1570,7 @@ h6 {
             .section_10 .what .skin_layer_5 a .pluse_arrow .skin_layer_img_outer .skin_layer_img_1 {
               transition: all 1s;
               transform-origin: right;
-              clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
+              clip-path: polygon(0 0, 0 0, 0 100%, 0 100%); }
             .section_10 .what .skin_layer_5 a .pluse_arrow .skin_layer_img_outer .skin_l_w_1 {
               clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
     .section_10 .what .skin_layer_6 {
@@ -1566,6 +1591,9 @@ h6 {
           display: flex;
           align-items: flex-end;
           justify-content: end; }
+          @media (max-width: 767px) {
+            .section_10 .what .skin_layer_6 a .pluse_arrow {
+              width: 75px; } }
           .section_10 .what .skin_layer_6 a .pluse_arrow .pluse {
             left: 10px;
             bottom: -30px; }
@@ -1573,10 +1601,13 @@ h6 {
             top: 15px;
             left: 20px;
             z-index: -1; }
+            @media (max-width: 767px) {
+              .section_10 .what .skin_layer_6 a .pluse_arrow .skin_layer_img_outer {
+                top: 27px; } }
             .section_10 .what .skin_layer_6 a .pluse_arrow .skin_layer_img_outer .skin_layer_img_1 {
               transition: all 1s;
               transform-origin: right;
-              clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
+              clip-path: polygon(0 0, 0 0, 0 100%, 0 100%); }
             .section_10 .what .skin_layer_6 a .pluse_arrow .skin_layer_img_outer .skin_l_w_1 {
               clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
     .section_10 .what .skin_layer_anmaction a {
@@ -1584,13 +1615,17 @@ h6 {
       text-decoration: none;
       color: var(--iconography); }
     .section_10 .what .skin_layer_anmaction .layer_text {
+      opacity: 0;
       font-size: 40px;
       font-family: "gistesy";
       padding-right: 20px;
-      color: var(--iconography); }
+      color: var(--iconography);
+      transition: all 3s; }
       @media (max-width: 767px) {
         .section_10 .what .skin_layer_anmaction .layer_text {
           font-size: 20px; } }
+    .section_10 .what .skin_layer_anmaction .layer_text_o {
+      opacity: 1; }
 
 @media (max-width: 992px) {
   .section_11 {
