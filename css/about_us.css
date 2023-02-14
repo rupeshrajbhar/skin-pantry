@@ -114,10 +114,10 @@ h6 {
 .n_s_b {
   font-family: "NunitoSans-SemiBold"; }
 
-.n_b {
+.n_b, .tertiary_btn {
   font-family: "NunitoSans-Bold"; }
 
-.n_e_b, .primary_btn, .tertiary_btn {
+.n_e_b, .primary_btn {
   font-family: "NunitoSans-ExtraBold"; }
 
 .text_xxxl {
@@ -457,7 +457,7 @@ h6 {
 .width_100, .product_box .text_arrow {
   width: 100%; }
 
-.margin_a {
+.margin_a, .section_5 .ingredients {
   margin: auto; }
 
 .d_f {
@@ -662,10 +662,10 @@ h6 {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color_white); }
 
-.postion_relative, .section_12, .section_12 .some h4 {
+.postion_relative, .section_5, .section_12, .section_12 .some h4 {
   position: relative; }
 
-.postion_absolute, .section_12 .some, .section_12 .some h4 .g, .section_12 .sub {
+.postion_absolute, .section_5 .ingredients_layer_1, .section_5 .ingredients_layer_2, .section_5 .ingredients_layer_4, .section_5 .ingredients_layer_5, .section_12 .some, .section_12 .some h4 .g, .section_12 .sub {
   position: absolute; }
 
 .postion_t_b {
@@ -723,7 +723,8 @@ h6 {
   position: relative;
   overflow: hidden;
   padding: 10px;
-  bottom: 0; }
+  bottom: 0;
+  transition: all .3s; }
   @media (min-width: 768px) and (max-width: 992px) {
     .product_box .text_arrow {
       padding: 8px 15px; } }
@@ -813,16 +814,55 @@ h6 {
 .section_2 .beauty .info_box {
   width: 48%; }
 
-.section_6 .colette .colette_img {
+.section_3 .journey .journey_section:nth-child(2n+0) .journey_text {
+  order: -1;
+  padding-left: 0;
+  padding-right: 50px; }
+.section_3 .journey .journey_section .journey_img {
   width: 30%; }
+.section_3 .journey .journey_section .journey_text {
+  width: 70%;
+  padding-left: 50px; }
+
+.section_5 .ingredients_layer_1 {
+  top: -70px;
+  left: -85px;
+  width: 480px; }
+.section_5 .ingredients_layer_2 {
+  top: 260px;
+  left: -100px;
+  width: 370px; }
+.section_5 .ingredients_layer_4 {
+  top: 260px;
+  right: -145px; }
+.section_5 .ingredients_layer_5 {
+  top: -70px;
+  right: 100px; }
+.section_5 .ingredients {
+  width: 45%; }
+  .section_5 .ingredients .ingredients_layer_3 {
+    margin-left: -180px; }
+
+.section_6 h3 span {
+  display: block;
+  font-family: "gistesy";
+  font-size: 69px;
+  margin-left: -320px;
+  margin-bottom: -25px;
+  text-transform: capitalize; }
+.section_6 .colette .colette_img {
+  width: 40%; }
   @media (max-width: 767px) {
     .section_6 .colette .colette_img {
-      width: 100%; } }
+      width: 100%;
+      padding-right: 0; } }
 .section_6 .colette .colette_info {
-  width: 70%; }
+  width: 60%;
+  padding-left: 30px; }
   @media (max-width: 767px) {
     .section_6 .colette .colette_info {
-      width: 100%; } }
+      width: 100%;
+      padding-left: 0; } }
 
 @media (max-width: 992px) {
   .section_7 .text_btn {

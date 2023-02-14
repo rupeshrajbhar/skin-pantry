@@ -114,10 +114,10 @@ h6 {
 .n_s_b, .section_1 .banner_slider .slider .slider_info .text_xl {
   font-family: "NunitoSans-SemiBold"; }
 
-.n_b {
+.n_b, .tertiary_btn {
   font-family: "NunitoSans-Bold"; }
 
-.n_e_b, .primary_btn, .tertiary_btn {
+.n_e_b, .primary_btn {
   font-family: "NunitoSans-ExtraBold"; }
 
 .text_xxxl {
@@ -662,10 +662,10 @@ h6 {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color_white); }
 
-.postion_relative, .section_1 .banner_slider .slider, .section_2, .section_2 .philosophy_info, .section_4, .section_6 .products .right_product .product_box, .section_6 .products .right_product .product_box .product_img, .section_8 .products .right_product .product_box, .section_8 .products .right_product .product_box .product_img, .section_10 .what, .section_11 .blog_slider .slider .blog_img, .section_12, .section_12 .some h4 {
+.postion_relative, .section_1 .banner_slider .slider, .section_2, .section_2 .philosophy_info, .section_4, .section_6 .products .right_product .product_box, .section_6 .products .right_product .product_box .product_img, .section_8 .products .right_product .product_box, .section_8 .products .right_product .product_box .product_img, .section_10 .what, .section_10 .what .skin_layer_1 .pluse_arrow, .section_10 .what .skin_layer_2 a .pluse_arrow, .section_10 .what .skin_layer_3 a .pluse_arrow, .section_10 .what .skin_layer_4 a .pluse_arrow, .section_10 .what .skin_layer_5 a .pluse_arrow, .section_10 .what .skin_layer_6 a .pluse_arrow, .section_11 .blog_slider .slider .blog_img, .section_12, .section_12 .some h4 {
   position: relative; }
 
-.postion_absolute, .section_2 .layer_1, .section_2 .layer_2, .section_2 .layer_3, .section_2 .layer_4, .section_2 .philosophy_info .m_layer_4, .section_2 .philosophy_info .m_pantry, .section_6 .products .right_product .product_box .product_img img, .section_6 .products .right_product .product_box .product_arrows, .section_6 .products .right_product .product_box .text_arrow, .section_8 .products .right_product .product_box .product_img img, .section_8 .products .right_product .product_box .product_arrows, .section_8 .products .right_product .product_box .text_arrow, .section_10 .what .skin_layer_anmaction, .section_11 .blog_slider .slider .blog_img h6, .section_12 .some, .section_12 .some h4 .g, .section_12 .sub {
+.postion_absolute, .section_2 .layer_1, .section_2 .layer_2, .section_2 .layer_3, .section_2 .layer_4, .section_2 .philosophy_info .m_layer_4, .section_2 .philosophy_info .m_pantry, .section_6 .products .right_product .product_box .product_img img, .section_6 .products .right_product .product_box .product_arrows, .section_6 .products .right_product .product_box .text_arrow, .section_8 .products .right_product .product_box .product_img img, .section_8 .products .right_product .product_box .product_arrows, .section_8 .products .right_product .product_box .text_arrow, .section_10 .what .skin_layer_1 .pluse_arrow .skin_layer_img_outer, .section_10 .what .skin_layer_2 a .pluse_arrow .pluse, .section_10 .what .skin_layer_2 a .pluse_arrow .skin_layer_img_outer, .section_10 .what .skin_layer_3 a .pluse_arrow .pluse, .section_10 .what .skin_layer_3 a .pluse_arrow .skin_layer_img_outer, .section_10 .what .skin_layer_4 a .pluse_arrow .pluse, .section_10 .what .skin_layer_4 a .pluse_arrow .skin_layer_img_outer, .section_10 .what .skin_layer_5 a .pluse_arrow .pluse, .section_10 .what .skin_layer_5 a .pluse_arrow .skin_layer_img_outer, .section_10 .what .skin_layer_6 a .pluse_arrow .pluse, .section_10 .what .skin_layer_6 a .pluse_arrow .skin_layer_img_outer, .section_10 .what .skin_layer_anmaction, .section_11 .blog_slider .slider .blog_img h6, .section_12 .some, .section_12 .some h4 .g, .section_12 .sub {
   position: absolute; }
 
 .postion_t_b, .section_1 .banner_slider .slider .slider_info {
@@ -723,7 +723,8 @@ h6 {
   position: relative;
   overflow: hidden;
   padding: 10px;
-  bottom: 0; }
+  bottom: 0;
+  transition: all .3s; }
   @media (min-width: 768px) and (max-width: 992px) {
     .product_box .text_arrow {
       padding: 8px 15px; } }
@@ -1094,20 +1095,27 @@ h6 {
           margin-bottom: 10px;
           background-color: #FCFAF8; } }
       .section_6 .products .right_product .product_box .product_img {
-        height: 77%; }
+        height: 77%;
+        transition: all 1s; }
         @media (max-width: 767px) {
           .section_6 .products .right_product .product_box .product_img {
             width: 90%;
             margin: auto; } }
+        .section_6 .products .right_product .product_box .product_img .skin_product {
+          z-index: 1;
+          transition: all 1s; }
+        .section_6 .products .right_product .product_box .product_img .skin_product_layer {
+          opacity: 0;
+          transition: linear .2s; }
         .section_6 .products .right_product .product_box .product_img .big_img {
           height: 200px; }
           @media (max-width: 767px) {
             .section_6 .products .right_product .product_box .product_img .big_img {
               height: auto;
-              width: 50%; } }
+              width: 100%; } }
           @media (min-width: 768px) and (max-width: 992px) {
             .section_6 .products .right_product .product_box .product_img .big_img {
-              width: 40%;
+              width: 70%;
               height: auto; } }
         .section_6 .products .right_product .product_box .product_img img {
           bottom: 0;
@@ -1116,6 +1124,10 @@ h6 {
           @media (min-width: 768px) and (max-width: 992px) {
             .section_6 .products .right_product .product_box .product_img img {
               bottom: 10px; } }
+      .section_6 .products .right_product .product_box:hover .skin_product {
+        transform: translateX(-45%); }
+      .section_6 .products .right_product .product_box:hover .skin_product_layer {
+        opacity: 1 !important; }
       .section_6 .products .right_product .product_box:hover .product_arrows {
         display: none; }
       .section_6 .products .right_product .product_box:hover .text_arrow {
@@ -1239,25 +1251,42 @@ h6 {
           width: 48.5%;
           margin-bottom: 10px;
           background-color: #FCFAF8; } }
+      .section_8 .products .right_product .product_box:hover .skin_prroduct_3 {
+        z-index: 1; }
       .section_8 .products .right_product .product_box .product_img {
-        height: 77%; }
+        height: 77%;
+        transition: all 1s; }
         @media (max-width: 767px) {
           .section_8 .products .right_product .product_box .product_img {
             width: 90%;
             margin: auto; } }
+        .section_8 .products .right_product .product_box .product_img .skin_product {
+          z-index: 1;
+          transition: all 1s; }
+        .section_8 .products .right_product .product_box .product_img .skin_product_layer {
+          opacity: 0;
+          transition: linear .2s; }
         .section_8 .products .right_product .product_box .product_img .big_img {
           height: 200px; }
-          @media (max-width: 992px) {
+          @media (max-width: 767px) {
             .section_8 .products .right_product .product_box .product_img .big_img {
               height: auto;
-              width: 50%; } }
+              width: 100%; } }
           @media (min-width: 768px) and (max-width: 992px) {
             .section_8 .products .right_product .product_box .product_img .big_img {
-              width: 40%; } }
+              width: 70%;
+              height: auto; } }
         .section_8 .products .right_product .product_box .product_img img {
           bottom: 0;
           left: 50%;
           transform: translateX(-50%); }
+          @media (min-width: 768px) and (max-width: 992px) {
+            .section_8 .products .right_product .product_box .product_img img {
+              bottom: 10px; } }
+      .section_8 .products .right_product .product_box:hover .skin_product {
+        margin-left: 15px; }
+      .section_8 .products .right_product .product_box:hover .skin_product_layer {
+        opacity: 1 !important; }
       .section_8 .products .right_product .product_box:hover .product_arrows {
         display: none; }
       .section_8 .products .right_product .product_box:hover .text_arrow {
@@ -1368,14 +1397,9 @@ h6 {
     @media (min-width: 768px) and (max-width: 992px) {
       .section_10 .what {
         width: 400px; } }
-    .section_10 .what .skin_layer {
-      width: 546px; }
-      @media (max-width: 767px) {
-        .section_10 .what .skin_layer {
-          width: 250px; } }
-      @media (min-width: 768px) and (max-width: 992px) {
-        .section_10 .what .skin_layer {
-          width: 400px; } }
+    .section_10 .what .skin_layer_anmaction:hover .pluse {
+      transform: scale(1.2);
+      transition: ease-in-out .3s; }
     .section_10 .what .skin_layer_1 {
       top: 80px;
       left: -150px; }
@@ -1386,9 +1410,24 @@ h6 {
       @media (min-width: 768px) and (max-width: 992px) {
         .section_10 .what .skin_layer_1 {
           top: 28px; } }
+      .section_10 .what .skin_layer_1 .pluse_arrow {
+        width: 75px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: end; }
+        .section_10 .what .skin_layer_1 .pluse_arrow .skin_layer_img_outer {
+          top: 0;
+          left: 0;
+          z-index: -1; }
+          .section_10 .what .skin_layer_1 .pluse_arrow .skin_layer_img_outer .skin_layer_img_1 {
+            transition: all 1s;
+            transform-origin: right;
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
+          .section_10 .what .skin_layer_1 .pluse_arrow .skin_layer_img_outer .skin_l_w_1 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
     .section_10 .what .skin_layer_2 {
-      left: -130px;
-      bottom: 60px; }
+      left: -120px;
+      bottom: 30px; }
       @media (max-width: 767px) {
         .section_10 .what .skin_layer_2 {
           left: -55px;
@@ -1398,6 +1437,24 @@ h6 {
           bottom: 0; } }
       .section_10 .what .skin_layer_2 a {
         align-items: baseline; }
+        .section_10 .what .skin_layer_2 a .pluse_arrow {
+          width: 100px;
+          height: 100px;
+          display: flex;
+          align-items: flex-end;
+          justify-content: end; }
+          .section_10 .what .skin_layer_2 a .pluse_arrow .pluse {
+            top: 0; }
+          .section_10 .what .skin_layer_2 a .pluse_arrow .skin_layer_img_outer {
+            top: 15px;
+            left: 0;
+            z-index: -1; }
+            .section_10 .what .skin_layer_2 a .pluse_arrow .skin_layer_img_outer .skin_layer_img_1 {
+              transition: all 1s;
+              transform-origin: right;
+              clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
+            .section_10 .what .skin_layer_2 a .pluse_arrow .skin_layer_img_outer .skin_l_w_1 {
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
     .section_10 .what .skin_layer_3 {
       left: 170px;
       bottom: -15px; }
@@ -1410,9 +1467,28 @@ h6 {
           left: 100px; } }
       .section_10 .what .skin_layer_3 a {
         align-items: baseline; }
+        .section_10 .what .skin_layer_3 a .pluse_arrow {
+          width: 100px;
+          height: 70px;
+          display: flex;
+          align-items: flex-end;
+          justify-content: end; }
+          .section_10 .what .skin_layer_3 a .pluse_arrow .pluse {
+            top: 0;
+            left: 10px; }
+          .section_10 .what .skin_layer_3 a .pluse_arrow .skin_layer_img_outer {
+            top: 15px;
+            left: 0;
+            z-index: -1; }
+            .section_10 .what .skin_layer_3 a .pluse_arrow .skin_layer_img_outer .skin_layer_img_1 {
+              transition: all 1s;
+              transform-origin: right;
+              clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
+            .section_10 .what .skin_layer_3 a .pluse_arrow .skin_layer_img_outer .skin_l_w_1 {
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
     .section_10 .what .skin_layer_4 {
       right: -120px;
-      bottom: -35px; }
+      bottom: -20px; }
       @media (max-width: 767px) {
         .section_10 .what .skin_layer_4 {
           right: -25px;
@@ -1422,8 +1498,27 @@ h6 {
           right: -150px; } }
       .section_10 .what .skin_layer_4 a {
         align-items: baseline; }
+        .section_10 .what .skin_layer_4 a .pluse_arrow {
+          width: 100px;
+          height: 70px;
+          display: flex;
+          align-items: flex-end;
+          justify-content: end; }
+          .section_10 .what .skin_layer_4 a .pluse_arrow .pluse {
+            top: 0;
+            left: 10px; }
+          .section_10 .what .skin_layer_4 a .pluse_arrow .skin_layer_img_outer {
+            top: 15px;
+            left: 20px;
+            z-index: -1; }
+            .section_10 .what .skin_layer_4 a .pluse_arrow .skin_layer_img_outer .skin_layer_img_1 {
+              transition: all 1s;
+              transform-origin: right;
+              clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
+            .section_10 .what .skin_layer_4 a .pluse_arrow .skin_layer_img_outer .skin_l_w_1 {
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
     .section_10 .what .skin_layer_5 {
-      right: -160px;
+      right: -150px;
       bottom: 110px; }
       @media (max-width: 767px) {
         .section_10 .what .skin_layer_5 {
@@ -1434,9 +1529,28 @@ h6 {
           bottom: 70px; } }
       .section_10 .what .skin_layer_5 a {
         align-items: baseline; }
+        .section_10 .what .skin_layer_5 a .pluse_arrow {
+          width: 80px;
+          height: 50px;
+          display: flex;
+          align-items: flex-end;
+          justify-content: end; }
+          .section_10 .what .skin_layer_5 a .pluse_arrow .pluse {
+            top: 0;
+            left: -5px; }
+          .section_10 .what .skin_layer_5 a .pluse_arrow .skin_layer_img_outer {
+            top: 15px;
+            left: 20px;
+            z-index: -1; }
+            .section_10 .what .skin_layer_5 a .pluse_arrow .skin_layer_img_outer .skin_layer_img_1 {
+              transition: all 1s;
+              transform-origin: right;
+              clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
+            .section_10 .what .skin_layer_5 a .pluse_arrow .skin_layer_img_outer .skin_l_w_1 {
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
     .section_10 .what .skin_layer_6 {
-      right: -145px;
-      top: 30px; }
+      top: 30px;
+      right: -180px; }
       @media (max-width: 767px) {
         .section_10 .what .skin_layer_6 {
           right: -60px;
@@ -1446,6 +1560,25 @@ h6 {
           right: -180px; } }
       .section_10 .what .skin_layer_6 a {
         align-items: flex-start; }
+        .section_10 .what .skin_layer_6 a .pluse_arrow {
+          width: 130px;
+          height: 50px;
+          display: flex;
+          align-items: flex-end;
+          justify-content: end; }
+          .section_10 .what .skin_layer_6 a .pluse_arrow .pluse {
+            left: 10px;
+            bottom: -30px; }
+          .section_10 .what .skin_layer_6 a .pluse_arrow .skin_layer_img_outer {
+            top: 15px;
+            left: 20px;
+            z-index: -1; }
+            .section_10 .what .skin_layer_6 a .pluse_arrow .skin_layer_img_outer .skin_layer_img_1 {
+              transition: all 1s;
+              transform-origin: right;
+              clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
+            .section_10 .what .skin_layer_6 a .pluse_arrow .skin_layer_img_outer .skin_l_w_1 {
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
     .section_10 .what .skin_layer_anmaction a {
       display: flex;
       text-decoration: none;
@@ -1485,6 +1618,10 @@ h6 {
         width: 80vw !important;
         padding: 0;
         margin: 0 8px; } }
+    @media (max-width: 767px) {
+      .section_11 .blog_slider .slider .text_reg {
+        font-size: 16px;
+        line-height: 24px; } }
     @media (max-width: 767px) {
       .section_11 .blog_slider .slider h3 {
         text-align: left; } }
@@ -1599,7 +1736,7 @@ h6 {
     transform-origin: left; }
 
 .zoomIn[data-scroll] {
-  transition: all 1.5s; }
+  transition: all 1s; }
 .zoomIn[data-scroll="in"] {
   transform: scale(1); }
 .zoomIn[data-scroll="out"] {

@@ -110,21 +110,102 @@
     }
 }
 
+.section_3 {
+    .journey {
+        .journey_section {
+            &:nth-child(2n+0) {
+                .journey_text {
+                    order: -1;
+                    padding-left: 0;
+                    padding-right: 50px;
+                }
+            }
+        }
+
+        .journey_section {
+            .journey_img {
+                width: 30%;
+            }
+
+            .journey_text {
+                width: 70%;
+                padding-left: 50px;
+            }
+        }
+    }
+}
+
+.section_5 {
+    @extend .postion_relative;
+
+    .ingredients_layer_1 {
+        top: -70px;
+        left: -85px;
+        width: 480px;
+        @extend .postion_absolute;
+    }
+
+    .ingredients_layer_2 {
+        top: 260px;
+        left: -100px;
+        width: 370px;
+        @extend .postion_absolute;
+    }
+
+    .ingredients_layer_4 {
+        top: 260px;
+        right: -145px;
+        //        width: 370px;
+        @extend .postion_absolute;
+    }
+
+    .ingredients_layer_5 {
+        top: -70px;
+        right: 100px;
+        //        width: 480px;
+        @extend .postion_absolute;
+    }
+
+    .ingredients {
+        width: 45%;
+        @extend .margin_a;
+
+        .ingredients_layer_3 {
+            margin-left: -180px;
+        }
+    }
+}
+
 .section_6 {
+    h3 {
+        span {
+            display: block;
+            font-family: $g;
+            font-size: 69px;
+            margin-left: -320px;
+            margin-bottom: -25px;
+            text-transform: capitalize;
+        }
+    }
+
     .colette {
         .colette_img {
-            width: 30%;
+            width: 40%;
+            //            padding-right: 20px;
 
             @media (max-width: 767px) {
                 width: 100%;
+                padding-right: 0;
             }
         }
 
         .colette_info {
-            width: 70%;
+            width: 60%;
+            padding-left: 30px;
 
             @media (max-width: 767px) {
                 width: 100%;
+                padding-left: 0;
             }
         }
     }
