@@ -593,6 +593,10 @@
                             width: 70%;
                             height: auto;
                         }
+
+                        @media (min-width: 1441px) and (max-width: 5000px) {
+                            height: 240px;
+                        }
                     }
 
                     img {
@@ -848,6 +852,10 @@
                         @media (min-width: 768px) and (max-width: 992px) {
                             width: 70%;
                             height: auto;
+                        }
+
+                        @media (min-width: 1441px) and (max-width: 5000px) {
+                            height: 240px;
                         }
                     }
 

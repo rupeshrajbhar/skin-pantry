@@ -191,6 +191,7 @@ h6 {
   text-decoration: none;
   letter-spacing: 1.5px;
   color: var(--color_white);
+  transition: linear .1s;
   background-color: transparent;
   border: 1px solid var(--color_white); }
   @media (max-width: 767px) {
@@ -201,11 +202,37 @@ h6 {
     padding-right: 6px;
     display: inline-block;
     vertical-align: bottom; }
+  .primary_btn:hover {
+    color: var(--primary_color);
+    border: 3px solid var(--color_white);
+    background-color: var(--color_white); }
 
 .secondary_btn {
+  overflow: hidden;
   text-decoration: none;
-  color: var(--secondary_color);
-  border-bottom: 1px solid var(--secondary_color); }
+  position: relative;
+  color: var(--secondary_color); }
+  .secondary_btn:after {
+    content: ' ';
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: var(--secondary_color); }
+  .secondary_btn:before {
+    content: ' ';
+    width: 100%;
+    height: 1px;
+    left: 0;
+    z-index: 1;
+    bottom: 0;
+    position: absolute;
+    transition: all .5s ease;
+    transform: translateX(-100%);
+    background-color: var(--color_white); }
+  .secondary_btn:hover:before {
+    transform: translateX(100%); }
 
 .tertiary_btn {
   margin-bottom: 0;
@@ -216,10 +243,16 @@ h6 {
   text-transform: capitalize;
   color: var(--color_white);
   background-color: #763422;
-  border: 1px solid var(--color_white); }
+  transition: linear .1s;
+  border: 1px solid var(--color_white);
+  position: relative;
+  border: 2px solid #F9F5F1; }
   @media (max-width: 767px) {
     .tertiary_btn {
       padding: 11px 22px; } }
+  .tertiary_btn:hover {
+    border: 2px solid #672614;
+    background-color: #672614; }
 
 .f_w_l {
   font-weight: 300; }
@@ -1120,6 +1153,9 @@ h6 {
             .section_6 .products .right_product .product_box .product_img .big_img {
               width: 70%;
               height: auto; } }
+          @media (min-width: 1441px) and (max-width: 5000px) {
+            .section_6 .products .right_product .product_box .product_img .big_img {
+              height: 240px; } }
         .section_6 .products .right_product .product_box .product_img img {
           bottom: 0;
           left: 50%;
@@ -1282,6 +1318,9 @@ h6 {
             .section_8 .products .right_product .product_box .product_img .big_img {
               width: 70%;
               height: auto; } }
+          @media (min-width: 1441px) and (max-width: 5000px) {
+            .section_8 .products .right_product .product_box .product_img .big_img {
+              height: 240px; } }
         .section_8 .products .right_product .product_box .product_img img {
           bottom: 0;
           left: 50%;
