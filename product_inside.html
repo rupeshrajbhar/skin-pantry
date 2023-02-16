@@ -16,13 +16,20 @@
 <body>
 
     <section class="section_1 ptb_100">
+        <div class="view_popup">
+            <img src="img/product_inside/close.png" class="img-responsive close">
+            <p class="text_xs">Aloe Vera (Aloe Barbadensis)*, Cold Pressed Apricot Oil (Prunus Armeniaca)*, Jojoba Oil
+                (Simmondsia Chinensis)*, Glycerin***, Sweet Almond Oil (Prunus Amygdalus Dulcis)*, Sucrose Laurate***, Orange
+                Fruit Water (Citrus Aurantium Dulcis)*, Rose Essential Oil (Rosa Damascena)* Benzyl Alcohol**, Salicylic Acid**,
+                Sorbic Acid**, Vanilla Hazelnut Fragrance oil, Vitamin E Oil (Tocopherol)*** , Annato Olearesin***.</p>
+        </div>
         <div class="container">
-            <div class="text_btn f_j">
+            <div class="text_btn f_j f_r_aj_between">
                 <div class="text">
-                    <h2 class="text_xxxl n_l toTop f_w_r text_uppercase">Active Ingredients</h2>
+                    <h2 class="text_xxxl n_l m_tb_0 pb_30 toTop f_w_r text_uppercase">Active Ingredients</h2>
                 </div>
-                <div class="btn_section hidden-xs toTop" data-scroll>
-                    <a href="#" class="secondary_btn text_reg n_b text_uppercase">View all</a>
+                <div class="btn_section overflow_h hidden-xs toTop" data-scroll>
+                    <a href="#" class="secondary_btn text_reg n_b text_uppercase popup_open">View all</a>
                 </div>
             </div>
             <div class="icon_section f_w_j pt_10">
@@ -112,17 +119,25 @@
                     </div>
                 </div>
             </div>
+
+            <div class="btn_section overflow_h visible-xs text_center pt_20 toTop" data-scroll>
+                <a href="#" class="secondary_btn text_reg n_b text_uppercase popup_open">View all</a>
+            </div>
         </div>
     </section>
 
     <section class="section_4 pb_100 overflow_h">
         <div class="tab_section">
-            <div class="button_style pb_40 mob_tb_1 toTop " data-scroll>
+            <div class="button_style pb_30 mob_tb_1 toTop " data-scroll>
                 <h5 class="main_tab_btn f_r_aj_between m_tb_0">
-                    <span class="btn text_sm f_w_100 active" data-id="how_to_use">How To Use</span>
-                    <span class="btn text_sm f_w_100" data-id="faq">FAQS</span>
-                    <span class="btn btn_m text_sm f_w_100" data-id="manufacturing"><span class="hidden-xs">Manufacturing</span>
+                    <span class="btn text_md n_b f_w_100 active" data-id="how_to_use">How To Use</span>
+                    <span class="btn text_md n_b f_w_100" data-id="faq">FAQS</span>
+                    <!--
+                    <span class="btn text_md n_b f_w_100" data-id="manufacturing"><span class="padd_faq">Manufacturing</span>
                         <span class="visible-xs padd_faq">More </span> Info</span>
+-->
+
+                    <span class="btn text_md n_b f_w_100" data-id="manufacturing">Manufacturing Info</span>
                 </h5>
             </div>
         </div>
@@ -133,12 +148,12 @@
                         <img src="img/product_inside/how_img.jpg" class="img-responsive">
                     </div>
                     <div class="how_info">
-                        <p class="text_md m_tb_0">Massage on to your skin, using circular motions</p>
+                        <p class="text_md m_tb_0 how_info_o">Massage on to your skin, using circular motions</p>
                         <p class="text_md m_tb_0">Don’t forget to give your elbows and heels some extra love</p>
                         <p class="text_md m_tb_0">For best results use twice a day, morning and evening.</p>
                     </div>
                 </div>
-                <div class="icon_section_slider f_j width_m_80 pt_50">
+                <div class="icon_section_slider f_j pt_50">
                     <div class="icon_box toTop" data-scroll>
                         <img src="img/home/icon_1.gif" class="img-responsive margin_a" />
                         <h6 class="text_xs n_s_b text_center text_uppercase">
@@ -282,16 +297,20 @@
                 <img src="img/product_inside/video_banner.jpg" class="img-responsive width_100" />
             </picture>
             <div class="play_btn_section">
-                <p class="f_w_a n_s_b m_tb_0"><a href="#">Play Now</a><img src="img/product_inside/play_video_btn.png" class="img-responsive pl_10" /></p>
+                <a href="#">
+                    <p class="f_w_a n_s_b text_md m_tb_0">Play Now
+                        <img src="img/product_inside/play_video_btn.png" class="img-responsive pl_10" />
+                    </p>
+                </a>
             </div>
         </div>
     </section>
 
     <section class="section_5 ptb_100 overflow_h">
         <div class="container">
-            <div class="text_btn f_j">
+            <div class="text_btn f_j f_r_aj_between">
                 <div class="text">
-                    <h3 class="text_xxxl n_l primary_color text_uppercase toTop f_w_r" data-scroll>You May Also Like
+                    <h3 class="text_xxxl n_l primary_color m_tb_0 text_uppercase toTop f_w_r" data-scroll>You May Also Like
                     </h3>
                 </div>
                 <div class="btn_section hidden-xs toTop" data-scroll>
@@ -360,6 +379,15 @@
             cssProps: {
                 viewportY: true,
             },
+        });
+
+        $(document).ready(function() {
+            $(".popup_open").click(function() {
+                $(".view_popup").show();
+            });
+            $(".close").click(function() {
+                $(".view_popup").hide();
+            });
         });
 
         $(".tab_inside_section").hide();
@@ -453,6 +481,22 @@
                     // variableWidth: false,
                 },
             }, ],
+        });
+
+        $(window).scroll(function() {
+            if ($('body').length) {
+                var scrollTopPos = $(window).scrollTop();
+                console.log(scrollTopPos);
+                var scrollme = $(".section_4").offset().top - 250;
+                console.log(scrollme);
+                if (scrollTopPos > scrollme) {
+                    setTimeout(function() {
+                        $(document).ready(function() {
+                            $('.how_info p').addClass('how_info_o');
+                        });
+                    }, 0);
+                }
+            }
         });
 
     </script>

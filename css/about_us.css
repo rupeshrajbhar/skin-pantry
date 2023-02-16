@@ -851,25 +851,45 @@ h6 {
   order: -1;
   padding-left: 0;
   padding-right: 50px; }
-.section_3 .journey .journey_section .journey_img {
-  width: 30%; }
-.section_3 .journey .journey_section .journey_text {
-  width: 70%;
-  padding-left: 50px; }
+.section_3 .journey .journey_section:nth-child(1) {
+  padding-right: 100px; }
+.section_3 .journey .journey_section:nth-child(2) {
+  padding-left: 100px; }
+.section_3 .journey .journey_section:nth-child(3) {
+  padding-right: 100px; }
+.section_3 .journey .journey_section {
+  position: relative; }
+  .section_3 .journey .journey_section .line_1 {
+    left: 50%;
+    width: 70%;
+    bottom: -32%;
+    position: absolute;
+    transform: translateX(-50%); }
+  .section_3 .journey .journey_section .line_2 {
+    left: 51%;
+    width: 70%;
+    bottom: 5%;
+    position: absolute;
+    transform: translateX(-50%); }
+  .section_3 .journey .journey_section .journey_img {
+    width: 30%; }
+  .section_3 .journey .journey_section .journey_text {
+    width: 70%;
+    padding-left: 50px; }
 
 .section_5 .ingredients_layer_1 {
-  top: -70px;
+  top: 0;
   left: -85px;
   width: 480px; }
 .section_5 .ingredients_layer_2 {
-  top: 260px;
+  top: 340px;
   left: -100px;
   width: 370px; }
 .section_5 .ingredients_layer_4 {
-  top: 260px;
+  top: 330px;
   right: -145px; }
 .section_5 .ingredients_layer_5 {
-  top: -70px;
+  top: 0;
   right: 100px; }
 .section_5 .ingredients {
   width: 45%; }

@@ -123,6 +123,50 @@
         }
 
         .journey_section {
+            &:nth-child(1) {
+                padding-right: 100px;
+                //                &:after {
+                //                    content: ' ';
+                //                    width: 100%;
+                //                    height: 75px;
+                //                    left: 0;
+                //                    bottom: 0;
+                //                    position: absolute;
+                //                    background-size: contain;
+                //                    background-position: center;
+                //                    background-repeat: no-repeat;
+                //                    background-image: url(../img/about/line_1.png);
+                //                }
+            }
+
+            &:nth-child(2) {
+                padding-left: 100px;
+            }
+
+            &:nth-child(3) {
+                padding-right: 100px;
+            }
+        }
+
+        .journey_section {
+            position: relative;
+
+            .line_1 {
+                left: 50%;
+                width: 70%;
+                bottom: -32%;
+                position: absolute;
+                transform: translateX(-50%);
+            }
+
+            .line_2 {
+                left: 51%;
+                width: 70%;
+                bottom: 5%;
+                position: absolute;
+                transform: translateX(-50%);
+            }
+
             .journey_img {
                 width: 30%;
             }
@@ -139,28 +183,28 @@
     @extend .postion_relative;
 
     .ingredients_layer_1 {
-        top: -70px;
+        top: 0;
         left: -85px;
         width: 480px;
         @extend .postion_absolute;
     }
 
     .ingredients_layer_2 {
-        top: 260px;
+        top: 340px;
         left: -100px;
         width: 370px;
         @extend .postion_absolute;
     }
 
     .ingredients_layer_4 {
-        top: 260px;
+        top: 330px;
         right: -145px;
         //        width: 370px;
         @extend .postion_absolute;
     }
 
     .ingredients_layer_5 {
-        top: -70px;
+        top: 0;
         right: 100px;
         //        width: 480px;
         @extend .postion_absolute;
