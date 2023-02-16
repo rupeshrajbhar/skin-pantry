@@ -2,6 +2,50 @@
 
 
 .section_1 {
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000ba;
+      }
+      
+    .modal {
+        display: none;
+        position: fixed;
+        top: 150px;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        width: 95%;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #f9f5f1;
+        border-radius: 4px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+        
+      .modal-close-btn {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 20px;
+      }
+      .modal_icon_img{
+        top: -32px;
+        left: 50%;
+        width: 70px;
+        position: absolute;
+        border-radius: 100%;
+        border: 2px solid #CCA27B;
+        transform: translateX(-50%);
+      }
+      }
     .view_popup {
         right: 0;
         z-index: 1;

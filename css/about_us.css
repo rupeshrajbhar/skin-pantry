@@ -844,38 +844,77 @@ h6 {
 
 .section_2 .beauty .img_box {
   width: 48%; }
+  @media (max-width: 767px) {
+    .section_2 .beauty .img_box {
+      width: 100%; } }
 .section_2 .beauty .info_box {
   width: 48%; }
+  @media (max-width: 767px) {
+    .section_2 .beauty .info_box {
+      width: 100%;
+      padding-top: 30px; } }
 
 .section_3 .journey .journey_section:nth-child(2n+0) .journey_text {
   order: -1;
   padding-left: 0;
   padding-right: 50px; }
+  @media (max-width: 767px) {
+    .section_3 .journey .journey_section:nth-child(2n+0) .journey_text {
+      padding-right: 0; } }
 .section_3 .journey .journey_section:nth-child(1) {
   padding-right: 100px; }
+  @media (max-width: 767px) {
+    .section_3 .journey .journey_section:nth-child(1) {
+      padding-right: 0; } }
 .section_3 .journey .journey_section:nth-child(2) {
   padding-left: 100px; }
+  @media (max-width: 767px) {
+    .section_3 .journey .journey_section:nth-child(2) {
+      padding-left: 0; } }
+  @media (max-width: 767px) {
+    .section_3 .journey .journey_section:nth-child(2) .journey_text {
+      order: 1; } }
 .section_3 .journey .journey_section:nth-child(3) {
   padding-right: 100px; }
+  @media (max-width: 767px) {
+    .section_3 .journey .journey_section:nth-child(3) {
+      padding-right: 0; } }
 .section_3 .journey .journey_section {
   position: relative; }
+  @media (max-width: 767px) {
+    .section_3 .journey .journey_section {
+      padding: 30px 0; } }
   .section_3 .journey .journey_section .line_1 {
     left: 50%;
     width: 70%;
     bottom: -32%;
     position: absolute;
     transform: translateX(-50%); }
+    @media (max-width: 767px) {
+      .section_3 .journey .journey_section .line_1 {
+        display: none; } }
   .section_3 .journey .journey_section .line_2 {
     left: 51%;
     width: 70%;
     bottom: 5%;
     position: absolute;
     transform: translateX(-50%); }
+    @media (max-width: 767px) {
+      .section_3 .journey .journey_section .line_2 {
+        display: none; } }
   .section_3 .journey .journey_section .journey_img {
     width: 30%; }
+    @media (max-width: 767px) {
+      .section_3 .journey .journey_section .journey_img {
+        width: 100%; } }
   .section_3 .journey .journey_section .journey_text {
     width: 70%;
     padding-left: 50px; }
+    @media (max-width: 767px) {
+      .section_3 .journey .journey_section .journey_text {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 25px; } }
 
 .section_5 .ingredients_layer_1 {
   top: 0;

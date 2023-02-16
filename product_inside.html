@@ -30,6 +30,85 @@
           Olearesin***.
         </p>
       </div>
+
+      <div class="overlay" id="overlay"></div>
+
+      <div class="modal js-modal" data-id="modal1">
+        <img
+          src="img/product_inside/close.png"
+          class="img-responsive modal-close-btn js-close-btn" />
+        <div class="icon_popup_contant">
+          <img
+            src="img/product_inside/aloe.jpg"
+            class="img-responsive modal_icon_img" />
+          <p class="text_xs text_center m_tb_0 pt_30">
+            Vanilla Oil is rich in antioxidants that neutralise free radicals
+            and reverse skin damage. Vanilla helps to slow down signs of ageing
+            like fine lines, wrinkles and age spots.
+          </p>
+        </div>
+      </div>
+      <div class="modal js-modal" data-id="modal2">
+        <img
+          src="img/product_inside/close.png"
+          class="img-responsive modal-close-btn js-close-btn" />
+        <div class="icon_popup_contant">
+          <img
+            src="img/product_inside/vanilla.jpg"
+            class="img-responsive modal_icon_img" />
+          <p class="text_xs text_center m_tb_0 pt_30">
+            Vanilla Oil is rich in antioxidants that neutralise free radicals
+            and reverse skin damage. Vanilla helps to slow down signs of ageing
+            like fine lines, wrinkles and age spots.
+          </p>
+        </div>
+      </div>
+      <div class="modal js-modal" data-id="modal3">
+        <img
+          src="img/product_inside/close.png"
+          class="img-responsive modal-close-btn js-close-btn" />
+        <div class="icon_popup_contant">
+          <img
+            src="img/product_inside/apricot.jpg"
+            class="img-responsive modal_icon_img" />
+          <p class="text_xs text_center m_tb_0 pt_30">
+            Vanilla Oil is rich in antioxidants that neutralise free radicals
+            and reverse skin damage. Vanilla helps to slow down signs of ageing
+            like fine lines, wrinkles and age spots.
+          </p>
+        </div>
+      </div>
+      <div class="modal js-modal" data-id="modal4">
+        <img
+          src="img/product_inside/close.png"
+          class="img-responsive modal-close-btn js-close-btn" />
+        <div class="icon_popup_contant">
+          <img
+            src="img/product_inside/jojoba.jpg"
+            class="img-responsive modal_icon_img" />
+          <p class="text_xs text_center m_tb_0 pt_30">
+            Vanilla Oil is rich in antioxidants that neutralise free radicals
+            and reverse skin damage. Vanilla helps to slow down signs of ageing
+            like fine lines, wrinkles and age spots.
+          </p>
+        </div>
+      </div>
+      <div class="modal js-modal" data-id="modal5">
+        <img
+          src="img/product_inside/close.png"
+          class="img-responsive modal-close-btn js-close-btn" />
+        <div class="icon_popup_contant">
+          <img
+            src="img/product_inside/rose.jpg"
+            class="img-responsive modal_icon_img" />
+          <p class="text_xs text_center m_tb_0 pt_30">
+            Vanilla Oil is rich in antioxidants that neutralise free radicals
+            and reverse skin damage. Vanilla helps to slow down signs of ageing
+            like fine lines, wrinkles and age spots.
+          </p>
+        </div>
+      </div>
+
       <div class="container">
         <div class="text_btn f_j f_r_aj_between">
           <div class="text">
@@ -46,7 +125,7 @@
           </div>
         </div>
         <div class="icon_section f_w_j pt_10">
-          <div class="icon_box">
+          <div class="icon_box js-btn-modal" data-id="1">
             <div class="icon_box_img">
               <img
                 src="img/product_inside/aloe.jpg"
@@ -70,7 +149,7 @@
               </p>
             </div>
           </div>
-          <div class="icon_box">
+          <div class="icon_box js-btn-modal" data-id="2">
             <div class="icon_box_img">
               <img
                 src="img/product_inside/vanilla.jpg"
@@ -94,7 +173,7 @@
               </p>
             </div>
           </div>
-          <div class="icon_box">
+          <div class="icon_box js-btn-modal" data-id="3">
             <div class="icon_box_img">
               <img
                 src="img/product_inside/apricot.jpg"
@@ -118,7 +197,7 @@
               </p>
             </div>
           </div>
-          <div class="icon_box">
+          <div class="icon_box js-btn-modal" data-id="4">
             <div class="icon_box_img">
               <img
                 src="img/product_inside/jojoba.jpg"
@@ -142,7 +221,7 @@
               </p>
             </div>
           </div>
-          <div class="icon_box">
+          <div class="icon_box js-btn-modal" data-id="5">
             <div class="icon_box_img">
               <img
                 src="img/product_inside/rose.jpg"
@@ -508,6 +587,24 @@
         $(".close").click(function () {
           $(".view_popup").hide();
         });
+
+        // modal popup
+        if (windowWidth < 767) {
+          $(".js-btn-modal").on("click", function () {
+            $("#overlay").fadeIn();
+            var id = $(this).data("id");
+            $('.js-modal[data-id="modal' + id + '"]').fadeIn();
+          });
+
+          $(".js-close-btn").on("click", function () {
+            $("#overlay").fadeOut();
+            $(".js-modal").fadeOut();
+          });
+          $("#overlay").on("click", function () {
+            $("#overlay").fadeOut();
+            $(".js-modal").fadeOut();
+          });
+        }
       });
 
       $(".tab_inside_section").hide();
