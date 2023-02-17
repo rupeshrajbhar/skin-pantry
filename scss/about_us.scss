@@ -78,7 +78,7 @@
                     @media (max-width: 767px) {
                         font-size: 26px;
                         padding: 0 10px;
-                        line-height: 40px;
+                        line-height: 35px;
                     }
 
                     @media (min-width: 768px) and (max-width: 992px) {
@@ -119,15 +119,24 @@
 
 .section_3 {
     h3{
-        @media (max-width: 767px) {
+        @media (max-width: 992px) {
             padding-bottom: 0;
         }
     }
     .journey {
-        @media (min-width: 768px) and (max-width: 992px) {
+        width: 90%;
+        margin: auto;
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+        @media (min-width: 993px) and (max-width: 1200px) {
             width: 100%;
         }
         .journey_section {
+            @media (min-width: 768px) and (max-width: 1200px) {
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
             &:nth-child(2n+0) {
                 .journey_text {
                     order: -1;
@@ -146,6 +155,26 @@
                 @media (max-width: 992px) {
                     padding-right: 0;
                 }
+                .journey_text{
+                    @media (min-width: 1681px) {
+                        padding-left: 0;
+                     }
+                     @media (max-width: 767px) {
+                        padding-top: 40px;
+                    }
+                }
+                .journey_img{
+                    img{
+                        margin-left: auto;
+                        @media (min-width: 1681px) {
+                            margin: auto;
+                         }
+                         @media (max-width: 767px) {
+                            margin-right: auto;
+                            margin-left: inherit;
+                        }
+                    }
+                }
             }
 
             &:nth-child(2) {
@@ -154,8 +183,16 @@
                     padding-left: 0;
                 }
                 .journey_text{
+                    padding-right: 20px;
+                    padding-left: 50px;
                     @media (max-width: 767px) {
                         order: 1;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                    @media (min-width: 768px) and (max-width: 992px) {
+                        padding-left: 0;
+                        padding-right: 0;
                     }
                 }
             }
@@ -165,6 +202,16 @@
                 @media (max-width: 992px) {
                     padding-right: 0;
                 }
+                .journey_text{
+                    @media (max-width: 767px) {
+                        padding-top: 0;
+                    }
+                }
+                .journey_img{
+                    @media (min-width: 768px) and (max-width: 992px) {
+                        margin-top: -70px;
+                    }
+                }
             }
         }
 
@@ -173,43 +220,61 @@
             @media (max-width: 767px) {
                 padding: 15px 0;
             }
+            @media (min-width: 1681px) {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
 
             .line_1 {
                 left: 50%;
                 width: 70%;
-                bottom: -32%;
+                bottom: -65%;
                 position: absolute;
                 transform: translateX(-50%);
                 @media (max-width: 767px) {
                     display: none;
+                }
+                @media (min-width: 1681px) {
+                   bottom: -80%;
+                }
+                @media (min-width: 768px) and (max-width: 992px) {
+                    width: 74%;
+                    bottom: -20%;
                 }
             }
 
             .line_2 {
                 left: 51%;
                 width: 70%;
-                bottom: 5%;
+                bottom: -23%;
                 position: absolute;
                 transform: translateX(-50%);
                 @media (max-width: 767px) {
                     display: none;
                 }
+                @media (min-width: 1681px) {
+                    bottom: -40%;
+                }
+                @media (min-width: 768px) and (max-width: 992px) {
+                    bottom: -25%;
+                }
             }
 
             .journey_img {
-                width: 30%;
+                width: 35%;
+                z-index: 1;
+                position: relative;
                 @media (max-width: 767px) {
                     width: 100%;
                 }
             }
 
             .journey_text {
-                width: 70%;
+                width: 65%;
                 padding-left: 50px;
                 @media (max-width: 767px) {
                     width: 100%;
                     padding-left: 0;
-                    padding-top: 25px;
                 }
             }
         }
@@ -234,6 +299,10 @@
         }
         @media (min-width: 768px) and (max-width: 992px) {
             width: 250px;
+        }
+
+        @media (min-width: 993px) and (max-width: 1200px) {
+            width: 370px;
         }
     }
 
@@ -287,6 +356,10 @@
         @media (min-width: 768px) and (max-width: 992px) {
             width: 280px;
             right: -100px;
+        }
+        @media (min-width: 993px) and (max-width: 1200px) {
+            width: 300px;
+            right: -20px;
         }
     }
 
