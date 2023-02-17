@@ -837,7 +837,9 @@ h6 {
   @media (max-width: 767px) {
     .section_1 .view_popup {
       right: 3%;
-      width: 94%; } }
+      width: 94%;
+      top: 50%;
+      transform: translateY(-50%); } }
   .section_1 .view_popup .close {
     top: 10px;
     right: 25px;
@@ -886,8 +888,10 @@ h6 {
       border-radius: 100%;
       border: 2px solid #CCA27B; } }
   .section_1 .icon_section .icon_box .icon_box_img .pluse_img {
-    right: 0;
+    right: 5px;
     bottom: 0;
+    border: 0;
+    border-radius: 0;
     position: absolute; }
   @media (min-width: 767px) {
     .section_1 .icon_section .icon_box:hover .icon_img {

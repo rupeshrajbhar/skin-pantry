@@ -854,7 +854,7 @@ h6 {
       width: 100%;
       padding-top: 30px; } }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .section_3 h3 {
     padding-bottom: 0; } }
 .section_3 .journey {
@@ -950,6 +950,9 @@ h6 {
         .section_3 .journey .journey_section .line_1 {
           width: 74%;
           bottom: -20%; } }
+      @media (min-width: 993px) and (max-width: 1200px) {
+        .section_3 .journey .journey_section .line_1 {
+          bottom: -33%; } }
     .section_3 .journey .journey_section .line_2 {
       left: 51%;
       width: 70%;
@@ -965,6 +968,9 @@ h6 {
       @media (min-width: 768px) and (max-width: 992px) {
         .section_3 .journey .journey_section .line_2 {
           bottom: -25%; } }
+      @media (min-width: 993px) and (max-width: 1200px) {
+        .section_3 .journey .journey_section .line_2 {
+          bottom: -28%; } }
     .section_3 .journey .journey_section .journey_img {
       width: 35%;
       z-index: 1;
