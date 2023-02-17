@@ -349,7 +349,7 @@ h6 {
 .pt_10 {
   padding-top: 10px; }
 
-.pb_10, .section_2 .get_in_touch .get_info .office ul li {
+.pb_10 {
   padding-bottom: 10px; }
 
 .ptb_10 {
@@ -867,11 +867,17 @@ h6 {
       list-style: none;
       padding-left: 0; }
       .section_2 .get_in_touch .get_info .office ul li {
-        padding-left: 35px; }
+        padding-left: 35px;
+        padding-bottom: 15px; }
         .section_2 .get_in_touch .get_info .office ul li:last-child {
           padding-bottom: 0; }
         .section_2 .get_in_touch .get_info .office ul li a {
-          text-decoration: none; }
+          text-decoration: none;
+          line-height: 30px; }
+          @media (max-width: 767px) {
+            .section_2 .get_in_touch .get_info .office ul li a {
+              font-size: 17px;
+              line-height: 29px; } }
           .section_2 .get_in_touch .get_info .office ul li a img {
             left: 0;
             top: 6px; }

@@ -128,8 +128,8 @@
                     padding-left: 0;
 
                     li {
-                        @extend .pb_10;
                         padding-left: 35px;
+                        padding-bottom: 15px;
                         @extend .postion_relative;
 
                         &:last-child {
@@ -140,6 +140,11 @@
                             @extend .text_reg;
                             @extend .primary_color;
                             text-decoration: none;
+                            line-height: 30px;
+                            @media (max-width: 767px) {
+                                font-size: 17px;
+                                line-height: 29px;
+                            }
 
                             img {
                                 left: 0;

@@ -102,14 +102,14 @@
     .beauty {
         .img_box {
             width: 48%;
-            @media (max-width: 767px) {
+            @media (max-width: 992px) {
                 width: 100%;
             }
         }
 
         .info_box {
             width: 48%;
-            @media (max-width: 767px) {
+            @media (max-width: 992px) {
                 width: 100%;
                 padding-top: 30px;
             }
@@ -118,14 +118,22 @@
 }
 
 .section_3 {
+    h3{
+        @media (max-width: 767px) {
+            padding-bottom: 0;
+        }
+    }
     .journey {
+        @media (min-width: 768px) and (max-width: 992px) {
+            width: 100%;
+        }
         .journey_section {
             &:nth-child(2n+0) {
                 .journey_text {
                     order: -1;
                     padding-left: 0;
                     padding-right: 50px;
-                    @media (max-width: 767px) {
+                    @media (max-width: 992px) {
                         padding-right: 0;
                     }
                 }
@@ -135,14 +143,14 @@
         .journey_section {
             &:nth-child(1) {
                 padding-right: 100px;
-                @media (max-width: 767px) {
+                @media (max-width: 992px) {
                     padding-right: 0;
                 }
             }
 
             &:nth-child(2) {
                 padding-left: 100px;
-                @media (max-width: 767px) {
+                @media (max-width: 992px) {
                     padding-left: 0;
                 }
                 .journey_text{
@@ -154,7 +162,7 @@
 
             &:nth-child(3) {
                 padding-right: 100px;
-                @media (max-width: 767px) {
+                @media (max-width: 992px) {
                     padding-right: 0;
                 }
             }
@@ -163,7 +171,7 @@
         .journey_section {
             position: relative;
             @media (max-width: 767px) {
-                padding: 30px 0;
+                padding: 15px 0;
             }
 
             .line_1 {
@@ -216,6 +224,17 @@
         left: -85px;
         width: 480px;
         @extend .postion_absolute;
+        @media (max-width: 767px) {
+            top: inherit;
+            bottom: 290px;
+            z-index: 1;
+            left: inherit;
+            width: 140px;
+            right: 10px;
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+            width: 250px;
+        }
     }
 
     .ingredients_layer_2 {
@@ -223,6 +242,17 @@
         left: -100px;
         width: 370px;
         @extend .postion_absolute;
+        @media (max-width: 767px) {
+            top: inherit;
+            bottom: 0;
+            z-index: 1;
+            width: 140px;
+            left: -30px;
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+            width: 240px;
+            left: -70px;
+        }
     }
 
     .ingredients_layer_4 {
@@ -230,6 +260,17 @@
         right: -145px;
         //        width: 370px;
         @extend .postion_absolute;
+        @media (max-width: 767px) {
+            top: inherit;
+            bottom: 0;
+            z-index: 1;
+            width: 140px;
+            right: -30px;
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+            width: 250px;
+            right: -110px;
+        }
     }
 
     .ingredients_layer_5 {
@@ -237,14 +278,37 @@
         right: 100px;
         //        width: 480px;
         @extend .postion_absolute;
+        @media (max-width: 767px) {
+            top: 0;
+            z-index: 1;
+            width: 120px;
+            right: -30px;
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+            width: 280px;
+            right: -100px;
+        }
     }
 
     .ingredients {
         width: 45%;
         @extend .margin_a;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+            width: 55%;
+        }
 
         .ingredients_layer_3 {
             margin-left: -180px;
+            @media (max-width: 767px) {
+                // display: none;
+                margin-left: 0;
+            }
+            @media (min-width: 768px) and (max-width: 992px) {
+                margin-left: -70px;
+            }
         }
     }
 }
@@ -258,6 +322,12 @@
             margin-left: -320px;
             margin-bottom: -25px;
             text-transform: capitalize;
+            @media (max-width: 767px) {
+                font-size: 45px;
+                margin-left: -220px;
+                margin-bottom: -10px;
+                padding-top: 30px;
+            }
         }
     }
 
@@ -266,7 +336,7 @@
             width: 40%;
             //            padding-right: 20px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 992px) {
                 width: 100%;
                 padding-right: 0;
             }
@@ -276,9 +346,10 @@
             width: 60%;
             padding-left: 30px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 992px) {
                 width: 100%;
                 padding-left: 0;
+                padding-top: 25px;
             }
         }
     }
