@@ -995,11 +995,23 @@ h6 {
           width: 100%;
           padding-left: 0; } }
 
+@media (max-width: 767px) {
+  .section_4 {
+    padding-top: 0; } }
 .section_4 .horizontal {
   overflow-x: hidden; }
   .section_4 .horizontal .pin-spacer {
     height: 2400px !important;
     margin-top: 30px !important; }
+    @media (max-width: 767px) {
+      .section_4 .horizontal .pin-spacer {
+        height: 2650px !important; } }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .section_4 .horizontal .pin-spacer {
+        height: 2800px !important; } }
+    @media (min-width: 993px) and (max-width: 1200px) {
+      .section_4 .horizontal .pin-spacer {
+        height: 3200px !important; } }
     @media (min-width: 1441px) and (max-width: 1680px) {
       .section_4 .horizontal .pin-spacer {
         height: 2600px !important; } }
@@ -1021,6 +1033,14 @@ h6 {
       position: relative;
       height: 600px;
       width: 600px; }
+      @media (max-width: 767px) {
+        .section_4 .horizontal .animation-wrap .item {
+          width: 100vw;
+          height: 550px; } }
+      @media (min-width: 768px) and (max-width: 992px) {
+        .section_4 .horizontal .animation-wrap .item {
+          height: 500px;
+          width: 500px; } }
       .section_4 .horizontal .animation-wrap .item img {
         height: 100%;
         object-fit: cover; }

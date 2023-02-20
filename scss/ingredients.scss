@@ -299,12 +299,13 @@
 .modal {
   display: none;
   position: fixed;
-  top: 150px;
+  top: 50%;
   z-index: 1;
   left: 0;
   right: 0;
   width: 590px;
   margin: 0 auto;
+  transform:translateY(-50%);
   padding: 30px 40px 60px;
   background-color: #fff;
   border-radius: 8px;
@@ -312,7 +313,6 @@
   @media (max-width: 767px) {
    width: 95%;
    padding: 20px 20px;
-   top: 80px;
   } 
 .modal-close-btn {
   position: absolute;

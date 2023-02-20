@@ -278,9 +278,9 @@
                     bottom: -28%;
                 }
             }
+
             .line_w_a_1{
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-                
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);    
             }
 
             .journey_img {
@@ -306,11 +306,23 @@
 
 
 .section_4{
+    @media (max-width: 767px) {
+        padding-top: 0;
+    }
     .horizontal {
         overflow-x: hidden;
         .pin-spacer{
             height: 2400px !important;
             margin-top:30px !important;
+            @media (max-width: 767px) {
+                height: 2650px !important;
+            }
+            @media (min-width: 768px) and (max-width: 992px) {
+                height: 2800px !important;
+            }
+            @media (min-width: 993px) and (max-width: 1200px) {
+                height: 3200px !important;
+            }
             @media (min-width: 1441px) and (max-width: 1680px) {
                 height: 2600px !important;
             }
@@ -337,8 +349,13 @@
             position: relative;
             height:600px;
             width:600px;
-            &:last-child{
-                // width:400px;
+            @media (max-width: 767px) {
+                width: 100vw;
+                height: 550px;
+            }
+            @media (min-width: 768px) and (max-width: 992px) {
+                height: 500px;
+                width: 500px;
             }
             img{
                 height: 100%;
