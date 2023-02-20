@@ -284,7 +284,7 @@
                 class="img-responsive margin_a icon_img" /></span>India</h5>
         </div>
 
-        <div class="icon_box moretext">
+        <div class="icon_box more_box">
           <div class="icon_box_img">
             <img src="img/ingredients/coffee.jpg" class="img-responsive margin_a icon_img" />
           </div>
@@ -293,7 +293,7 @@
                 class="img-responsive margin_a icon_img" /></span>India</h5>
         </div>
 
-        <div class="icon_box moretext">
+        <div class="icon_box more_box">
           <div class="icon_box_img">
             <img src="img/ingredients/pomegranate.jpg" class="img-responsive margin_a icon_img" />
           </div>
@@ -302,7 +302,7 @@
                 class="img-responsive margin_a icon_img" /></span>India</h5>
         </div>
 
-        <div class="icon_box moretext">
+        <div class="icon_box more_box">
           <div class="icon_box_img">
             <img src="img/ingredients/tomato.jpg" class="img-responsive margin_a icon_img" />
           </div>
@@ -311,7 +311,7 @@
                 class="img-responsive margin_a icon_img" /></span>India</h5>
         </div>
 
-        <div class="icon_box moretext">
+        <div class="icon_box more_box">
           <div class="icon_box_img">
             <img src="img/ingredients/wheatgrass.jpg" class="img-responsive margin_a icon_img" />
           </div>
@@ -320,7 +320,7 @@
                 class="img-responsive margin_a icon_img" /></span>India</h5>
         </div>
 
-        <div class="icon_box moretext">
+        <div class="icon_box more_box">
           <div class="icon_box_img">
             <img src="img/ingredients/carrot.jpg" class="img-responsive margin_a icon_img" />
           </div>
@@ -332,7 +332,7 @@
       </div>
 
       <div class="btn_section text_center pt_20 toTop" data-scroll>
-        <a href="javascript:void(0);" class="secondary_btn text_reg n_b text_uppercase moreless-button">Load More</a>
+        <a href="javascript:void(0);" class="secondary_btn text_reg n_b text_uppercase load_more">Load More</a>
       </div>
 
     </div>
@@ -404,9 +404,9 @@
       $(".js-modal").fadeOut();
     });
 
-    $('.moreless-button').click(function () {
-      $('.moretext').slideToggle();
-      if ($('.moreless-button').text() == "Load More") {
+    $('.load_more').click(function () {
+      $('.more_box').slideToggle();
+      if ($('.load_more').text() == "Load More") {
         $(this).text("Load Less")
       } else {
         $(this).text("Load More")
