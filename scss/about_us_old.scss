@@ -226,14 +226,11 @@
             }
 
             .line_1 {
-                width: 70%;
                 left: 50%;
+                width: 70%;
                 bottom: -65%;
                 position: absolute;
-                transition: all 2s;
                 transform: translateX(-50%);
-                clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-
                 @media (max-width: 767px) {
                     display: none;
                 }
@@ -249,22 +246,12 @@
                 }
             }
 
-            .line_w_a{
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            }
-
-            
-
             .line_2 {
                 left: 51%;
                 width: 70%;
                 bottom: -23%;
                 position: absolute;
                 transform: translateX(-50%);
-                transition: all 2s;
-                        transform-origin: right;
-                        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-                
                 @media (max-width: 767px) {
                     display: none;
                 }
@@ -277,10 +264,6 @@
                 @media (min-width: 993px) and (max-width: 1200px) {
                     bottom: -28%;
                 }
-            }
-            .line_w_a_1{
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-                
             }
 
             .journey_img {
@@ -304,77 +287,195 @@
     }
 }
 
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+body
+{
+    overflow-x: hidden;
+}
 
-.section_4{
-    .horizontal {
-        overflow-x: hidden;
-        .pin-spacer{
-            height: 2400px !important;
-            margin-top:30px !important;
-            @media (min-width: 1441px) and (max-width: 1680px) {
-                height: 2600px !important;
-            }
-            @media (min-width: 1367px) and (max-width: 1440px) {
-                height: 2800px !important;
-            }
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll
+{
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+}
 
-            @media (min-width: 1201px) and (max-width: 1366px) {
-                height: 2900px !important;
-            }
+html,
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+}
+
+h1,
+h2,
+h3
+{
+    color: #238acb;
+}
+
+h3
+{
+    margin: 10px 0;
+}
+
+a
+{
+    color: #238acb;
+}
+
+a img
+{
+    border: none;
+}
+
+pre
+{
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    background: #646464;
+}
+
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+    background: #238acb;
+    z-index: 1000;
+}
+
+.header .logo
+{
+    float: left;
+    padding: 22px;
+    padding-left: 30px;
+}
+
+.header .credits
+{
+    float: right;
+    padding-top: 15px;
+}
+
+.horizon
+{
+    line-height: 0;
+    z-index: 100;
+    width: 3000px;
+}
+
+// .middle
+// {
+//     z-index: 250;
+//     line-height: 0;
+//     width: 4500px;
+// }
+
+.front
+{
+    z-index: 500;
+    top: 0;
+    width: 2900px;
+    height: 500px;
+}
+
+.intro
+{
+    position: absolute;
+    left: 500px;
+    top: 0px;
+    padding-right: 50px;
+    background: url('../images/scroll.png') no-repeat right 5px;
+}
+
+.page
+{
+    width: 580px;
+    height: 500px;
+    position: absolute;
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .center_a_text{
+        top:50%;
+        width: 487px;
+        position: absolute;
+        transform: translateY(-50%);
+        h6{
+            color: #CCA27B;
         }
-        .animation-wrap {
-            display: flex;
-            position: relative;
-            z-index: 1;  
-            height: 600px;
-
-            &.to-right {
-              counter-reset: item;
-              float: left;
-          }
-
-          .item {
-            position: relative;
-            height:600px;
-            width:600px;
-            &:last-child{
-                // width:400px;
-            }
-            img{
-                height: 100%;
-                object-fit: cover;
-            }
-            &.bg{
-                background-color: #F9F5F1;
-            }
-            .center_a_text{
-                top:50%;
-                padding: 50px;
-                position: absolute;
-                transform: translateY(-50%);
-               
-                h6{
-                    color: #CCA27B;
-                }
-                p{
-                    font-weight: 400;
-                    color: #3E2313;
-                }
-            }
-            }
+        p{
+            font-weight: 400;
+            color: #3E2313;
         }
     }
 }
 
+.slide_1
+{
+    left: 0;
+    
+}
 
+.slide_2
+{
+    left: 580px;
+    padding: 50px;
+    background-color: #F9F5F1;
+ 
+}
 
+.slide_3
+{
+    left: 1160px;
+}
 
+.slide_4
+{
+    left: 1740px;
+    padding: 50px;
+    background-color: #F9F5F1;
+}
 
+.slide_5
+{
+    left: 2320px;
+}
 
+.slide_6
+{
+    left: 2900px;
+    padding: 50px;
+    background-color: #F9F5F1;
+}
+
+.license
+{
+    padding: 100px 30px 30px 30px;
+}
+
+.section_4{
+    .horizontal_scroll{
+        height: 500px;
+        position: relative;
+    }
+}
 
 .section_5 {
-    z-index:999;
-    background-color: #fff;
     @extend .postion_relative;
 
     .ingredients_layer_1 {

@@ -935,11 +935,13 @@ h6 {
         padding-top: 0;
         padding-bottom: 0; } }
     .section_3 .journey .journey_section .line_1 {
-      left: 50%;
       width: 70%;
+      left: 50%;
       bottom: -65%;
       position: absolute;
-      transform: translateX(-50%); }
+      transition: all 2s;
+      transform: translateX(-50%);
+      clip-path: polygon(0 0, 0 0, 0 100%, 0 100%); }
       @media (max-width: 767px) {
         .section_3 .journey .journey_section .line_1 {
           display: none; } }
@@ -953,12 +955,17 @@ h6 {
       @media (min-width: 993px) and (max-width: 1200px) {
         .section_3 .journey .journey_section .line_1 {
           bottom: -33%; } }
+    .section_3 .journey .journey_section .line_w_a {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
     .section_3 .journey .journey_section .line_2 {
       left: 51%;
       width: 70%;
       bottom: -23%;
       position: absolute;
-      transform: translateX(-50%); }
+      transform: translateX(-50%);
+      transition: all 2s;
+      transform-origin: right;
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
       @media (max-width: 767px) {
         .section_3 .journey .journey_section .line_2 {
           display: none; } }
@@ -971,6 +978,8 @@ h6 {
       @media (min-width: 993px) and (max-width: 1200px) {
         .section_3 .journey .journey_section .line_2 {
           bottom: -28%; } }
+    .section_3 .journey .journey_section .line_w_a_1 {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
     .section_3 .journey .journey_section .journey_img {
       width: 35%;
       z-index: 1;
@@ -986,86 +995,131 @@ h6 {
           width: 100%;
           padding-left: 0; } }
 
-.section_5 .ingredients_layer_1 {
-  top: 0;
-  left: -85px;
-  width: 480px; }
-  @media (max-width: 767px) {
-    .section_5 .ingredients_layer_1 {
-      top: inherit;
-      bottom: 290px;
-      z-index: 1;
-      left: inherit;
-      width: 140px;
-      right: 10px; } }
-  @media (min-width: 768px) and (max-width: 992px) {
-    .section_5 .ingredients_layer_1 {
-      width: 250px; } }
-  @media (min-width: 993px) and (max-width: 1200px) {
-    .section_5 .ingredients_layer_1 {
-      width: 370px; } }
-.section_5 .ingredients_layer_2 {
-  top: 340px;
-  left: -100px;
-  width: 370px; }
-  @media (max-width: 767px) {
-    .section_5 .ingredients_layer_2 {
-      top: inherit;
-      bottom: 0;
-      z-index: 1;
-      width: 140px;
-      left: -30px; } }
-  @media (min-width: 768px) and (max-width: 992px) {
-    .section_5 .ingredients_layer_2 {
-      width: 240px;
-      left: -70px; } }
-.section_5 .ingredients_layer_4 {
-  top: 330px;
-  right: -145px; }
-  @media (max-width: 767px) {
-    .section_5 .ingredients_layer_4 {
-      top: inherit;
-      bottom: 0;
-      z-index: 1;
-      width: 140px;
-      right: -30px; } }
-  @media (min-width: 768px) and (max-width: 992px) {
-    .section_5 .ingredients_layer_4 {
-      width: 250px;
-      right: -110px; } }
-.section_5 .ingredients_layer_5 {
-  top: 0;
-  right: 100px; }
-  @media (max-width: 767px) {
-    .section_5 .ingredients_layer_5 {
-      top: 0;
-      z-index: 1;
-      width: 120px;
-      right: -30px; } }
-  @media (min-width: 768px) and (max-width: 992px) {
-    .section_5 .ingredients_layer_5 {
-      width: 280px;
-      right: -100px; } }
-  @media (min-width: 993px) and (max-width: 1200px) {
-    .section_5 .ingredients_layer_5 {
-      width: 300px;
-      right: -20px; } }
-.section_5 .ingredients {
-  width: 45%; }
-  @media (max-width: 767px) {
-    .section_5 .ingredients {
-      width: 100%; } }
-  @media (min-width: 768px) and (max-width: 992px) {
-    .section_5 .ingredients {
-      width: 55%; } }
-  .section_5 .ingredients .ingredients_layer_3 {
-    margin-left: -180px; }
+.section_4 .horizontal {
+  overflow-x: hidden; }
+  .section_4 .horizontal .pin-spacer {
+    height: 2400px !important;
+    margin-top: 30px !important; }
+    @media (min-width: 1441px) and (max-width: 1680px) {
+      .section_4 .horizontal .pin-spacer {
+        height: 2600px !important; } }
+    @media (min-width: 1367px) and (max-width: 1440px) {
+      .section_4 .horizontal .pin-spacer {
+        height: 2800px !important; } }
+    @media (min-width: 1201px) and (max-width: 1366px) {
+      .section_4 .horizontal .pin-spacer {
+        height: 2900px !important; } }
+  .section_4 .horizontal .animation-wrap {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    height: 600px; }
+    .section_4 .horizontal .animation-wrap.to-right {
+      counter-reset: item;
+      float: left; }
+    .section_4 .horizontal .animation-wrap .item {
+      position: relative;
+      height: 600px;
+      width: 600px; }
+      .section_4 .horizontal .animation-wrap .item img {
+        height: 100%;
+        object-fit: cover; }
+      .section_4 .horizontal .animation-wrap .item.bg {
+        background-color: #F9F5F1; }
+      .section_4 .horizontal .animation-wrap .item .center_a_text {
+        top: 50%;
+        padding: 50px;
+        position: absolute;
+        transform: translateY(-50%); }
+        .section_4 .horizontal .animation-wrap .item .center_a_text h6 {
+          color: #CCA27B; }
+        .section_4 .horizontal .animation-wrap .item .center_a_text p {
+          font-weight: 400;
+          color: #3E2313; }
+
+.section_5 {
+  z-index: 999;
+  background-color: #fff; }
+  .section_5 .ingredients_layer_1 {
+    top: 0;
+    left: -85px;
+    width: 480px; }
     @media (max-width: 767px) {
-      .section_5 .ingredients .ingredients_layer_3 {
-        margin-left: 0; } }
+      .section_5 .ingredients_layer_1 {
+        top: inherit;
+        bottom: 290px;
+        z-index: 1;
+        left: inherit;
+        width: 140px;
+        right: 10px; } }
     @media (min-width: 768px) and (max-width: 992px) {
-      .section_5 .ingredients .ingredients_layer_3 {
-        margin-left: -70px; } }
+      .section_5 .ingredients_layer_1 {
+        width: 250px; } }
+    @media (min-width: 993px) and (max-width: 1200px) {
+      .section_5 .ingredients_layer_1 {
+        width: 370px; } }
+  .section_5 .ingredients_layer_2 {
+    top: 340px;
+    left: -100px;
+    width: 370px; }
+    @media (max-width: 767px) {
+      .section_5 .ingredients_layer_2 {
+        top: inherit;
+        bottom: 0;
+        z-index: 1;
+        width: 140px;
+        left: -30px; } }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .section_5 .ingredients_layer_2 {
+        width: 240px;
+        left: -70px; } }
+  .section_5 .ingredients_layer_4 {
+    top: 330px;
+    right: -145px; }
+    @media (max-width: 767px) {
+      .section_5 .ingredients_layer_4 {
+        top: inherit;
+        bottom: 0;
+        z-index: 1;
+        width: 140px;
+        right: -30px; } }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .section_5 .ingredients_layer_4 {
+        width: 250px;
+        right: -110px; } }
+  .section_5 .ingredients_layer_5 {
+    top: 0;
+    right: 100px; }
+    @media (max-width: 767px) {
+      .section_5 .ingredients_layer_5 {
+        top: 0;
+        z-index: 1;
+        width: 120px;
+        right: -30px; } }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .section_5 .ingredients_layer_5 {
+        width: 280px;
+        right: -100px; } }
+    @media (min-width: 993px) and (max-width: 1200px) {
+      .section_5 .ingredients_layer_5 {
+        width: 300px;
+        right: -20px; } }
+  .section_5 .ingredients {
+    width: 45%; }
+    @media (max-width: 767px) {
+      .section_5 .ingredients {
+        width: 100%; } }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .section_5 .ingredients {
+        width: 55%; } }
+    .section_5 .ingredients .ingredients_layer_3 {
+      margin-left: -180px; }
+      @media (max-width: 767px) {
+        .section_5 .ingredients .ingredients_layer_3 {
+          margin-left: 0; } }
+      @media (min-width: 768px) and (max-width: 992px) {
+        .section_5 .ingredients .ingredients_layer_3 {
+          margin-left: -70px; } }
 
 .section_6 h3 span {
   display: block;
