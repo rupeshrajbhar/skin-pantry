@@ -923,6 +923,15 @@ h6 {
   @media (max-width: 991px) {
     .section_4 .icon_section {
       --auto-grid-min-size: 8rem; } }
+  @media (max-width: 767px) {
+    .section_4 .icon_section {
+      --auto-grid-min-size: 7rem; } }
+  @media (max-width: 500px) {
+    .section_4 .icon_section {
+      --auto-grid-min-size: 6rem; } }
+  @media (max-width: 360px) {
+    .section_4 .icon_section {
+      --auto-grid-min-size: 5rem; } }
   .section_4 .icon_section .icon_box {
     position: relative;
     cursor: pointer;
@@ -932,7 +941,8 @@ h6 {
         padding-bottom: 20px; } }
     @media (max-width: 767px) {
       .section_4 .icon_section .icon_box .text_md {
-        font-size: 14px; } }
+        font-size: 16px;
+        line-height: 1.4; } }
     @media (min-width: 768px) and (max-width: 992px) {
       .section_4 .icon_section .icon_box .text_md {
         font-size: 16px; } }
@@ -940,6 +950,9 @@ h6 {
       align-items: center;
       justify-content: center;
       padding-top: 0px; }
+      @media (max-width: 767px) {
+        .section_4 .icon_section .icon_box h5 {
+          font-size: 14px; } }
       .section_4 .icon_section .icon_box h5 span {
         margin-right: 5px; }
     @media (max-width: 767px) {
@@ -948,7 +961,7 @@ h6 {
     @media (max-width: 767px) {
       .section_4 .icon_section .icon_box .icon_box_img img {
         border-radius: 100%;
-        border: 2px solid #CCA27B; } }
+        border: 2px solid #cca27b; } }
   .section_4 .icon_section .more_box {
     display: none; }
 
@@ -1000,7 +1013,7 @@ h6 {
     margin-top: -45px; }
     @media (max-width: 767px) {
       .modal .modal_header {
-        margin-top: 0px; } }
+        margin-top: -30px; } }
     .modal .modal_header .header_left {
       width: 25%; }
       @media (max-width: 767px) {
@@ -1010,7 +1023,7 @@ h6 {
         width: 110px;
         height: 110px;
         border-radius: 100%;
-        border: 2px solid #CCA27B; }
+        border: 2px solid #cca27b; }
         @media (max-width: 767px) {
           .modal .modal_header .header_left img {
             width: 80px;
@@ -1021,10 +1034,16 @@ h6 {
         .modal .modal_header .header_right {
           width: 70%; } }
       .modal .modal_header .header_right h6 {
-        color: #3E2313; }
+        color: #3e2313; }
+        @media (max-width: 767px) {
+          .modal .modal_header .header_right h6 {
+            font-size: 18px; } }
       .modal .modal_header .header_right h5 {
         padding: 0px;
         font-weight: normal; }
+        @media (max-width: 767px) {
+          .modal .modal_header .header_right h5 {
+            font-size: 14px; } }
   .modal .icon_popup_contant ul {
     margin-top: 0px;
     padding-left: 20px; }
@@ -1039,13 +1058,17 @@ h6 {
       .modal .icon_popup_contant .popup_product_slider .popup_product_box .popup_product_content {
         text-align: center; }
         .modal .icon_popup_contant .popup_product_slider .popup_product_box .popup_product_content .popup_bg_box {
-          background-color: #F9F5F1;
+          background-color: #f9f5f1;
           border-radius: 10px;
           padding: 30px 30px;
           height: 154px;
           display: flex;
           align-items: center;
           justify-content: center; }
+          @media (max-width: 767px) {
+            .modal .icon_popup_contant .popup_product_slider .popup_product_box .popup_product_content .popup_bg_box {
+              padding: 20px 20px;
+              height: 148px; } }
         .modal .icon_popup_contant .popup_product_slider .popup_product_box .popup_product_content h6 {
           font-size: 12px;
           text-transform: uppercase; }
