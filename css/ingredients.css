@@ -182,7 +182,7 @@ h6 {
 .color_white, .section_1 .banner_paginaction .text_xs, .section_1 .banner_paginaction .text_xs a {
   color: var(--color_white); }
 
-.primary_color {
+.primary_color, .modal .icon_popup_contant .popup_product_slider .popup_product_box a {
   color: var(--primary_color); }
 
 .primary_btn {
@@ -941,7 +941,7 @@ h6 {
         padding-bottom: 20px; } }
     @media (max-width: 767px) {
       .section_4 .icon_section .icon_box .text_md {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.4; } }
     @media (min-width: 768px) and (max-width: 992px) {
       .section_4 .icon_section .icon_box .text_md {
@@ -949,10 +949,11 @@ h6 {
     .section_4 .icon_section .icon_box h5 {
       align-items: center;
       justify-content: center;
-      padding-top: 0px; }
+      padding-top: 0px;
+      font-weight: 400; }
       @media (max-width: 767px) {
         .section_4 .icon_section .icon_box h5 {
-          font-size: 14px; } }
+          font-size: 13px; } }
       .section_4 .icon_section .icon_box h5 span {
         margin-right: 5px; }
     @media (max-width: 767px) {
@@ -964,6 +965,9 @@ h6 {
         border: 2px solid #cca27b; } }
   .section_4 .icon_section .more_box {
     display: none; }
+  @media (max-width: 767px) {
+    .section_4 .icon_section .more_box_m {
+      display: none; } }
 
 .overlay {
   display: none;
@@ -1046,7 +1050,8 @@ h6 {
             font-size: 14px; } }
   .modal .icon_popup_contant ul {
     margin-top: 0px;
-    padding-left: 20px; }
+    padding-top: 5px;
+    padding-left: 18px; }
     .modal .icon_popup_contant ul li {
       padding-bottom: 10px; }
   .modal .icon_popup_contant .popup_slider h6 {
@@ -1055,6 +1060,8 @@ h6 {
     margin: 0px -10px; }
     .modal .icon_popup_contant .popup_product_slider .popup_product_box {
       padding: 0px 10px; }
+      .modal .icon_popup_contant .popup_product_slider .popup_product_box a {
+        text-decoration: none; }
       .modal .icon_popup_contant .popup_product_slider .popup_product_box .popup_product_content {
         text-align: center; }
         .modal .icon_popup_contant .popup_product_slider .popup_product_box .popup_product_content .popup_bg_box {

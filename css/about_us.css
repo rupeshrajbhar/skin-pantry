@@ -890,6 +890,9 @@ h6 {
         padding-top: 40px; } }
     .section_3 .journey .journey_section:nth-child(1) .journey_img img {
       margin-left: auto; }
+      @media (max-width: 767px) {
+        .section_3 .journey .journey_section:nth-child(1) .journey_img img {
+          margin-left: auto !important; } }
       @media (min-width: 1681px) {
         .section_3 .journey .journey_section:nth-child(1) .journey_img img {
           margin: auto; } }
@@ -1000,6 +1003,9 @@ h6 {
     padding-top: 0; } }
 .section_4 .horizontal {
   overflow-x: hidden; }
+  @media (min-width: 1201px) and (max-width: 1440px) {
+    .section_4 .horizontal h3 {
+      padding-bottom: 5px; } }
   .section_4 .horizontal .pin-spacer {
     height: 2400px !important;
     margin-top: 30px !important; }
@@ -1014,10 +1020,10 @@ h6 {
         height: 3200px !important; } }
     @media (min-width: 1441px) and (max-width: 1680px) {
       .section_4 .horizontal .pin-spacer {
-        height: 2600px !important; } }
+        height: 2650px !important; } }
     @media (min-width: 1367px) and (max-width: 1440px) {
       .section_4 .horizontal .pin-spacer {
-        height: 2800px !important; } }
+        height: 2850px !important; } }
     @media (min-width: 1201px) and (max-width: 1366px) {
       .section_4 .horizontal .pin-spacer {
         height: 2900px !important; } }
@@ -1036,7 +1042,7 @@ h6 {
       @media (max-width: 767px) {
         .section_4 .horizontal .animation-wrap .item {
           width: 100vw;
-          height: 550px; } }
+          height: 600px; } }
       @media (min-width: 768px) and (max-width: 992px) {
         .section_4 .horizontal .animation-wrap .item {
           height: 500px;
@@ -1125,7 +1131,7 @@ h6 {
         width: 300px;
         right: -20px; } }
   .section_5 .ingredients {
-    width: 45%; }
+    width: 50%; }
     @media (max-width: 767px) {
       .section_5 .ingredients {
         width: 100%; } }
@@ -1162,7 +1168,7 @@ h6 {
       padding-right: 0; } }
 .section_6 .colette .colette_info {
   width: 60%;
-  padding-left: 30px; }
+  padding-left: 50px; }
   @media (max-width: 992px) {
     .section_6 .colette .colette_info {
       width: 100%;
