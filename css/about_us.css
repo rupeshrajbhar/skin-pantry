@@ -698,7 +698,7 @@ h6 {
 .postion_relative, .section_5, .section_12, .section_12 .some h4 {
   position: relative; }
 
-.postion_absolute, .section_5 .ingredients_layer_1, .section_5 .ingredients_layer_2, .section_5 .ingredients_layer_4, .section_5 .ingredients_layer_5, .section_12 .some, .section_12 .some h4 .g, .section_12 .sub {
+.postion_absolute, .section_5 .ingredients_layer_1, .section_5 .ingredients_layer_1_m, .section_5 .ingredients_layer_2_m, .section_5 .ingredients_layer_5_m, .section_5 .ingredients_layer_2, .section_5 .ingredients_layer_4, .section_5 .ingredients_layer_4_m, .section_5 .ingredients_layer_5, .section_12 .some, .section_12 .some h4 .g, .section_12 .sub {
   position: absolute; }
 
 .postion_t_b {
@@ -1000,7 +1000,8 @@ h6 {
 
 @media (max-width: 767px) {
   .section_4 {
-    padding-top: 0; } }
+    padding-top: 0;
+    padding-bottom: 0; } }
 .section_4 .horizontal {
   overflow-x: hidden; }
   @media (min-width: 1201px) and (max-width: 1440px) {
@@ -1066,6 +1067,10 @@ h6 {
 .section_5 {
   z-index: 999;
   background-color: #fff; }
+  @media (max-width: 767px) {
+    .section_5 {
+      padding-top: 400px;
+      padding-bottom: 0; } }
   .section_5 .ingredients_layer_1 {
     top: 0;
     left: -85px;
@@ -1084,16 +1089,25 @@ h6 {
     @media (min-width: 993px) and (max-width: 1200px) {
       .section_5 .ingredients_layer_1 {
         width: 370px; } }
+  .section_5 .ingredients_layer_1_m {
+    top: 20px;
+    left: -40px; }
+  .section_5 .ingredients_layer_2_m {
+    top: 220px;
+    left: -60px; }
+  .section_5 .ingredients_layer_5_m {
+    top: 195px;
+    right: -70px;
+    width: 250px; }
   .section_5 .ingredients_layer_2 {
     top: 340px;
     left: -100px;
     width: 370px; }
     @media (max-width: 767px) {
       .section_5 .ingredients_layer_2 {
-        top: inherit;
-        bottom: 0;
+        top: 0;
         z-index: 1;
-        width: 140px;
+        width: 300px;
         left: -30px; } }
     @media (min-width: 768px) and (max-width: 992px) {
       .section_5 .ingredients_layer_2 {
@@ -1113,6 +1127,9 @@ h6 {
       .section_5 .ingredients_layer_4 {
         width: 250px;
         right: -110px; } }
+  .section_5 .ingredients_layer_4_m {
+    right: -110px;
+    bottom: 85px; }
   .section_5 .ingredients_layer_5 {
     top: 0;
     right: 100px; }
@@ -1146,7 +1163,13 @@ h6 {
       @media (min-width: 768px) and (max-width: 992px) {
         .section_5 .ingredients .ingredients_layer_3 {
           margin-left: -70px; } }
+    .section_5 .ingredients .ingredients_layer_3_m {
+      padding-top: 80px;
+      margin-left: -125px; }
 
+@media (max-width: 767px) {
+  .section_6 {
+    padding-top: 0; } }
 .section_6 h3 span {
   display: block;
   font-family: "gistesy";
