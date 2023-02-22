@@ -458,23 +458,55 @@
         top: 0;
         left: -85px;
         width: 480px;
+        cursor: pointer;
         @extend .postion_absolute;
 
-        @media (max-width: 767px) {
-            top: inherit;
-            bottom: 290px;
-            z-index: 1;
-            left: inherit;
-            width: 140px;
-            right: 10px;
-        }
+        .layer_animaction{
+            top: 58%;
+            left: 46%;
+            z-index: 2;
+            @extend .postion_absolute;
+            overflow: hidden;
+            
+            .layer_animaction_1{
+                z-index: 1;
+                padding: 8px 15px;
+                border-radius: 25px;
+                background: #ded6d3;
+                position: relative;
+                border: 1px solid #fff;
+            }
+            .layer_animaction_2{
+                margin-left: -20px;
+                transition: all .3s ease;
+                padding: 8px 15px 8px 20px;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                width: 0;
+                opacity: 0;
+                height: 38px;
+                transform-origin: right;
+                border: 1px solid #fff;
+                background: rgb(222,214,211);
+                background: linear-gradient(90deg, rgba(222,214,211,1) 25%, rgba(255,255,255,1) 61%);
+                h6{
+                    font-weight: 400;
+                    height: 20px;
+                    overflow: hidden;
+                }
+            }
 
-        @media (min-width: 768px) and (max-width: 992px) {
-            width: 250px;
-        }
-
-        @media (min-width: 993px) and (max-width: 1200px) {
-            width: 370px;
+            &:hover{
+                .layer_animaction_2{
+                    width: 225px;
+                    opacity: 1;
+                }
+                .layer_animaction_1{
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    border-right:1px solid #ded6d3;
+                }
+            }
         }
     }
 

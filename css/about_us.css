@@ -698,7 +698,7 @@ h6 {
 .postion_relative, .section_5, .section_12, .section_12 .some h4 {
   position: relative; }
 
-.postion_absolute, .section_5 .ingredients_layer_1, .section_5 .ingredients_layer_1_m, .section_5 .ingredients_layer_2_m, .section_5 .ingredients_layer_5_m, .section_5 .ingredients_layer_2, .section_5 .ingredients_layer_4, .section_5 .ingredients_layer_4_m, .section_5 .ingredients_layer_5, .section_12 .some, .section_12 .some h4 .g, .section_12 .sub {
+.postion_absolute, .section_5 .ingredients_layer_1, .section_5 .ingredients_layer_1 .layer_animaction, .section_5 .ingredients_layer_1_m, .section_5 .ingredients_layer_2_m, .section_5 .ingredients_layer_5_m, .section_5 .ingredients_layer_2, .section_5 .ingredients_layer_4, .section_5 .ingredients_layer_4_m, .section_5 .ingredients_layer_5, .section_12 .some, .section_12 .some h4 .g, .section_12 .sub {
   position: absolute; }
 
 .postion_t_b {
@@ -1074,21 +1074,44 @@ h6 {
   .section_5 .ingredients_layer_1 {
     top: 0;
     left: -85px;
-    width: 480px; }
-    @media (max-width: 767px) {
-      .section_5 .ingredients_layer_1 {
-        top: inherit;
-        bottom: 290px;
+    width: 480px;
+    cursor: pointer; }
+    .section_5 .ingredients_layer_1 .layer_animaction {
+      top: 58%;
+      left: 46%;
+      z-index: 2;
+      overflow: hidden; }
+      .section_5 .ingredients_layer_1 .layer_animaction .layer_animaction_1 {
         z-index: 1;
-        left: inherit;
-        width: 140px;
-        right: 10px; } }
-    @media (min-width: 768px) and (max-width: 992px) {
-      .section_5 .ingredients_layer_1 {
-        width: 250px; } }
-    @media (min-width: 993px) and (max-width: 1200px) {
-      .section_5 .ingredients_layer_1 {
-        width: 370px; } }
+        padding: 8px 15px;
+        border-radius: 25px;
+        background: #ded6d3;
+        position: relative;
+        border: 1px solid #fff; }
+      .section_5 .ingredients_layer_1 .layer_animaction .layer_animaction_2 {
+        margin-left: -20px;
+        transition: all .3s ease;
+        padding: 8px 15px 8px 20px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        width: 0;
+        opacity: 0;
+        height: 38px;
+        transform-origin: right;
+        border: 1px solid #fff;
+        background: #ded6d3;
+        background: linear-gradient(90deg, #ded6d3 25%, white 61%); }
+        .section_5 .ingredients_layer_1 .layer_animaction .layer_animaction_2 h6 {
+          font-weight: 400;
+          height: 20px;
+          overflow: hidden; }
+      .section_5 .ingredients_layer_1 .layer_animaction:hover .layer_animaction_2 {
+        width: 225px;
+        opacity: 1; }
+      .section_5 .ingredients_layer_1 .layer_animaction:hover .layer_animaction_1 {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 1px solid #ded6d3; }
   .section_5 .ingredients_layer_1_m {
     top: 20px;
     left: -40px; }
