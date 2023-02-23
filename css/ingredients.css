@@ -249,7 +249,7 @@ h6 {
   border: 2px solid #F9F5F1; }
   @media (max-width: 767px) {
     .tertiary_btn {
-      padding: 11px 22px; } }
+      padding: 8px 22px; } }
   .tertiary_btn:hover {
     border: 2px solid #672614;
     background-color: #672614; }
@@ -1073,7 +1073,7 @@ h6 {
         .modal .icon_popup_contant .popup_product_slider .popup_product_box .popup_product_content .popup_bg_box {
           background-color: #f9f5f1;
           border-radius: 10px;
-          padding: 30px 30px;
+          padding: 20px;
           height: 154px;
           display: flex;
           align-items: center;

@@ -1007,7 +1007,7 @@ h6 {
     padding-bottom: 0; } }
 .section_4 .horizontal {
   overflow-x: hidden; }
-  @media (min-width: 1201px) and (max-width: 1440px) {
+  @media (min-width: 1201px) and (max-width: 5000px) {
     .section_4 .horizontal h3 {
       padding-bottom: 5px; } }
   .section_4 .horizontal .pin-spacer {
