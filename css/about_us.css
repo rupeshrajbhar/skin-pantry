@@ -1123,8 +1123,8 @@ h6 {
         border-right: 1px solid #ded6d3; }
   .section_5 .ingredients_layer_2 {
     top: 340px;
-    left: -100px;
-    width: 400px; }
+    left: -130px;
+    width: 460px; }
     @media (max-width: 767px) {
       .section_5 .ingredients_layer_2 {
         top: 0;
@@ -1167,7 +1167,7 @@ h6 {
           height: 20px;
           overflow: hidden; }
       .section_5 .ingredients_layer_2 .layer_animaction:hover .layer_animaction_2 {
-        width: 190px;
+        width: 220px;
         opacity: 1; }
       .section_5 .ingredients_layer_2 .layer_animaction:hover .layer_animaction_1 {
         border-top-right-radius: 0;
@@ -1217,10 +1217,10 @@ h6 {
         border-bottom-left-radius: 25px;
         opacity: 0;
         height: 38px;
-        transform: translateX(110%);
         transform-origin: left;
         border: 1px solid #fff;
         background: white;
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
         background: linear-gradient(90deg, white 35%, #ffeaa2 73%); }
         .section_5 .ingredients_layer_4 .layer_animaction .layer_animaction_2 h6 {
           font-weight: 400;
@@ -1228,7 +1228,7 @@ h6 {
           overflow: hidden; }
       .section_5 .ingredients_layer_4 .layer_animaction:hover .layer_animaction_2 {
         opacity: 1;
-        transform: translateX(0); }
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
       .section_5 .ingredients_layer_4 .layer_animaction:hover .layer_animaction_1 {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
@@ -1277,10 +1277,10 @@ h6 {
         border-bottom-left-radius: 25px;
         opacity: 0;
         height: 38px;
-        transform: translateX(110%);
         transform-origin: left;
         border: 1px solid #fff;
         background: white;
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
         background: linear-gradient(90deg, white 35%, #f9fefb 73%); }
         .section_5 .ingredients_layer_5 .layer_animaction .layer_animaction_2 h6 {
           font-weight: 400;
@@ -1288,7 +1288,7 @@ h6 {
           overflow: hidden; }
       .section_5 .ingredients_layer_5 .layer_animaction:hover .layer_animaction_2 {
         opacity: 1;
-        transform: translateX(0); }
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
       .section_5 .ingredients_layer_5 .layer_animaction:hover .layer_animaction_1 {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
