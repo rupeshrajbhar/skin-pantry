@@ -249,7 +249,7 @@ h6 {
   border: 2px solid #F9F5F1; }
   @media (max-width: 767px) {
     .tertiary_btn {
-      padding: 11px 22px; } }
+      padding: 8px 22px; } }
   .tertiary_btn:hover {
     border: 2px solid #672614;
     background-color: #672614; }
@@ -1015,7 +1015,7 @@ h6 {
     margin-top: 30px !important; }
     @media (max-width: 767px) {
       .section_4 .horizontal .pin-spacer {
-        height: 2650px !important; } }
+        height: 2550px !important; } }
     @media (min-width: 768px) and (max-width: 992px) {
       .section_4 .horizontal .pin-spacer {
         height: 2800px !important; } }
@@ -1295,7 +1295,8 @@ h6 {
         border-left: 1px solid #f9fefb; }
   .section_5 .ingredients_layer_1_m {
     top: 80px;
-    left: -90px; }
+    left: -90px;
+    z-index: 1; }
   .section_5 .ingredients_layer_2_m {
     top: 220px;
     left: 60px; }
@@ -1304,7 +1305,7 @@ h6 {
     right: -110px; }
   .section_5 .ingredients_layer_4_m {
     right: -110px;
-    bottom: 90px; }
+    bottom: 50px; }
   .section_5 .ingredients {
     width: 50%; }
     @media (max-width: 767px) {
