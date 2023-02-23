@@ -1294,17 +1294,17 @@ h6 {
         border-bottom-left-radius: 0;
         border-left: 1px solid #f9fefb; }
   .section_5 .ingredients_layer_1_m {
-    top: 20px;
-    left: -40px; }
+    top: 80px;
+    left: -90px; }
   .section_5 .ingredients_layer_2_m {
     top: 220px;
-    left: -60px; }
+    left: 60px; }
   .section_5 .ingredients_layer_5_m {
-    top: 180px;
+    top: 20px;
     right: -110px; }
   .section_5 .ingredients_layer_4_m {
     right: -110px;
-    bottom: 85px; }
+    bottom: 90px; }
   .section_5 .ingredients {
     width: 50%; }
     @media (max-width: 767px) {

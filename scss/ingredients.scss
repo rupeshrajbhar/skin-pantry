@@ -99,12 +99,9 @@
 }
 
 .section_2 {
-    // margin-left: var(--container_left_space);
-
-    // @media (min-width: 1441px) and (max-width: 5000px) {
-    //     margin-right: var(--container_left_space);
-    // }
-
+    @media (max-width: 767px) {
+        padding-top: 40px;
+    }
     .pantry {
         align-items: center;
         // @media (max-width: 767px) {
