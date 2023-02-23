@@ -99,6 +99,9 @@
 }
 
 .section_2 {
+    @media (max-width: 767px) {
+        padding-top: 40px;
+    }
     .beauty {
         .img_box {
             width: 48%;
@@ -461,12 +464,21 @@
         cursor: pointer;
         @extend .postion_absolute;
 
+        .layer_1{
+            @media (min-width: 768px) and (max-width: 992px) {
+                width: 250px;
+            }
+        }
+
         .layer_animaction{
             top: 47%;
             left: 40%;
             z-index: 2;
             @extend .postion_absolute;
             overflow: hidden;
+            @media (min-width: 768px) and (max-width: 992px) {
+                left: 25%;
+            }
             
             .layer_animaction_1{
                 z-index: 1;
@@ -521,11 +533,13 @@
             width: 300px;
             left: -30px;
         }
-
-        @media (min-width: 768px) and (max-width: 992px) {
-            width: 240px;
-            left: -70px;
+        
+        .layer_1{
+            @media (min-width: 768px) and (max-width: 992px) {
+                width: 300px;
+            }
         }
+        
 
         .layer_animaction{
             top: 65%;
@@ -533,6 +547,10 @@
             z-index: 2;
             @extend .postion_absolute;
             overflow: hidden;
+
+            @media (min-width: 768px) and (max-width: 992px) {
+                top: 45%;
+            }
             
             .layer_animaction_1{
                 z-index: 1;
@@ -577,8 +595,8 @@
     }
     .ingredients_layer_4 {
         top: 330px;
-        right: -145px;
-        //        width: 370px;
+        right: -180px;
+        width: 570px;
         @extend .postion_absolute;
 
         @media (max-width: 767px) {
@@ -593,14 +611,22 @@
             width: 250px;
             right: -110px;
         }
+        @media (min-width: 993px) and (max-width: 1200px) {
+           right: -280px;
+        }
 
         .layer_animaction{
             top: 20%;
-            right: 45%;
+            right: 38%;
             z-index: 2;
             @extend .postion_absolute;
             overflow: hidden;
             transform: translate(-50%,-50%);
+            @media (min-width: 768px) and (max-width: 992px) {
+                width: 315px;
+                left: -18%;
+                right: inherit;
+            }
             
             .layer_animaction_1{
                 z-index: 1;
@@ -678,6 +704,10 @@
             @extend .postion_absolute;
             overflow: hidden;
             transform: translate(-50%,-50%);
+
+            @media (min-width: 768px) and (max-width: 992px) {
+                width: 260px;
+            }
             
             .layer_animaction_1{
                 z-index: 1;
@@ -736,9 +766,8 @@
         @extend .postion_absolute;
     }
     .ingredients_layer_5_m{
-        top: 195px;
-        right: -70px;
-        width: 250px;
+        top: 180px;
+        right: -110px;
         @extend .postion_absolute;
     }
 
@@ -810,8 +839,8 @@
     
                 &:hover{
                     .layer_animaction_2{
-                        width: 190px;
                         opacity: 1;
+                        width: 250px;
                     }
                     .layer_animaction_1{
                         border-top-right-radius: 0;

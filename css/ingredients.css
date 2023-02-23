@@ -994,7 +994,7 @@ h6 {
   padding: 30px 40px 60px;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); }
+  box-shadow: 0px 20px 40px #3e23134f; }
   @media (max-width: 767px) {
     .modal {
       width: 95%;
@@ -1054,6 +1054,9 @@ h6 {
     padding-left: 18px; }
     .modal .icon_popup_contant ul li {
       padding-bottom: 10px; }
+    .modal .icon_popup_contant ul li::marker {
+      font-size: 1em;
+      margin-left: 10px; }
   .modal .icon_popup_contant .popup_slider h6 {
     margin: 0px; }
   .modal .icon_popup_contant .popup_product_slider {

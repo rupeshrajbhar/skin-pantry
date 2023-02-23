@@ -331,7 +331,8 @@
     padding: 30px 40px 60px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 20px 40px #3e23134f;
+
 
     @media (max-width: 767px) {
         width: 95%;
@@ -416,6 +417,11 @@
 
             li {
                 padding-bottom: 10px;
+            }
+            li::marker {
+                // content: '.';
+                font-size: 1em;
+                margin-left: 10px;
             }
         }
 
