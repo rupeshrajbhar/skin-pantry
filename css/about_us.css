@@ -1032,7 +1032,7 @@ h6 {
         margin-top: 0 !important; } }
     @media (max-width: 767px) {
       .section_4 .horizontal .pin-spacer {
-        height: 2730px !important; } }
+        height: 2600px !important; } }
     @media (min-width: 768px) and (max-width: 992px) {
       .section_4 .horizontal .pin-spacer {
         height: 2860px !important; } }
@@ -1093,9 +1093,16 @@ h6 {
       padding-bottom: 0; } }
   .section_5 .ingredients_layer_1 {
     top: 0;
+    z-index: 2;
     left: -85px;
-    width: 600px;
     cursor: pointer; }
+    @media (max-width: 767px) {
+      .section_5 .ingredients_layer_1 {
+        width: 390px;
+        top: 30px; } }
+    @media (max-width: 767px) {
+      .section_5 .ingredients_layer_1 .layer_1 {
+        width: 320px; } }
     @media (min-width: 768px) and (max-width: 992px) {
       .section_5 .ingredients_layer_1 .layer_1 {
         width: 250px; } }
@@ -1106,6 +1113,10 @@ h6 {
       border-radius: 25px;
       overflow: hidden;
       border: 1px solid #fff; }
+      @media (max-width: 767px) {
+        .section_5 .ingredients_layer_1 .layer_animaction {
+          left: 28%;
+          border: 0; } }
       @media (min-width: 768px) and (max-width: 992px) {
         .section_5 .ingredients_layer_1 .layer_animaction {
           left: 25%; } }
@@ -1127,6 +1138,9 @@ h6 {
         transform-origin: right;
         background: #ded6d3;
         background: linear-gradient(90deg, #ded6d3 25%, white 61%); }
+        @media (max-width: 767px) {
+          .section_5 .ingredients_layer_1 .layer_animaction .layer_animaction_2 {
+            width: auto; } }
         .section_5 .ingredients_layer_1 .layer_animaction .layer_animaction_2 h6 {
           font-weight: 400;
           height: 20px;
@@ -1143,10 +1157,10 @@ h6 {
     width: 460px; }
     @media (max-width: 767px) {
       .section_5 .ingredients_layer_2 {
-        top: 0;
-        z-index: 1;
+        top: 200px;
+        z-index: 2;
         width: 300px;
-        left: -30px; } }
+        left: 190px; } }
     @media (min-width: 768px) and (max-width: 992px) {
       .section_5 .ingredients_layer_2 .layer_1 {
         width: 300px; } }
@@ -1157,6 +1171,11 @@ h6 {
       border-radius: 25px;
       overflow: hidden;
       border: 1px solid #fff; }
+      @media (max-width: 767px) {
+        .section_5 .ingredients_layer_2 .layer_animaction {
+          top: 60%;
+          left: -25%;
+          border: 0; } }
       @media (min-width: 768px) and (max-width: 992px) {
         .section_5 .ingredients_layer_2 .layer_animaction {
           top: 45%; } }
@@ -1177,27 +1196,39 @@ h6 {
         transform-origin: right;
         background: #fbcbae;
         background: linear-gradient(90deg, #fbcbae 24%, white 64%); }
+        @media (max-width: 767px) {
+          .section_5 .ingredients_layer_2 .layer_animaction .layer_animaction_2 {
+            width: auto;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            background: white;
+            background: linear-gradient(90deg, white 35%, #fbcbae 100%); } }
         .section_5 .ingredients_layer_2 .layer_animaction .layer_animaction_2 h6 {
           font-weight: 400;
           height: 20px;
           overflow: hidden; }
-      .section_5 .ingredients_layer_2 .layer_animaction:hover .layer_animaction_2 {
-        width: 220px; }
+      @media (max-width: 767px) {
+        .section_5 .ingredients_layer_2 .layer_animaction:hover .layer_animaction_2 {
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
       .section_5 .ingredients_layer_2 .layer_animaction:hover .layer_animaction_1 {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         border-right: 1px solid #FBCBAE; }
   .section_5 .ingredients_layer_4 {
+    z-index: 1;
     top: 330px;
     right: -180px;
     width: 570px; }
     @media (max-width: 767px) {
       .section_5 .ingredients_layer_4 {
         top: inherit;
-        bottom: 0;
+        bottom: 60px;
         z-index: 1;
-        width: 140px;
-        right: -30px; } }
+        width: 250px;
+        right: -90px; } }
     @media (min-width: 768px) and (max-width: 992px) {
       .section_5 .ingredients_layer_4 {
         width: 250px;
@@ -1206,12 +1237,16 @@ h6 {
       .section_5 .ingredients_layer_4 {
         right: -280px; } }
     .section_5 .ingredients_layer_4 .layer_animaction {
-      top: 20%;
+      top: 35%;
       right: 38%;
       z-index: 2;
-      border-radius: 25px;
       overflow: hidden;
+      border-radius: 25px;
       transform: translate(-50%, -50%); }
+      @media (max-width: 767px) {
+        .section_5 .ingredients_layer_4 .layer_animaction {
+          top: 44%;
+          right: -18%; } }
       @media (min-width: 768px) and (max-width: 992px) {
         .section_5 .ingredients_layer_4 .layer_animaction {
           width: 315px;
@@ -1235,6 +1270,9 @@ h6 {
         background: white;
         clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
         background: linear-gradient(90deg, white 35%, #ffeaa2 73%); }
+        @media (max-width: 767px) {
+          .section_5 .ingredients_layer_4 .layer_animaction .layer_animaction_2 {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
         .section_5 .ingredients_layer_4 .layer_animaction .layer_animaction_2 h6 {
           font-weight: 400;
           height: 20px;
@@ -1243,8 +1281,7 @@ h6 {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
       .section_5 .ingredients_layer_4 .layer_animaction:hover .layer_animaction_1 {
         border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        border-left: 1px solid #FFEAA2; }
+        border-bottom-left-radius: 0; }
   .section_5 .ingredients_layer_5 {
     top: 0;
     right: 100px;
@@ -1254,9 +1291,9 @@ h6 {
     @media (max-width: 767px) {
       .section_5 .ingredients_layer_5 {
         top: 0;
-        z-index: 1;
-        width: 120px;
-        right: -30px; } }
+        z-index: 3;
+        width: 200px;
+        right: -60px; } }
     @media (min-width: 768px) and (max-width: 992px) {
       .section_5 .ingredients_layer_5 {
         width: 280px;
@@ -1272,6 +1309,10 @@ h6 {
       overflow: hidden;
       border-radius: 25px;
       transform: translate(-50%, -50%); }
+      @media (max-width: 767px) {
+        .section_5 .ingredients_layer_5 .layer_animaction {
+          top: 30%;
+          right: -20%; } }
       @media (min-width: 768px) and (max-width: 992px) {
         .section_5 .ingredients_layer_5 .layer_animaction {
           width: 260px; } }
@@ -1290,10 +1331,12 @@ h6 {
         border-bottom-left-radius: 25px;
         height: 38px;
         transform-origin: left;
-        border: 1px solid #fff;
         background: white;
-        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         background: linear-gradient(90deg, white 35%, #f9fefb 73%); }
+        @media (max-width: 767px) {
+          .section_5 .ingredients_layer_5 .layer_animaction .layer_animaction_2 {
+            width: auto; } }
         .section_5 .ingredients_layer_5 .layer_animaction .layer_animaction_2 h6 {
           font-weight: 400;
           height: 20px;
@@ -1302,8 +1345,7 @@ h6 {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
       .section_5 .ingredients_layer_5 .layer_animaction:hover .layer_animaction_1 {
         border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        border-left: 1px solid #f9fefb; }
+        border-bottom-left-radius: 0; }
   .section_5 .ingredients_layer_1_m {
     top: 80px;
     left: -90px;
@@ -1329,10 +1371,14 @@ h6 {
       margin-left: -60px; }
       @media (max-width: 767px) {
         .section_5 .ingredients .ingredients_layer_3 {
-          margin-left: 0; } }
+          margin-left: -100px; } }
       @media (min-width: 768px) and (max-width: 992px) {
         .section_5 .ingredients .ingredients_layer_3 {
           margin-left: -70px; } }
+      @media (max-width: 767px) {
+        .section_5 .ingredients .ingredients_layer_3 .cocoa_butter {
+          width: 300px;
+          padding-top: 50px; } }
       .section_5 .ingredients .ingredients_layer_3 .layer_animaction {
         top: 65%;
         left: 46%;
@@ -1340,6 +1386,11 @@ h6 {
         border-radius: 25px;
         overflow: hidden;
         border: 1px solid #fff; }
+        @media (max-width: 767px) {
+          .section_5 .ingredients .ingredients_layer_3 .layer_animaction {
+            top: 86%;
+            left: 10%;
+            border: 0; } }
         .section_5 .ingredients .ingredients_layer_3 .layer_animaction .layer_animaction_1 {
           z-index: 1;
           height: 38px;
@@ -1357,6 +1408,9 @@ h6 {
           transform-origin: right;
           background: #fffdd9;
           background: linear-gradient(90deg, #fffdd9 24%, white 64%); }
+          @media (max-width: 767px) {
+            .section_5 .ingredients .ingredients_layer_3 .layer_animaction .layer_animaction_2 {
+              width: auto; } }
           .section_5 .ingredients .ingredients_layer_3 .layer_animaction .layer_animaction_2 h6 {
             font-weight: 400;
             height: 20px;
