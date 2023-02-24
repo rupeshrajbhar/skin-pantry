@@ -102,6 +102,7 @@
     @media (max-width: 767px) {
         padding-top: 40px;
     }
+
     .beauty {
         .img_box {
             width: 48%;
@@ -349,33 +350,55 @@
         padding-bottom: 0;
     }
 
+    @media (min-width: 1441px) and (max-width: 5000px) {
+        padding-top: 0;
+    }
+
     .horizontal {
         overflow-x: hidden;
 
         h3 {
-            @media (min-width: 1201px) and (max-width: 5000px) {
+            @media (max-width: 767px) {
+                margin-bottom: 0;
+            }
+
+            @media (min-width: 1201px) and (max-width: 1440px) {
                 padding-bottom: 5px;
+            }
+
+            @media (min-width: 1441px) and (max-width: 5000px) {
+                padding-bottom: 25px;
+                padding-top: 100px
+            }
+
+            @media (min-width: 768px) and (max-width: 1200px) {
+                padding-top: 30px;
             }
         }
 
         .pin-spacer {
-            height: 2400px !important;
+            height: 2470px !important;
             margin-top: 30px !important;
 
+            @media (min-width: 1441px) and (max-width: 5000px) {
+                margin-top: 0;
+                margin-top: 0 !important;
+            }
+
             @media (max-width: 767px) {
-                height: 2550px !important;
+                height: 2730px !important;
             }
 
             @media (min-width: 768px) and (max-width: 992px) {
-                height: 2800px !important;
+                height: 2860px !important;
             }
 
             @media (min-width: 993px) and (max-width: 1200px) {
-                height: 3200px !important;
+                height: 3310px !important;
             }
 
             @media (min-width: 1441px) and (max-width: 1680px) {
-                height: 2650px !important;
+                height: 2730px !important;
             }
 
             @media (min-width: 1367px) and (max-width: 1440px) {
@@ -452,6 +475,7 @@
     z-index: 999;
     background-color: #fff;
     @extend .postion_relative;
+
     @media (max-width: 767px) {
         padding-top: 400px;
         padding-bottom: 0;
@@ -464,63 +488,68 @@
         cursor: pointer;
         @extend .postion_absolute;
 
-        .layer_1{
+        .layer_1 {
             @media (min-width: 768px) and (max-width: 992px) {
                 width: 250px;
             }
         }
 
-        .layer_animaction{
+        .layer_animaction {
             top: 47%;
             left: 40%;
             z-index: 2;
+            border-radius: 25px;
             @extend .postion_absolute;
             overflow: hidden;
+            border: 1px solid #fff;
+
             @media (min-width: 768px) and (max-width: 992px) {
                 left: 25%;
             }
-            
-            .layer_animaction_1{
+
+            .layer_animaction_1 {
                 z-index: 1;
+                height: 38px;
                 padding: 8px 15px;
                 border-radius: 25px;
                 background: #ded6d3;
                 position: relative;
-                border: 1px solid #fff;
             }
-            .layer_animaction_2{
+
+            .layer_animaction_2 {
                 margin-left: -20px;
                 transition: all .3s ease;
-                padding: 8px 15px 8px 20px;
+                padding: 10px 0 8px 20px;
                 border-top-right-radius: 25px;
                 border-bottom-right-radius: 25px;
                 width: 0;
-                opacity: 0;
                 height: 38px;
                 transform-origin: right;
-                border: 1px solid #fff;
-                background: rgb(222,214,211);
-                background: linear-gradient(90deg, rgba(222,214,211,1) 25%, rgba(255,255,255,1) 61%);
-                h6{
+                background: rgb(222, 214, 211);
+                background: linear-gradient(90deg, rgba(222, 214, 211, 1) 25%, rgba(255, 255, 255, 1) 61%);
+
+                h6 {
                     font-weight: 400;
                     height: 20px;
                     overflow: hidden;
                 }
             }
 
-            &:hover{
-                .layer_animaction_2{
+            &:hover {
+                .layer_animaction_2 {
                     width: 225px;
-                    opacity: 1;
+                    //                    opacity: 1;
                 }
-                .layer_animaction_1{
+
+                .layer_animaction_1 {
                     border-top-right-radius: 0;
                     border-bottom-right-radius: 0;
-                    border-right:1px solid #ded6d3;
+                    border-right: 1px solid #ded6d3;
                 }
             }
         }
     }
+
     .ingredients_layer_2 {
         top: 340px;
         left: -130px;
@@ -533,66 +562,69 @@
             width: 300px;
             left: -30px;
         }
-        
-        .layer_1{
+
+        .layer_1 {
             @media (min-width: 768px) and (max-width: 992px) {
                 width: 300px;
             }
         }
-        
 
-        .layer_animaction{
+
+        .layer_animaction {
             top: 65%;
             left: 46%;
             z-index: 2;
+            border-radius: 25px;
             @extend .postion_absolute;
             overflow: hidden;
+            border: 1px solid #fff;
 
             @media (min-width: 768px) and (max-width: 992px) {
                 top: 45%;
             }
-            
-            .layer_animaction_1{
+
+            .layer_animaction_1 {
                 z-index: 1;
                 padding: 8px 15px;
-                border-radius: 25px;
                 background: #FBCBAE;
                 position: relative;
-                border: 1px solid #fff;
+                height: 38px;
             }
-            .layer_animaction_2{
+
+            .layer_animaction_2 {
                 margin-left: -20px;
                 transition: all .3s ease;
-                padding: 8px 15px 8px 20px;
+                padding: 10px 0px 8px 20px;
                 border-top-right-radius: 25px;
                 border-bottom-right-radius: 25px;
                 width: 0;
-                opacity: 0;
                 height: 38px;
                 transform-origin: right;
-                border: 1px solid #fff;
-                background: rgb(251,203,174);
-                background: linear-gradient(90deg, rgba(251,203,174,1) 24%,
-                rgba(255,255,255,1) 64%);h6{
+                background: rgb(251, 203, 174);
+                background: linear-gradient(90deg, rgba(251, 203, 174, 1) 24%,
+                        rgba(255, 255, 255, 1) 64%);
+
+                h6 {
                     font-weight: 400;
                     height: 20px;
                     overflow: hidden;
                 }
             }
 
-            &:hover{
-                .layer_animaction_2{
+            &:hover {
+                .layer_animaction_2 {
                     width: 220px;
-                    opacity: 1;
                 }
-                .layer_animaction_1{
+
+                .layer_animaction_1 {
                     border-top-right-radius: 0;
                     border-bottom-right-radius: 0;
-                    border-right:1px solid #FBCBAE;
+                    border-right: 1px solid #FBCBAE;
                 }
             }
         }
     }
+
     .ingredients_layer_4 {
         top: 330px;
         right: -180px;
@@ -611,63 +643,65 @@
             width: 250px;
             right: -110px;
         }
+
         @media (min-width: 993px) and (max-width: 1200px) {
-           right: -280px;
+            right: -280px;
         }
 
-        .layer_animaction{
+        .layer_animaction {
             top: 20%;
             right: 38%;
             z-index: 2;
+            border-radius: 25px;
             @extend .postion_absolute;
             overflow: hidden;
-            transform: translate(-50%,-50%);
+            //            border: 1px solid #fff;
+            transform: translate(-50%, -50%);
+
             @media (min-width: 768px) and (max-width: 992px) {
                 width: 315px;
                 left: -18%;
                 right: inherit;
             }
-            
-            .layer_animaction_1{
+
+            .layer_animaction_1 {
                 z-index: 1;
+                height: 38px;
                 padding: 8px 15px;
-                border-radius: 25px;
                 background: #FFEAA2;
                 position: relative;
-                border: 1px solid #fff;
+                border-radius: 25px;
             }
-            .layer_animaction_2{
+
+            .layer_animaction_2 {
                 margin-right: -20px;
                 transition: all .3s ease;
-                padding: 8px 20px 8px 15px;
+                padding: 10px 20px 8px 0px;
                 border-top-left-radius: 25px;
                 border-bottom-left-radius: 25px;
-                opacity: 0;
                 height: 38px;
-                // transform: translateX(110%);
                 transform-origin: left;
-                border: 1px solid #fff;
-                background: rgb(255,255,255);
+                background: rgb(255, 255, 255);
                 clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-                background: linear-gradient(90deg, rgba(255,255,255,1) 35%,
-                 rgba(255,234,162,1) 73%);
-                h6{
+                background: linear-gradient(90deg, rgba(255, 255, 255, 1) 35%,
+                        rgba(255, 234, 162, 1) 73%);
+
+                h6 {
                     font-weight: 400;
                     height: 20px;
                     overflow: hidden;
                 }
             }
 
-            &:hover{
-                .layer_animaction_2{
-                    opacity: 1;
-                    // transform: translateX(0);
+            &:hover {
+                .layer_animaction_2 {
                     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
                 }
-                .layer_animaction_1{
+
+                .layer_animaction_1 {
                     border-top-left-radius: 0;
                     border-bottom-left-radius: 0;
-                    border-left:1px solid #FFEAA2;
+                    border-left: 1px solid #FFEAA2;
                 }
             }
         }
@@ -678,7 +712,8 @@
         right: 100px;
         width: 500px;
         @extend .postion_absolute;
-        img{
+
+        img {
             margin-left: auto;
         }
 
@@ -699,58 +734,62 @@
             right: -20px;
         }
 
-        .layer_animaction{
+        .layer_animaction {
             top: 20%;
             right: 12%;
             z-index: 2;
             @extend .postion_absolute;
             overflow: hidden;
-            transform: translate(-50%,-50%);
+            border-radius: 25px;
+            //            border: 1px solid #fff;
+            transform: translate(-50%, -50%);
 
             @media (min-width: 768px) and (max-width: 992px) {
                 width: 260px;
             }
-            
-            .layer_animaction_1{
+
+            .layer_animaction_1 {
                 z-index: 1;
+                height: 38px;
                 padding: 8px 15px;
-                border-radius: 25px;
                 background: #f9fefb;
                 position: relative;
-                border: 1px solid #fff;
+                border-radius: 25px;
             }
-            .layer_animaction_2{
+
+            .layer_animaction_2 {
                 margin-right: -20px;
                 transition: all .3s ease;
-                padding: 8px 20px 8px 15px;
+                padding: 10px 20px 8px 0px;
                 border-top-left-radius: 25px;
                 border-bottom-left-radius: 25px;
-                opacity: 0;
+                //                opacity: 0;
                 height: 38px;
-                // transform: translateX(110%);
                 transform-origin: left;
                 border: 1px solid #fff;
-                background: rgb(255,255,255);
+                background: rgb(255, 255, 255);
                 clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-                background: linear-gradient(90deg, rgba(255,255,255,1) 35%,
-                rgba(249,254,251,1) 73%);
-                h6{
+                background: linear-gradient(90deg, rgba(255, 255, 255, 1) 35%,
+                        rgba(249, 254, 251, 1) 73%);
+
+                h6 {
                     font-weight: 400;
                     height: 20px;
                     overflow: hidden;
                 }
             }
 
-            &:hover{
-                .layer_animaction_2{
-                    opacity: 1;
+            &:hover {
+                .layer_animaction_2 {
+                    //                    opacity: 1;
                     // transform: translateX(0);
                     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
                 }
-                .layer_animaction_1{
+
+                .layer_animaction_1 {
                     border-top-left-radius: 0;
                     border-bottom-left-radius: 0;
-                    border-left:1px solid #f9fefb;
+                    border-left: 1px solid #f9fefb;
                 }
             }
         }
@@ -758,25 +797,26 @@
 
 
 
-    .ingredients_layer_1_m{
+    .ingredients_layer_1_m {
         top: 80px;
         left: -90px;
         z-index: 1;
         @extend .postion_absolute;
     }
 
-    .ingredients_layer_2_m{
+    .ingredients_layer_2_m {
         top: 220px;
         left: 60px;
         @extend .postion_absolute;
     }
-    .ingredients_layer_5_m{
+
+    .ingredients_layer_5_m {
         top: 20px;
         right: -110px;
         @extend .postion_absolute;
     }
 
-    .ingredients_layer_4_m{
+    .ingredients_layer_4_m {
         right: -110px;
         bottom: 50px;
         @extend .postion_absolute;
@@ -805,58 +845,59 @@
             @media (min-width: 768px) and (max-width: 992px) {
                 margin-left: -70px;
             }
-    
-            .layer_animaction{
+
+            .layer_animaction {
                 top: 65%;
                 left: 46%;
                 z-index: 2;
+                border-radius: 25px;
                 @extend .postion_absolute;
                 overflow: hidden;
-                
-                .layer_animaction_1{
+                border: 1px solid #fff;
+
+                .layer_animaction_1 {
                     z-index: 1;
+                    height: 38px;
                     padding: 8px 15px;
-                    border-radius: 25px;
                     background: #FFFDD9;
                     position: relative;
-                    border: 1px solid #fff;
                 }
-                .layer_animaction_2{
+
+                .layer_animaction_2 {
                     margin-left: -20px;
                     transition: all .3s ease;
-                    padding: 8px 15px 8px 20px;
+                    padding: 10px 0px 8px 20px;
                     border-top-right-radius: 25px;
                     border-bottom-right-radius: 25px;
                     width: 0;
-                    opacity: 0;
                     height: 38px;
                     transform-origin: right;
-                    border: 1px solid #fff;
-                    background: rgb(255,253,217);
-                    background: linear-gradient(90deg, rgba(255,253,217,1) 24%,
-                     rgba(255,255,255,1) 64%);
-                    h6{
+                    background: rgb(255, 253, 217);
+                    background: linear-gradient(90deg, rgba(255, 253, 217, 1) 24%,
+                            rgba(255, 255, 255, 1) 64%);
+
+                    h6 {
                         font-weight: 400;
                         height: 20px;
                         overflow: hidden;
                     }
                 }
-    
-                &:hover{
-                    .layer_animaction_2{
-                        opacity: 1;
+
+                &:hover {
+                    .layer_animaction_2 {
                         width: 250px;
                     }
-                    .layer_animaction_1{
+
+                    .layer_animaction_1 {
                         border-top-right-radius: 0;
                         border-bottom-right-radius: 0;
-                        border-right:1px solid #FFFDD9;
+                        border-right: 1px solid #FFFDD9;
                     }
                 }
             }
         }
 
-        .ingredients_layer_3_m{
+        .ingredients_layer_3_m {
             padding-top: 80px;
             margin-left: -125px;
         }
@@ -868,7 +909,7 @@
     @media (max-width: 767px) {
         padding-top: 0;
     }
-    
+
     h3 {
         span {
             display: block;

@@ -1218,6 +1218,16 @@ h6 {
         width: 100%; } }
     .section_7 .pantry .pantry_text .superfoods_text {
       margin-bottom: 8px; }
+    .section_7 .pantry .pantry_text .tertiary_btn {
+      line-height: 5px; }
+      .section_7 .pantry .pantry_text .tertiary_btn span {
+        margin-left: 20px;
+        padding-left: 25px;
+        border-left: 1px solid #CCA27B; }
+        .section_7 .pantry .pantry_text .tertiary_btn span sup {
+          top: 2px;
+          font-size: 10px;
+          position: relative; }
   .section_7 .pantry .pantry_img {
     width: 50%; }
     @media (max-width: 767px) {

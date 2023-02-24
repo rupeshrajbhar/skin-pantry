@@ -702,6 +702,22 @@
             .superfoods_text {
                 margin-bottom: 8px;
             }
+
+            .tertiary_btn {
+                line-height: 5px;
+
+                span {
+                    margin-left: 20px;
+                    padding-left: 25px;
+                    border-left: 1px solid #CCA27B;
+
+                    sup {
+                        top: 2px;
+                        font-size: 10px;
+                        position: relative;
+                    }
+                }
+            }
         }
 
         .pantry_img {
