@@ -249,7 +249,7 @@ h6 {
   border: 2px solid #F9F5F1; }
   @media (max-width: 767px) {
     .tertiary_btn {
-      padding: 11px 22px; } }
+      padding: 8px 22px; } }
   .tertiary_btn:hover {
     border: 2px solid #672614;
     background-color: #672614; }
