@@ -485,8 +485,13 @@
         top: 0;
         z-index: 2;
         left: -85px;
-        cursor: pointer;
         @extend .postion_absolute;
+        @media (min-width: 768px) and (max-width: 992px) {
+            width: 350px;
+        }
+        @media (min-width: 993px) and (max-width: 1200px) {
+            left: -158px;
+        }
 
         @media (max-width: 767px) {
             width: 390px;
@@ -516,9 +521,8 @@
                 left: 28%;
                 border: 0;
             }
-
             @media (min-width: 768px) and (max-width: 992px) {
-                left: 25%;
+                left: 30%;
             }
 
             .layer_animaction_1 {
@@ -528,6 +532,7 @@
                 border-radius: 25px;
                 background: #ded6d3;
                 position: relative;
+                cursor: pointer;
             }
 
             .layer_animaction_2 {
@@ -556,7 +561,9 @@
             &:hover {
                 .layer_animaction_2 {
                     width: 225px;
-                    //                    opacity: 1;
+                    @media (min-width: 768px) and (max-width: 992px) {
+                        width: 215px;
+                    }
                 }
 
                 .layer_animaction_1 {
@@ -604,7 +611,7 @@
             }
 
             @media (min-width: 768px) and (max-width: 992px) {
-                top: 45%;
+                top: 36%;
             }
 
             .layer_animaction_1 {
@@ -613,6 +620,7 @@
                 background: #FBCBAE;
                 position: relative;
                 height: 38px;
+                cursor: pointer;
             }
 
             .layer_animaction_2 {
@@ -649,6 +657,7 @@
 
             &:hover {
                 .layer_animaction_2 {
+                    width: 220px;
                     @media (max-width: 767px) {
                         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
                     }
@@ -703,7 +712,8 @@
 
             @media (min-width: 768px) and (max-width: 992px) {
                 width: 315px;
-                left: -18%;
+                left: -12%;
+                top: 48%;
                 right: inherit;
             }
 
@@ -714,6 +724,7 @@
                 background: #FFEAA2;
                 position: relative;
                 border-radius: 25px;
+                cursor: pointer;
             }
 
             .layer_animaction_2 {
@@ -796,6 +807,7 @@
             }
 
             @media (min-width: 768px) and (max-width: 992px) {
+                right: -4%;
                 width: 260px;
             }
 
@@ -806,6 +818,7 @@
                 background: #f9fefb;
                 position: relative;
                 border-radius: 25px;
+                cursor: pointer;
             }
 
             .layer_animaction_2 {
@@ -818,13 +831,14 @@
                 height: 38px;
                 transform-origin: left;
                 background: rgb(255, 255, 255);
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-                //                clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+                
+                               clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
                 background: linear-gradient(90deg, rgba(255, 255, 255, 1) 35%,
                         rgba(249, 254, 251, 1) 73%);
 
                 @media (max-width: 767px) {
                     width: auto;
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
                 }
 
                 h6 {
@@ -925,6 +939,7 @@
                     padding: 8px 15px;
                     background: #FFFDD9;
                     position: relative;
+                    cursor: pointer;
                 }
 
                 .layer_animaction_2 {
