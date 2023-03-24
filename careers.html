@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000" />
+    <title>skin pantry</title>
+    <link rel="stylesheet" href="css/careers.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="	https://cdnjs.cloudflare.com/ajax/libs/jInvertScroll/0.8.3/css/jInvertScroll.min.css" />
+    <!--    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />-->
+    <link rel="shortcut icon" type="image/x-icon" href="img/g5/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+
+  <body>
+    
+    <section class="section_1">
+        <div class="banner_paginaction">
+          <p class="text_xs">
+            <a href="index.html">Home</a> / <a href="contact.html">Careers</a>
+          </p>
+        </div>
+        <div class="banner_slider overflow_h">
+          <div class="slider">
+            <picture>
+              <source
+                media="(max-width:767px)"
+                srcset="img/contact/mobile_banner.jpg"
+                alt="" />
+              <img
+                src="img/careers/dekstop_banner.jpg"
+                class="img-responsive width_100" />
+            </picture>
+            <div class="slider_info text_center">
+              <h2
+                class="text_xxxl n_l text_uppercase f_w_r text_left">
+                Come, join us <br class="hidden-xs" />
+                in our pantry
+              </h2>
+            </div>  
+          </div>
+        </div>
+      </section>
+      <section class="section_2" >
+        <div class="container">
+            <div class="accordion-body">
+                <div class="accordion">
+                  <h1>Current Job Openings</h1>
+                  <div class="acc-container">
+                    <div class="label">Formulator <span>Product</span></div>
+                    <div class="content">Hypertext Markup Language (HTML) is a computer language that makes up most web pages and online applications. A hypertext is a text that is used to reference other pieces of text, while a markup language is a series of markings that tells web servers the style and structure of a document. HTML is very simple to learn and use.</div>
+                  </div>
+                  <hr>
+                  <div class="acc-container">
+                    <div class="label">Marketing Head <span>Marketing</span></div>
+                    <div class="content">CSS stands for Cascading Style Sheets. It is the language for describing the presentation of Web pages, including colours, layout, and fonts, thus making our web pages presentable to the users. CSS is designed to make style sheets for the web. It is independent of HTML and can be used with any XML-based markup language. CSS is popularly called the design language of the web.
+                  </div>
+                  </div>
+                  <hr>
+                  <div class="acc-container">
+                    <div class="label">Jr Accountant <span>Finance</span></div>
+                    <div class="content">JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third of the web trio.</div>
+                  </div>
+                  <hr>
+                  <div class="acc-container">
+                    <div class="label">Packaging Designer <span>Design</span></div>
+                    <div class="content">React is a JavaScript library created for building fast and interactive user interfaces for web and mobile applications. It is an open-source, component-based, front-end library responsible only for the application’s view layer. In Model View Controller (MVC) architecture, the view layer is responsible for how the app looks and feels. React was created by Jordan Walke, a software engineer at Facebook. </div>
+                  </div>
+                </div>
+                </div>
+        </div>
+
+      </section>
+
+    <section class="section_12 toTop" data-scroll>
+        <picture>
+          <source
+            media="(max-width:767px)"
+            srcset="img/home/m_some_banner.jpg"
+            alt="" />
+          <img src="img/home/some_banner.jpg" class="img-responsive width_100" />
+        </picture>
+        <div class="some pt_100">
+          <h4>
+            <span class="g color_white">Some scoop</span>
+            <span class="text_xxxl color_white n_e_l text_uppercase"
+              >from our pantry</span
+            >
+          </h4>
+        </div>
+        <div class="sub width_100">
+          <img src="img/home/subscribe.jpg" class="img-responsive width_100" />
+        </div>
+      </section>
+      <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/scroll-out.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+      <script>
+        const accordion = document.getElementsByClassName('acc-container');
+
+for (i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+  })
+}
+      </script>
+      <script>
+         $(".banner_slider").slick({
+        // dots: true,
+        infinite: true,
+        speed: 500,
+        pauseOnHover: false,
+        fade: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+      </script>
+  </body>
+</html>

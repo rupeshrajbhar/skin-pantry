@@ -1,0 +1,209 @@
+@import "base";
+
+
+.section_1 {
+    position: relative;
+
+    h2 {
+        opacity: 0;
+    }
+
+    .text_reg {
+        opacity: 0;
+    }
+
+    .slick-active h2 {
+        transform: translateY(80px);
+        animation: 0.5s fadeUp 0.5s forwards;
+    }
+
+    .slick-active .text_reg {
+        transform: translateY(80px);
+        animation: 0.5s fadeUp 0.5s forwards;
+    }
+
+    @keyframes fadeUp { 
+        0% {
+            transform: translateY(80px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    .banner_paginaction {
+        top: 25px;
+        left: 0;
+        z-index: 1;
+        position: absolute;
+        margin-left: var(--container_left_space);
+
+        @media (max-width: 767px) {
+            padding: 0 10px;
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+            padding: 0 15px;
+        }
+
+        .text_xs {
+            color: #3E2313;
+
+            a {
+                color: #3E2313;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .banner_slider {
+        .slider {
+            .slider_info {
+                left: 0;
+                bottom: 35px;
+                position: absolute;
+                margin-left: var(--container_left_space);
+
+                @media (max-width: 1200px) {
+                    bottom: 0;
+                }
+
+                @media (min-width: 768px) and (max-width: 992px) {
+                    left: 15px;
+                }
+
+                h2 {
+                    @media (max-width: 767px) {
+                        font-size: 26px;
+                        padding: 0 10px;
+                        line-height: 35px;
+                        color: #3E2313;
+                    }
+
+                    @media (min-width: 768px) and (max-width: 992px) {
+                        text-align: left;
+                        font-size: 30px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+.section_2{
+    padding: 60px 0;
+    .accordion {
+        color: black;
+        background-color: white;
+        h1{
+        font-family: "NunitoSans-SemiBold";
+        font-size: 36px;
+        line-height: 52px;
+        color: #3E2313;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        }
+        .acc-container {
+           position: relative;
+         }
+         .label {
+           font-family: "NunitoSans-SemiBold";
+           font-size: 24px;
+           line-height: 30px;
+           position: relative;
+           padding: 25px 0;
+           color: #3E2313;
+           cursor: pointer;
+           span{
+               font-family: "NunitoSans-SemiBold";
+               font-size: 14px;
+               line-height: 19px;
+               color: #3E2313;
+               background-color: #F9F8F7;
+               margin-left: 15px;
+               padding: 8px 20px;
+               border-radius: 4px;
+           }
+         }
+         .label::before {
+            content: '+';
+            color: black;
+            position: absolute;
+            top: 50%;
+            right: -5px;
+            font-size: 30px;
+            transform: translateY(-50%);
+          }
+          .content {
+            position: relative;
+            background: white;
+            height: 0;
+            font-size: 20px;
+            text-align: justify;
+            overflow: hidden;
+            transition: 0.5s;
+          }
+          hr {
+            width: 100;
+            margin-left: 0;
+            border: 1px solid grey;
+          }
+      }
+      
+  
+/* Unhides the content part when active. Sets the height */
+
+.accordion .acc-container.active .content {
+    height: 100px;
+  }
+  
+  /* Changes from plus sign to negative sign once active */
+  
+  .accordion .acc-container.active .label::before {
+    content: '-';
+    font-size: 30px;
+  }
+  
+}
+.section_12 {
+    @extend .postion_relative;
+
+    .some {
+        top: 0;
+        @extend .postion_absolute;
+        margin-left: var(--container_left_space);
+
+        h4 {
+            @extend .postion_relative;
+            padding-top: 100px;
+            padding-left: 70px;
+
+            .g {
+                top: 0;
+                left: 0;
+                display: inherit;
+                font-size: 90px;
+                font-weight: 100;
+                @extend .postion_absolute;
+
+                @media (max-width: 767px) {
+                    top: 20px;
+                    left: 25px;
+                    font-size: 70px;
+                }
+            }
+        }
+    }
+
+    .sub {
+        bottom: 0;
+        @extend .postion_absolute;
+
+        img {
+            opacity: 0.8;
+        }
+    }
+}
