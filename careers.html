@@ -54,14 +54,17 @@
             <div class="accordion-body">
               <div class="accordion">
                 <h1>Current Job Openings</h1>
+                <div class="right_para mobile-ipad-visible">
+                  Join the family of conscious, nature-loving and caring individuals who make skincare better for the world, one whisk at a time.
+                </div>
                 <div class="acc-container">
                   <div class="label">Formulator <span>Product</span></div>
                   <div class="content">Cosmetic formulators must have an extensive knowledge of chemistry and biology in order to understand how different ingredients interact with each other. They also need to be able to identify which ingredients will provide the best results when used together.
                     <div class="content_inside_flex">
                       <div class="desc">
-                        <p>Experience : 1-3 years</p>
-                        <p>Email your Resume : careers@skinpantry.com</p>
-                        <p>Location : Mumbai</p>
+                        <p><span>Experience :</span> 1-3 years</p>
+                        <p><span>Email your Resume :</span> <br class="mobile-visible"/> careers@skinpantry.com</p>
+                        <p><span>Location :</span>  Mumbai</p>
                       </div>
                       <div class="btn">
                         <a href="">Apply Here</a>
@@ -75,9 +78,9 @@
                   <div class="content">Cosmetic formulators must have an extensive knowledge of chemistry and biology in order to understand how different ingredients interact with each other. They also need to be able to identify which ingredients will provide the best results when used together.
                     <div class="content_inside_flex">
                       <div class="desc">
-                        <p>Experience : 1-3 years</p>
-                        <p>Email your Resume : careers@skinpantry.com</p>
-                        <p>Location : Mumbai</p>
+                        <p><span>Experience :</span> 1-3 years</p>
+                        <p><span>Email your Resume :</span>  <br class="mobile-visible"/>careers@skinpantry.com</p>
+                        <p><span>Location :</span>  Mumbai</p>
                       </div>
                       <div class="btn">
                         <a href="">Apply Here</a>
@@ -91,9 +94,9 @@
                   <div class="content">Cosmetic formulators must have an extensive knowledge of chemistry and biology in order to understand how different ingredients interact with each other. They also need to be able to identify which ingredients will provide the best results when used together.
                     <div class="content_inside_flex">
                       <div class="desc">
-                        <p>Experience : 1-3 years</p>
-                        <p>Email your Resume : careers@skinpantry.com</p>
-                        <p>Location : Mumbai</p>
+                        <p><span>Experience :</span> 1-3 years</p>
+                        <p><span>Email your Resume :</span> <br class="mobile-visible"/> careers@skinpantry.com</p>
+                        <p><span>Location :</span>  Mumbai</p>
                       </div>
                       <div class="btn">
                         <a href="">Apply Here</a>
@@ -107,9 +110,9 @@
                   <div class="content">Cosmetic formulators must have an extensive knowledge of chemistry and biology in order to understand how different ingredients interact with each other. They also need to be able to identify which ingredients will provide the best results when used together.
                     <div class="content_inside_flex">
                       <div class="desc">
-                        <p>Experience : 1-3 years</p>
-                        <p>Email your Resume : careers@skinpantry.com</p>
-                        <p>Location : Mumbai</p>
+                        <p><span>Experience :</span> 1-3 years</p>
+                        <p><span>Email your Resume :</span> <br class="mobile-visible"/> careers@skinpantry.com</p>
+                        <p><span>Location :</span>  Mumbai</p>
                       </div>
                       <div class="btn">
                         <a href="">Apply Here</a>
@@ -120,7 +123,7 @@
               </div>
             </div>
             <div class="form_right">
-              <div class="right_para">
+              <div class="right_para desktop-pro-visible">
                 Join the family of conscious, nature-loving and caring individuals who make skincare better for the world, one whisk at a time.
               </div>
               <img src="img/careers/form_img.png" class="img-responsive" alt="">
@@ -156,13 +159,21 @@
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
       <script>
-        const accordion = document.getElementsByClassName('acc-container');
+//         const accordion = document.getElementsByClassName('acc-container');
 
-for (i=0; i<accordion.length; i++) {
-  accordion[i].addEventListener('click', function () {
-    this.classList.toggle('active')
-  })
-}
+// for (i=0; i<accordion.length; i++) {
+//   accordion[i].addEventListener('click', function () {
+//     this.classList.toggle('active')
+
+//   })
+// }
+
+$(".acc-container").each(function () {
+    $(this).on("click", function(){
+        $(this).addClass("active");
+        $(this).siblings().removeClass("active");
+    })
+})
       </script>
       <script>
          $(".banner_slider").slick({
