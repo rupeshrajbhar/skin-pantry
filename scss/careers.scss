@@ -95,77 +95,145 @@
 }
 .section_2{
     padding: 60px 0;
-    .accordion {
-        color: black;
-        background-color: white;
-        h1{
-        font-family: "NunitoSans-SemiBold";
-        font-size: 36px;
-        line-height: 52px;
-        color: #3E2313;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+    .sec2_flex{
+        display: flex;
+        justify-content: space-between;
+        @media  screen and (max-width:768px) {
+            flex-direction: column;
+            gap: 30px;
         }
-        .acc-container {
-           position: relative;
-         }
-         .label {
-           font-family: "NunitoSans-SemiBold";
-           font-size: 24px;
-           line-height: 30px;
-           position: relative;
-           padding: 25px 0;
-           color: #3E2313;
-           cursor: pointer;
-           span{
-               font-family: "NunitoSans-SemiBold";
-               font-size: 14px;
-               line-height: 19px;
-               color: #3E2313;
-               background-color: #F9F8F7;
-               margin-left: 15px;
-               padding: 8px 20px;
-               border-radius: 4px;
-           }
-         }
-         .label::before {
-            content: '+';
-            color: black;
-            position: absolute;
-            top: 50%;
-            right: -5px;
+        .accordion-body{
+            width: 60%;
+            @media  screen and (max-width:768px) {
+                width: 100%;
+            }
+            .accordion {
+                color: black;
+                background-color: white;
+                h1{
+                font-family: "NunitoSans-SemiBold";
+                font-size: 36px;
+                line-height: 52px;
+                color: #3E2313;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                }
+                .acc-container {
+                   position: relative;
+                 }
+                 .label {
+                   font-family: "NunitoSans-SemiBold";
+                   font-size: 24px;
+                   line-height: 30px;
+                   position: relative;
+                   padding: 25px 0;
+                   color: #3E2313;
+                   cursor: pointer;
+                   span{
+                       font-family: "NunitoSans-SemiBold";
+                       font-size: 14px;
+                       line-height: 19px;
+                       color: #3E2313;
+                       background-color: #F9F8F7;
+                       margin-left: 15px;
+                       padding: 8px 20px;
+                       border-radius: 4px;
+                   }
+                 }
+                 .label::before {
+                    content: '+';
+                    color: black;
+                    position: absolute;
+                    top: 50%;
+                    right: -5px;
+                    font-size: 30px;
+                    transform: translateY(-50%);
+                  }
+                  .content {
+                    position: relative;
+                    background: white;
+                    height: 0;
+                    font-size: 20px;
+                    text-align: justify;
+                    overflow: hidden;
+                    transition: 0.5s;
+                    .content_inside_flex{
+                        display: flex;
+                        align-items: flex-end;
+                        width: 100%;
+                        justify-content: space-between;
+                        @media screen and (max-width: 991px) {
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 15px;
+                        }
+                        p:nth-child(3){
+                            margin-bottom: 0;
+                        } 
+                        .btn{
+                            background-color: #763422;
+                            padding: 10px 30px;
+                            border-radius: 4px;
+                            @media (min-width: 992px) and (max-width: 1199px) {
+                                padding: 10px 20px;
+                            }
+                            @media (min-width: 768px) and (max-width: 991px) {
+                                padding: 10px 20px;
+                            }
+                            a{
+                                text-decoration: none;
+                                color: white;
+                                text-transform: uppercase;
+                                font-family: "NunitoSans-Bold";
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                  }
+                  hr {
+                    width: 100;
+                    margin-left: 0;
+                    border: 1px solid grey;
+                  }
+              }
+              
+          
+        /* Unhides the content part when active. Sets the height */
+        
+        .accordion .acc-container.active .content {
+            height: 280px;
+            @media (min-width: 992px) and (max-width: 1199px) {
+                height: 300px;
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+                height: 330px;
+            }
+            @media  screen and (max-width:767px) {
+              height: 460px;
+            }
+          }
+          
+          /* Changes from plus sign to negative sign once active */
+          
+          .accordion .acc-container.active .label::before {
+            content: '-';
             font-size: 30px;
-            transform: translateY(-50%);
           }
-          .content {
-            position: relative;
-            background: white;
-            height: 0;
-            font-size: 20px;
-            text-align: justify;
-            overflow: hidden;
-            transition: 0.5s;
-          }
-          hr {
-            width: 100;
-            margin-left: 0;
-            border: 1px solid grey;
-          }
-      }
-      
-  
-/* Unhides the content part when active. Sets the height */
-
-.accordion .acc-container.active .content {
-    height: 100px;
-  }
-  
-  /* Changes from plus sign to negative sign once active */
-  
-  .accordion .acc-container.active .label::before {
-    content: '-';
-    font-size: 30px;
-  }
+        }
+        .form_right{
+            width: 35%;
+            @media  screen and (max-width:768px) {
+                width: 100%;
+            }
+            .right_para{
+                padding-bottom: 15px;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+ 
   
 }
 .section_12 {
