@@ -50,15 +50,18 @@
       </section>
       <section class="section_2" >
         <div class="container">
-          <div class="sec2_flex">
-            <div class="accordion-body">
+          <div class="sec2_flex"> 
+            <div class="accordion-container">
               <div class="accordion">
                 <h1>Current Job Openings</h1>
                 <div class="right_para mobile-ipad-visible">
                   Join the family of conscious, nature-loving and caring individuals who make skincare better for the world, one whisk at a time.
                 </div>
-                <div class="acc-container">
-                  <div class="label">Formulator <span>Product</span></div>
+                <div class="set">
+                  <a href="#">
+                    Formulator <span>Product</span>
+                    <i class="fa fa-plus"></i>
+                  </a>
                   <div class="content">Cosmetic formulators must have an extensive knowledge of chemistry and biology in order to understand how different ingredients interact with each other. They also need to be able to identify which ingredients will provide the best results when used together.
                     <div class="content_inside_flex">
                       <div class="desc">
@@ -72,9 +75,11 @@
                     </div>
                   </div>
                 </div>
-                <hr>
-                <div class="acc-container">
-                  <div class="label">Marketing Head <span>Marketing</span></div>
+                <div class="set">
+                  <a href="#">
+                    Marketing Head <span>Marketing</span>
+                    <i class="fa fa-plus"></i>
+                  </a>
                   <div class="content">Cosmetic formulators must have an extensive knowledge of chemistry and biology in order to understand how different ingredients interact with each other. They also need to be able to identify which ingredients will provide the best results when used together.
                     <div class="content_inside_flex">
                       <div class="desc">
@@ -88,9 +93,11 @@
                     </div>
                   </div>
                 </div>
-                <hr>
-                <div class="acc-container">
-                  <div class="label">Jr Accountant <span>Finance</span></div>
+                <div class="set">
+                  <a href="#">
+                    Jr Accountant <span>Finance</span>
+                    <i class="fa fa-plus"></i>
+                  </a>
                   <div class="content">Cosmetic formulators must have an extensive knowledge of chemistry and biology in order to understand how different ingredients interact with each other. They also need to be able to identify which ingredients will provide the best results when used together.
                     <div class="content_inside_flex">
                       <div class="desc">
@@ -104,9 +111,11 @@
                     </div>
                   </div>
                 </div>
-                <hr>
-                <div class="acc-container">
-                  <div class="label">Packaging Designer <span>Design</span></div>
+                <div class="set">
+                  <a href="#">
+                    Packaging Designer <span>Design</span>
+                    <i class="fa fa-plus"></i> 
+                  </a>
                   <div class="content">Cosmetic formulators must have an extensive knowledge of chemistry and biology in order to understand how different ingredients interact with each other. They also need to be able to identify which ingredients will provide the best results when used together.
                     <div class="content_inside_flex">
                       <div class="desc">
@@ -159,21 +168,33 @@
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
       <script>
-//         const accordion = document.getElementsByClassName('acc-container');
-
-// for (i=0; i<accordion.length; i++) {
-//   accordion[i].addEventListener('click', function () {
-//     this.classList.toggle('active')
-
-//   })
-// }
-
-$(".acc-container").each(function () {
-    $(this).on("click", function(){
-        $(this).addClass("active");
-        $(this).siblings().removeClass("active");
-    })
-})
+      $(document).ready(function() {
+        $(".set > a").on("click", function() {
+          if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+            $(this)
+              .siblings(".content")
+              .slideUp(200);
+            $(".set > a i")
+              .removeClass("fa-minus")
+              .addClass("fa-plus");
+          } else {
+            $(".set > a i")
+              .removeClass("fa-minus")
+              .addClass("fa-plus");
+            $(this)
+              .find("i")
+              .removeClass("fa-plus")
+              .addClass("fa-minus");
+            $(".set > a").removeClass("active");
+            $(this).addClass("active");
+            $(".content").slideUp(200);
+            $(this)
+              .siblings(".content")
+              .slideDown(200);
+          }
+        });
+      });
       </script>
       <script>
          $(".banner_slider").slick({

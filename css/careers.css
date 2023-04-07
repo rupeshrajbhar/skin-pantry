@@ -787,6 +787,9 @@ h6 {
   transition: transform 0.12s ease;
   will-change: transform; }
 
+* {
+  -webkit-tap-highlight-color: transparent; }
+
 .section_1 {
   position: relative; }
   .section_1 h2 {
@@ -855,109 +858,91 @@ h6 {
       .section_2 .sec2_flex {
         flex-direction: column;
         gap: 30px; } }
-    .section_2 .sec2_flex .accordion-body {
-      width: 60%;
-      /* Unhides the content part when active. Sets the height */
-      /* Changes from plus sign to negative sign once active */ }
-      @media screen and (max-width: 768px) {
-        .section_2 .sec2_flex .accordion-body {
+    .section_2 .sec2_flex .accordion-container {
+      position: relative;
+      width: 60%; }
+      @media screen and (max-width: 991px) {
+        .section_2 .sec2_flex .accordion-container {
           width: 100%; } }
-      .section_2 .sec2_flex .accordion-body .accordion {
-        color: black;
-        background-color: white; }
-        .section_2 .sec2_flex .accordion-body .accordion h1 {
-          font-family: "NunitoSans-SemiBold";
-          font-size: 36px;
-          line-height: 52px;
-          color: #3E2313;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-          margin-top: 0; }
-        .section_2 .sec2_flex .accordion-body .accordion .acc-container {
-          position: relative; }
-        .section_2 .sec2_flex .accordion-body .accordion .label {
-          font-family: "NunitoSans-Bold";
-          font-size: 24px;
-          line-height: 30px;
-          position: relative;
-          padding: 25px 0;
-          color: #3E2313;
-          cursor: pointer; }
-          .section_2 .sec2_flex .accordion-body .accordion .label span {
-            font-family: "NunitoSans-SemiBold";
-            font-size: 14px;
-            line-height: 19px;
-            color: #3E2313;
-            background-color: #F9F8F7;
-            margin-left: 15px;
-            padding: 8px 20px;
-            border-radius: 4px; }
-        .section_2 .sec2_flex .accordion-body .accordion .label::before {
-          content: '+';
-          color: black;
-          position: absolute;
-          top: 50%;
-          right: -5px;
-          font-size: 30px;
-          transform: translateY(-50%); }
-        .section_2 .sec2_flex .accordion-body .accordion .content {
-          position: relative;
-          background: white;
-          height: 0;
-          font-size: 18px;
-          text-align: justify;
-          overflow: hidden;
-          transition: 0.5s;
-          color: #3E2313; }
-          .section_2 .sec2_flex .accordion-body .accordion .content .content_inside_flex {
-            display: flex;
-            align-items: flex-end;
-            width: 100%;
-            justify-content: space-between; }
-            @media screen and (max-width: 991px) {
-              .section_2 .sec2_flex .accordion-body .accordion .content .content_inside_flex {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 15px; } }
-            .section_2 .sec2_flex .accordion-body .accordion .content .content_inside_flex p span {
-              font-weight: bold; }
-            .section_2 .sec2_flex .accordion-body .accordion .content .content_inside_flex p:nth-child(3) {
-              margin-bottom: 0; }
-            .section_2 .sec2_flex .accordion-body .accordion .content .content_inside_flex .btn {
-              background-color: #763422;
-              padding: 10px 30px;
-              border-radius: 4px; }
-              @media (min-width: 992px) and (max-width: 1199px) {
-                .section_2 .sec2_flex .accordion-body .accordion .content .content_inside_flex .btn {
-                  padding: 10px 20px; } }
-              @media (min-width: 768px) and (max-width: 991px) {
-                .section_2 .sec2_flex .accordion-body .accordion .content .content_inside_flex .btn {
-                  padding: 10px 20px; } }
-              .section_2 .sec2_flex .accordion-body .accordion .content .content_inside_flex .btn a {
-                text-decoration: none;
-                color: white;
-                text-transform: uppercase;
-                font-family: "NunitoSans-Bold";
-                font-size: 16px;
-                line-height: 20px; }
-        .section_2 .sec2_flex .accordion-body .accordion hr {
-          width: 100;
-          margin-left: 0;
-          border: 1px solid #F1EAE8; }
-      .section_2 .sec2_flex .accordion-body .accordion .acc-container.active .content {
-        height: 245px; }
-        @media (min-width: 992px) and (max-width: 1199px) {
-          .section_2 .sec2_flex .accordion-body .accordion .acc-container.active .content {
-            height: 270px; } }
-        @media (min-width: 768px) and (max-width: 991px) {
-          .section_2 .sec2_flex .accordion-body .accordion .acc-container.active .content {
-            height: 275px; } }
+      .section_2 .sec2_flex .accordion-container .accordion h1 {
+        font-family: "NunitoSans-SemiBold";
+        font-size: 36px;
+        line-height: 52px;
+        color: #3E2313;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 0; }
+    .section_2 .sec2_flex .set {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding: 25px 0;
+      border-bottom: 1px solid #ddd; }
+    .section_2 .sec2_flex .set > a {
+      font-family: "NunitoSans-Bold";
+      font-size: 24px;
+      line-height: 30px;
+      position: relative;
+      color: #3E2313;
+      cursor: pointer;
+      text-decoration: none;
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      transition: all 0.2s linear; }
+      .section_2 .sec2_flex .set > a span {
+        font-family: "NunitoSans-SemiBold";
+        font-size: 14px;
+        line-height: 19px;
+        color: #3E2313;
+        background-color: #F9F8F7;
+        margin-left: 15px;
+        padding: 8px 20px;
+        border-radius: 4px; }
         @media screen and (max-width: 767px) {
-          .section_2 .sec2_flex .accordion-body .accordion .acc-container.active .content {
-            height: 400px; } }
-      .section_2 .sec2_flex .accordion-body .accordion .acc-container.active .label::before {
-        content: '-';
-        font-size: 30px; }
+          .section_2 .sec2_flex .set > a span {
+            margin-left: 10px; } }
+    .section_2 .sec2_flex .set > a i {
+      float: right;
+      margin-top: 2px; }
+    .section_2 .sec2_flex .content {
+      background-color: #fff;
+      display: none;
+      font-size: 18px;
+      text-align: justify;
+      overflow: hidden;
+      color: #3E2313;
+      padding-top: 20px; }
+      .section_2 .sec2_flex .content .content_inside_flex {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        justify-content: space-between; }
+        @media screen and (max-width: 991px) {
+          .section_2 .sec2_flex .content .content_inside_flex {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px; } }
+        .section_2 .sec2_flex .content .content_inside_flex p span {
+          font-weight: bold; }
+        .section_2 .sec2_flex .content .content_inside_flex p:nth-child(3) {
+          margin-bottom: 0; }
+        .section_2 .sec2_flex .content .content_inside_flex .btn {
+          background-color: #763422;
+          padding: 10px 30px;
+          border-radius: 4px; }
+          @media (min-width: 992px) and (max-width: 1199px) {
+            .section_2 .sec2_flex .content .content_inside_flex .btn {
+              padding: 10px 20px; } }
+          @media (min-width: 768px) and (max-width: 991px) {
+            .section_2 .sec2_flex .content .content_inside_flex .btn {
+              padding: 10px 20px; } }
+          .section_2 .sec2_flex .content .content_inside_flex .btn a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-family: "NunitoSans-Bold";
+            font-size: 16px;
+            line-height: 20px; }
     .section_2 .sec2_flex .form_right {
       width: 35%; }
       @media screen and (max-width: 768px) {
