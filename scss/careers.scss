@@ -129,7 +129,7 @@
             width: 100%;
             height: auto;
             padding: 25px 0;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #F1EAE8;
           }
           .set > a{
             font-family: "NunitoSans-Bold";
@@ -173,7 +173,7 @@
                 align-items: flex-end;
                 width: 100%;
                 justify-content: space-between;
-                @media screen and (max-width: 991px) {
+                @media screen and (max-width: 767px) {
                     flex-direction: column;
                     align-items: flex-start;
                     gap: 15px;
